@@ -7,18 +7,11 @@
     <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
     <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
     <link href="stable/static/css/api.css" rel="stylesheet" type="text/css">
-    <title>chrome.contentSettings - Google Chrome</title>
+    <title>chrome.contentSettings - chrome插件中文开发文档(非官方)</title>
   </head>
   <body>
     <a id="top"></a>
-    <div id="header">
-      <span id="logo">
-        <a href="http://code.google.com/"><img src="stable/static/images/chrome_logo.gif" alt="Google Code Labs"></a>
-      </span>
-      <span id="cse">
-        <gcse:searchbox-only enableAutoComplete="true" autoCompleteMatchTyple="prefix"></gcse:searchbox-only>
-      </span>
-    </div>
+    <div id="header">{Header content}</div>
     <a id="gc-topnav-anchor"></a>
     <div id="gc-topnav">
       <h1>Google Chrome Extensions</h1>
@@ -643,32 +636,7 @@ You can find samples of this API on the
           prettyPrint();
         })();
       </script>
-      <script src="https://www.google-analytics.com/urchin.js" type="text/javascript"></script>
-      <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
-      <script type="text/javascript">
-        // chrome doc tracking
-        try {
-          var engdocs = _gat._getTracker("YT-10763712-2");
-          engdocs._trackPageview();
-        } catch(err) {}
-        // code.google.com site-wide tracking
-        try {
-          _uacct="UA-18071-1";
-          _uanchor=1;
-          _uff=0;
-          urchinTracker();
-        }
-        catch(e) {/* urchinTracker not available. */}
-      </script>
-      <script>
-        (function() {
-          var cx = '002967670403910741006:61_cvzfqtno';
-          var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//www.google.com/cse/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-        })();
-      </script>
+      <div id="footer_cus">{Footer}</div>
   
     </div>
   </div>

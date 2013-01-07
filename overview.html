@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -6,18 +6,11 @@
     <link href="stable/static/css/print.css" rel="stylesheet" type="text/css" media="print">
     <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
     <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
-    <title>Overview - Google Chrome</title>
+    <title>概述 - chrome插件中文开发文档(非官方)</title>
   </head>
   <body>
     <a id="top"></a>
-    <div id="header">
-      <span id="logo">
-        <a href="http://code.google.com/"><img src="stable/static/images/chrome_logo.gif" alt="Google Code Labs"></a>
-      </span>
-      <span id="cse">
-        <gcse:searchbox-only enableAutoComplete="true" autoCompleteMatchTyple="prefix"></gcse:searchbox-only>
-      </span>
-    </div>
+    <div id="header">{Header content}</div>
     <a id="gc-topnav-anchor"></a>
     <div id="gc-topnav">
       <h1>Google Chrome Extensions</h1>
@@ -47,146 +40,146 @@
         <ul 
             class="level1 ">
           <li class="level2">
-                <a href="getstarted.html" class="level2 ">Getting Started</a>
+                <a href="getstarted.html" class="level2 ">入门</a>
           </li>
           <li class="level2">
-                <a  class="level2 selected">Overview</a>
+                <a href="overview.html" class="level2 ">概述</a>
           </li>
           <li class="level2">
-                <a href="whats_new.html" class="level2 ">What's New?</a>
+                <a href="whats_new.html" class="level2 ">新功能</a>
           </li>
           <li class="level2">
-                <a href="devguide.html" class="level2 ">Developer's Guide</a>
+                <a href="devguide.html" class="level2 ">开发者指南</a>
               <ul 
                   class="level2 ">
                 <li class="level3">
                     <a class="button level3">
-                      <span class="level3">Browser UI</span>
+                      <span class="level3">用户界面</span>
                       <div class="toggleIndicator level3"></div>
                     </a>
                     <ul toggleable
                         class="level3 hidden">
                       <li class="level4">
-                            <a href="browserAction.html" class="level4 ">Browser Actions</a>
+                            <a href="browserAction.html" class="level4 ">浏览器按钮</a>
                       </li>
                       <li class="level4">
-                            <a href="contextMenus.html" class="level4 ">Context Menus</a>
+                            <a href="contextMenus.html" class="level4 ">右键菜单</a>
                       </li>
                       <li class="level4">
-                            <a href="notifications.html" class="level4 ">Desktop Notifications</a>
+                            <a href="notifications.html" class="level4 ">桌面通知</a>
                       </li>
                       <li class="level4">
-                            <a href="omnibox.html" class="level4 ">Omnibox</a>
+                            <a href="omnibox.html" class="level4 ">多功能地址栏</a>
                       </li>
                       <li class="level4">
-                            <a href="options.html" class="level4 ">Options Pages</a>
+                            <a href="options.html" class="level4 ">选项页面</a>
                       </li>
                       <li class="level4">
-                            <a href="override.html" class="level4 ">Override Pages</a>
+                            <a href="override.html" class="level4 ">代替页面</a>
                       </li>
                       <li class="level4">
-                            <a href="pageAction.html" class="level4 ">Page Actions</a>
+                            <a href="pageAction.html" class="level4 ">页面按钮</a>
                       </li>
                     </ul>
                 </li>
                 <li class="level3">
                     <a class="button level3">
-                      <span class="level3">Browser Interaction</span>
+                      <span class="level3">浏览器交互</span>
                       <div class="toggleIndicator level3"></div>
                     </a>
                     <ul toggleable
                         class="level3 hidden">
                       <li class="level4">
-                            <a href="bookmarks.html" class="level4 ">Bookmarks</a>
+                            <a href="bookmarks.html" class="level4 ">书签</a>
                       </li>
                       <li class="level4">
                             <a href="cookies.html" class="level4 ">Cookies</a>
                       </li>
                       <li class="level4">
-                            <a href="devtools.html" class="level4 ">Developer Tools</a>
+                            <a href="devtools.html" class="level4 ">开发人员工具</a>
                       </li>
                       <li class="level4">
-                            <a href="events.html" class="level4 ">Events</a>
+                            <a href="events.html" class="level4 ">事件</a>
                       </li>
                       <li class="level4">
-                            <a href="history.html" class="level4 ">History</a>
+                            <a href="history.html" class="level4 ">历史记录</a>
                       </li>
                       <li class="level4">
-                            <a href="management.html" class="level4 ">Management</a>
+                            <a href="management.html" class="level4 ">管理</a>
                       </li>
                       <li class="level4">
-                            <a href="tabs.html" class="level4 ">Tabs</a>
+                            <a href="tabs.html" class="level4 ">标签页</a>
                       </li>
                       <li class="level4">
-                            <a href="windows.html" class="level4 ">Windows</a>
-                      </li>
-                    </ul>
-                </li>
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Implementation</span>
-                      <div class="toggleIndicator level3"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 hidden">
-                      <li class="level4">
-                            <a href="a11y.html" class="level4 ">Accessibility</a>
-                      </li>
-                      <li class="level4">
-                            <a href="event_pages.html" class="level4 ">Event Pages</a>
-                      </li>
-                      <li class="level4">
-                            <a href="contentSecurityPolicy.html" class="level4 ">Content Security Policy</a>
-                      </li>
-                      <li class="level4">
-                            <a href="content_scripts.html" class="level4 ">Content Scripts</a>
-                      </li>
-                      <li class="level4">
-                            <a href="xhr.html" class="level4 ">Cross-Origin XHR</a>
-                      </li>
-                      <li class="level4">
-                            <a href="i18n.html" class="level4 ">Internationalization</a>
-                      </li>
-                      <li class="level4">
-                            <a href="messaging.html" class="level4 ">Message Passing</a>
-                      </li>
-                      <li class="level4">
-                            <a href="permissions.html" class="level4 ">Optional Permissions</a>
-                      </li>
-                      <li class="level4">
-                            <a href="npapi.html" class="level4 ">NPAPI Plugins</a>
+                            <a href="windows.html" class="level4 ">窗口</a>
                       </li>
                     </ul>
                 </li>
                 <li class="level3">
                     <a class="button level3">
-                      <span class="level3">Finishing</span>
+                      <span class="level3">实现</span>
                       <div class="toggleIndicator level3"></div>
                     </a>
                     <ul toggleable
                         class="level3 hidden">
                       <li class="level4">
-                            <a href="hosting.html" class="level4 ">Hosting</a>
+                            <a href="a11y.html" class="level4 ">辅助功能</a>
                       </li>
                       <li class="level4">
-                            <a href="external_extensions.html" class="level4 ">Other Deployment Options</a>
+                            <a href="event_pages.html" class="level4 ">事件页面</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contentSecurityPolicy.html" class="level4 ">内容安全策略(CSP)</a>
+                      </li>
+                      <li class="level4">
+                            <a href="content_scripts.html" class="level4 ">内容脚本</a>
+                      </li>
+                      <li class="level4">
+                            <a href="xhr.html" class="level4 ">跨站XMLHttpRequest</a>
+                      </li>
+                      <li class="level4">
+                            <a href="i18n.html" class="level4 ">国际化</a>
+                      </li>
+                      <li class="level4">
+                            <a href="messaging.html" class="level4 ">消息传递</a>
+                      </li>
+                      <li class="level4">
+                            <a href="permissions.html" class="level4 ">可选权限</a>
+                      </li>
+                      <li class="level4">
+                            <a href="npapi.html" class="level4 ">NPAPI插件</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">完成</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="hosting.html" class="level4 ">托管</a>
+                      </li>
+                      <li class="level4">
+                            <a href="external_extensions.html" class="level4 ">其他部署方案</a>
                       </li>
                     </ul>
                 </li>
               </ul>
           </li>
           <li class="level2">
-                <a href="tutorials.html" class="level2 ">Tutorials</a>
+                <a href="tutorials.html" class="level2 ">教程</a>
               <ul 
                   class="level2 ">
                 <li class="level3">
-                      <a href="tut_migration_to_manifest_v2.html" class="level3 ">Manifest V2</a>
+                      <a href="tut_migration_to_manifest_v2.html" class="level3 ">清单文件V2</a>
                 </li>
                 <li class="level3">
-                      <a href="tut_debugging.html" class="level3 ">Debugging</a>
+                      <a href="tut_debugging.html" class="level3 ">调试</a>
                 </li>
                 <li class="level3">
-                      <a href="tut_analytics.html" class="level3 ">Google Analytics</a>
+                      <a href="tut_analytics.html" class="level3 ">Google Analytics(分析)</a>
                 </li>
                 <li class="level3">
                       <a href="tut_oauth.html" class="level3 ">OAuth</a>
@@ -194,89 +187,89 @@
               </ul>
           </li>
           <li class="level2">
-                <span class="level2">Reference</span>
+                <span class="level2">参考</span>
               <ul 
                   class="level2 ">
                 <li class="level3">
                     <a class="button level3">
-                      <span class="level3">Formats</span>
+                      <span class="level3">格式</span>
                       <div class="toggleIndicator level3"></div>
                     </a>
                     <ul toggleable
                         class="level3 hidden">
                       <li class="level4">
-                            <a href="manifest.html" class="level4 ">Manifest Files</a>
+                            <a href="manifest.html" class="level4 ">清单文件</a>
                       </li>
                       <li class="level4">
-                            <a href="match_patterns.html" class="level4 ">Match Patterns</a>
+                            <a href="match_patterns.html" class="level4 ">匹配表达式</a>
                       </li>
                     </ul>
                 </li>
                 <li class="level3">
-                      <a href="permission_warnings.html" class="level3 ">Permission Warnings</a>
+                      <a href="permission_warnings.html" class="level3 ">权限警告</a>
                 </li>
                 <li class="level3">
                       <a href="api_index.html" class="level3 ">chrome.* APIs</a>
                 </li>
                 <li class="level3">
-                      <a href="api_other.html" class="level3 ">Other APIs</a>
+                      <a href="api_other.html" class="level3 ">其他APIs</a>
                 </li>
               </ul>
           </li>
           <li class="level2">
-                <span class="level2">More</span>
+                <span class="level2">更多</span>
               <ul 
                   class="level2 ">
                 <li class="level3">
-                      <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">Chrome Web Store</a>
+                      <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">chrome商店</a>
                 </li>
                 <li class="level3">
-                      <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">Hosted Apps</a>
+                      <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">托管应用程序</a>
                 </li>
                 <li class="level3">
-                      <a href="themes.html" class="level3 ">Themes</a>
+                      <a href="themes.html" class="level3 ">主题</a>
                 </li>
               </ul>
           </li>
         </ul>
       </div>
       <div id="gc-pagecontent">
-        <h1 class="page_title">Overview</h1>
+        <h1 class="page_title">概述</h1>
         <div id="toc">
-          <h2>Contents</h2>
+          <h2>内容</h2>
           <ol>
             <li>
-              <a href=#what>The basics</a>
+              <a href=#what>基础</a>
               <ol>
-                <li><a href=#extension-ui>Extension UIs</a></li>
+                <li><a href=#extension-ui>扩展程序的用户界面</a></li>
               </ol>
             </li>
             <li>
-              <a href=#files>Files</a>
+              <a href=#files>文件</a>
               <ol>
-                <li><a href=#relative-urls>Referring to files</a></li><li><a href=#manifest>The manifest file</a></li>
+                <li><a href=#relative-urls>引用文件</a></li><li><a href=#manifest>清单文件</a></li>
               </ol>
             </li>
             <li>
-              <a href=#arch>Architecture</a>
+              <a href=#arch>架构</a>
               <ol>
-                <li><a href=#background_page>The background page</a></li><li><a href=#pages>UI pages</a></li><li><a href=#contentScripts>Content scripts</a></li>
+                <li><a href=#background_page>后台页面</a></li><li><a href=#pages>用户界面页面</a></li><li><a href=#contentScripts>内容脚本</a></li>
               </ol>
             </li>
             <li>
-              <a href=#apis> Using the chrome.* APIs </a>
+              <a href=#apis> 使用chrome.* API </a>
               <ol>
-                <li><a href=#sync> Asynchronous vs. synchronous methods </a></li><li><a href=#sync-example> Example: Using a callback </a></li><li><a href=#chrome-more> More details </a></li>
+                <li><a href=#sync> 异步方法与同步方法的区别 </a></li><li><a href=#sync-example> 例子：使用回调函数 </a></li><li><a href=#chrome-more> 更多细节 </a></li>
               </ol>
             </li>
             <li>
-              <a href=#pageComm>Communication between pages </a>
+              <a href=#pageComm>页面间的通信 </a>
             </li>
             <li>
-              <a href=#incognito> Saving data and incognito mode </a>
+              <a href=#incognito> 保存数据和隐身模式 </a>
             </li>
             <li>
-              <a href=#now-what> Now what? </a>
+              <a href=#now-what> 现在做什么呢？ </a>
             </li>
           </ol>
         </div>
@@ -285,46 +278,38 @@
 
 
 <p>
-Once you've finished this page
-and the
-<a href="getstarted.html">Getting Started</a> tutorial,
-you'll be all set to start writing extensions.
+当您看完该页面以及
+<a href="getstarted.html">入门</a> 教程后，您已经准备好开始编写扩展程序和打包应用程序了。
 </p>
 
-<h2 id="what">The basics</h2>
+<h2 id="what">基础</h2>
 
 <p>
-An extension is a zipped bundle of files&mdash;HTML,
-CSS, JavaScript, images, and anything else you need&mdash;that
-adds functionality to the Google Chrome browser.
-Extensions are essentially web pages,
-and they can use all the
-<a href="api_other.html">APIs that the browser provides to web pages</a>,
-from XMLHttpRequest to JSON to HTML5.
+扩展程序由一些文件&mdash;HTML、CSS、JavaScript、图片以及其它任何您需要的文件&mdash;
+    为Google Chrome浏览器增加功能
+扩展程序本质上是网页，它们可以利用
+<a href="api_other.html">浏览器为网页提供的所有API</a>,
+例如XMLHttpRequest、JSON、HTML5等等。
 </p>
 
 <p>
-Extensions can interact with web pages or servers using
-<a href="content_scripts.html">content scripts</a> or
-<a href="xhr.html">cross-origin XMLHttpRequests</a>.
-Extensions can also interact programmatically
-with browser features such as
-<a href="bookmarks.html">bookmarks</a>
-and <a href="tabs.html">tabs</a>.
+扩展程序可以通过
+<a href="content_scripts.html">内容脚本</a> or
+<a href="xhr.html">跨站XML请求</a>.
+与网页或者服务器交互，扩展程序也可以以编程方式与浏览器功能交互，例如
+<a href="bookmarks.html">书签</a>
+和 <a href="tabs.html">标签页</a>.
 </p>
 
-<h3 id="extension-ui">Extension UIs</h3>
+<h3 id="extension-ui">扩展程序的用户界面</h3>
 
 <p>
-Many extensions&mdash;but not packaged apps&mdash;add
-UI to Google Chrome in the form of
-<a href="browserAction.html">browser actions</a>
-or <a href="pageAction.html">page actions</a>.
-Each extension can have at most one browser action or page action.
-Choose a <b>browser action</b> when the extension is relevant to most pages.
-Choose a <b>page action</b> when the extension's icon
-should appear or disappear,
-depending on the page.
+许多扩展程序&mdash;但不包括打包应用程序&mdash;以
+<a href="browserAction.html">浏览器按钮</a>
+或<a href="pageAction.html">页面按钮</a>.
+的形式向Google Chrome浏览器增加用户界面，每个扩展程序最多能有一个浏览器按钮或页面按钮。当扩展程序与大部分网页相关时选择使用
+    <b>浏览器按钮</b> ，当扩展程序的图标显示还是消失取决于具体网页时选择使用
+     <b>页面按钮</b>。
 </p>
 
 <table class="columns">
@@ -348,76 +333,62 @@ depending on the page.
 
 <tr>
   <td>
-    This <a href="samples.html#gmail">mail extension</a>
-    uses a <em>browser action</em>
-    (icon in the toolbar).
+    这一 <a href="samples.html#gmail">邮件扩展程序</a>
+    使用 <em>浏览器按钮</em>
+    (工具栏中的图标).
   </td>
   <td>
-    This <a href="samples.html#mappy">map extension</a>
-    uses a <em>page action</em>
-    (icon in the address bar)
-    and <em>content script</em>
-    (code injected into a web page).
+    这一 <a href="samples.html#mappy">地图扩展程序</a>
+    使用 <em>页面按钮</em>
+    (地址栏中的图标)
+    以及 <em>内容脚本</em>
+    (插入网页的代码).
   </td>
   <td>
-    This <a href="samples.html#news">news extension</a>
-    features a browser action that,
-    when clicked,
-    shows a <em>popup</em>.
+    单击时弹出内容 <em>弹出内容</em>是这一
+     <a href="samples.html#news">新闻扩展程序</a>
+    的特色。 
   </td>
 </tr>
 </table>
 
 <p>
-Extensions (and packaged apps) can also present a UI in other ways,
-such as adding to the Chrome context menu,
-providing an options page,
-or using a content script that changes how pages look.
-See the <a href="devguide.html">Developer's Guide</a>
-for a complete list of extension features,
-with links to implementation details
-for each one.
+扩展程序（以及打包应用程序）也可以以其它形式呈现用户界面，例如在Chrome浏览器的右键菜单中添加内容，提供选项页面，或者利用内容脚本更改页面的显示方式。有关完整的扩展程序功能以及每一种功能的实现细节，请参见
+    <a href="devguide.html">开发者指南</a>
+
 </p>
 
-<h2 id="files">Files</h2>
+<h2 id="files">文件</h2>
 <p>
-Each extension has the following files:
+每一个扩展程序包含以下文件：
 
 </p>
 
 <ul>
-  <li>A <b>manifest file</b></li>
-  <li>One or more <b>HTML files</b> (unless the extension is a theme)</li>
-  <li><em>Optional:</em> One or more <b>JavaScript files</b></li>
-  <li><em>Optional:</em> Any other files your extension needs&mdash;for
-  example, image files</li>
+  <li>一个<b>清单文件</b></li>
+  <li>一个或多个<b>HTML文件</b> (除非扩展程序是一个主题背景)</li>
+  <li><em>可选：</em>一个或多个<b>JavaScript文件</b></li>
+  <li><em>可选：</em> 您的扩展程序需要的任何其它文件，例如图片</li>
 </ul>
 
 <p>
-While you're working on your extension,
-you put all these files into a single folder.
-When you distribute your extension,
-the contents of the folder are packaged into a special ZIP file
-that has a <code>.crx</code> suffix.
-If you upload your extension using the
-<a href="https://chrome.google.com/webstore/developer/dashboard">Chrome Developer Dashboard</a>,
-the <code>.crx</code> file is created for you.
-For details on distributing extensions,
-see <a href="hosting.html">Hosting</a>.
+当您编写您的扩展程序时，您将所有这些文件放在一个文件夹中。当您发布您的扩展程序时，该文件夹的内容将被压缩成一个特殊的ZIP文件，以
+<code>.crx</code> 为后缀
+如果您通过
+<a href="https://chrome.google.com/webstore/developer/dashboard">Chrome开发者信息中心</a>,
+上传您的扩展，该
+    <code>.crx</code>文件是自动为您创建的。
+有关发布扩展的细节，参见<a href="hosting.html">托管</a>.
 </p>
 
 
-<h3 id="relative-urls">Referring to files</h3>
+<h3 id="relative-urls">引用文件</h3>
 
 <p>
-You can put any file you like into an extension,
-but how do you use it?
-Usually,
-you can refer to the file using a relative URL,
-just as you would in an ordinary HTML page.
-Here's an example of referring to
-a file named <code>myimage.png</code>
-that's in a subfolder named <code>images</code>.
+您可以在扩展程序中放置任何您需要的文件，但是您如何使用它们呢？通常，您可以通过相对URL引用文件，就像在普通的HTML页面中那样。下面是一个例子，引用位于子文件夹
+<code>images</code>中名为
+  <code>myimage.png</code>
+的文件。
 </p>
 
 <pre>
@@ -425,65 +396,44 @@ that's in a subfolder named <code>images</code>.
 </pre>
 
 <p>
-As you might notice while you use the Google Chrome debugger,
-every file in an extension is also accessible by an absolute URL like this:
+您使用Google Chrome浏览器的调试器时可能会发现，扩展程序中的每一个文件也可以通过绝对URL访问，就像这样：
 </p>
 
 <blockquote>
-<b>chrome-extension://</b><em>&lt;extensionID></em><b>/</b><em>&lt;pathToFile></em>
+<b>chrome-extension://</b><em>&lt;扩展程序唯一标识符></em><b>/</b><em>&lt;文件路径></em>
 </blockquote>
 
 <p>
-In that URL, the <em>&lt;extensionID></em> is a unique identifier
-that the extension system generates for each extension.
-You can see the IDs for all your loaded extensions
-by going to the URL <b>chrome://extensions</b>.
-The <em>&lt;pathToFile></em> is the location of the file
-under the extension's top folder;
-it's the same as the relative URL.
+在这一URL中， <em>&lt;扩展程序唯一标识符></em>是扩展程序系统为每一个扩展程序生成的唯一标识符，您可以进入
+    <b>chrome://extensions</b>查看您载入的所有扩展的唯一标识符。
+<em>&lt;文件路径></em> 是扩展程序的主目录下的文件位置，与相对URL相同。
 </p>
 
 <p>
-While you're working on an extension
-(before it's packaged),
-the extension ID can change.
-Specifically, the ID of an unpacked extension will change
-if you load the extension from a different directory;
-the ID will change again when you package the extension.
-If your extension's code
-needs to specify the full path to a file within the extension,
-you can use the <code>@@extension_id</code>
-<a href="i18n.html#overview-predefined">predefined message</a>
-to avoid hardcoding the ID during development.
+当您编写扩展程序时（打包之前），扩展程序唯一标识符可以更改。特别地，如果您从另一个目录载入未打包的扩展程序，它的唯一标识符会改变，当您打包扩展程序时会再次改变。如果您的扩展程序代码需要指定扩展程序中某个文件的完整路径，您可以使用
+    <code>@@extension_id</code>这一
+<a href="i18n.html#overview-predefined">预定义消息</a>
+，避免开发过程中硬编码唯一标识符。
 </p>
 
 <p>
-When you package an extension
-(typically, by uploading it with the dashboard),
-the extension gets a permanent ID,
-which remains the same even after you update the extension.
-Once the extension ID is permanent,
-you can change all occurrences of
-<code>@@extension_id</code> to use the real ID.
+当您打包扩展程序时（典型情况下，通过信息中心上传），该扩展程序将会获得一个永久的唯一标识符，即使您更新了这一扩展程序仍然保持不变。一旦扩展程序唯一标识符变成永久的了，您就可以将所有
+的<code>@@extension_id</code>修改为真正的唯一标识符。
 </p>
 
 
-<h3 id="manifest">The manifest file</h3>
+<h3 id="manifest">清单文件</h3>
 
 <p>
-The manifest file, called <code>manifest.json</code>,
-gives information about the extension,
-such as the most important files
-and the capabilities that the extension might use.
-Here's a typical manifest file for a browser action
-that uses information from google.com:
+清单文件，名为<code>manifest.json</code>,
+提供有关扩展程序的各种信息，例如最重要的文件和扩展程序可能具有的能力。以下是一个典型的清单文件，用于一个浏览器按钮，它将会访问来自google.com的信息：
 </p>
 
 <pre>
 {
-  "name": "My Extension",
+  "name": "我的扩展程序",
   "version": "2.1",
-  "description": "Gets information from Google.",
+  "description": "从Google获得信息。",
   "icons": { "128": "icon_128.png" },
   "background": {
     "persistent": false,
@@ -498,37 +448,24 @@ that uses information from google.com:
 }</pre>
 
 <p>
-For details, see
-<a href="manifest.html">Manifest Files</a>.
+有关更多细节，请参见
+<a href="manifest.html">清单文件</a>.
 </p>
 
-<h2 id="arch">Architecture</h2>
+<h2 id="arch">架构</h2>
 
 <p>
-Many extensions have a <em>background page</em>,
-an invisible page
-that holds the main logic of the extension.
-An extension can also contain other pages
-that present the extension's UI.
-If an extension needs to interact with web pages that the user loads
-(as opposed to pages that are included in the extension),
-then the extension must use a content script.
+许多扩展程序有一个<em>后台页面</em>,
+它是一个包含扩展程序主要逻辑的不可见页面。扩展程序也可以包含其它页面，展现扩展程序的用户界面。如果扩展程序需要与用户载入的网页交互（相对于包含在扩展程序中的页面），扩展程序必须使用内容脚本
 </p>
 
 
-<h3 id="background_page">The background page</h3>
+<h3 id="background_page">后台页面</h3>
 
 <p>
-The following figure shows a browser
-that has at least two extensions installed:
-a browser action (yellow icon)
-and a page action (blue icon).
-Both the browser action and the page action
-have background pages.
-This figure shows the browser action's background page,
-which is defined by <code>background.html</code>
-and has JavaScript code that controls
-the behavior of the browser action in both windows.
+下图所示的浏览器至少安装了两个扩展程序：一个浏览器按钮（黄色图标）和一个页面按钮（蓝色图标）。浏览器按钮和页面按钮都有后台页面。下图显示了浏览器按钮的后台页面，由
+    <code>background.html</code>
+定义，并且包含在这两个窗口中控制浏览器按钮的JavaScript代码。
 </p>
 
 <img src="stable/static/images/overview/arch-1.gif"
@@ -536,43 +473,32 @@ the behavior of the browser action in both windows.
  alt="Two windows and a box representing a background page (background.html). One window has a yellow icon; the other has both a yellow icon and a blue icon. The yellow icons are connected to the background page." />
 
 <p>
-There are two types of background pages:
-<a href="background_pages.html">persistent background pages</a>,
-and <a href="event_pages.html">event pages</a>. Persistent
-background pages, as the name suggests, are always open.
-Event pages are opened and closed as needed. Unless you absolutely
-need your background page to run all the time, prefer to use
-an event page.
+后台页面分两种:
+<a href="background_pages.html">持久运行的后台页面</a>,
+与<a href="event_pages.html">事件页面</a>。
+正如其名字所说，持续运行的后台页面保持打开状态；事件页面根据需要打开与关闭。除非您绝对需要您的后台页面一直运行，请首选事件页面。
 </p>
 
 <!-- PENDING: Perhaps show a picture of many background page processes.
   This could build on a figure that shows the process architecture. -->
 
 <p>
-See <a href="event_pages.html">Event Pages</a>
-and <a href="background_pages.html">Background Pages</a>
-for more details.
+有关更多详情，请参见<a href="event_pages.html">事件页面</a>
+与<a href="background_pages.html">后台页面</a>
+。
 </p>
 
-<h3 id="pages">UI pages</h3>
+<h3 id="pages">用户界面页面</h3>
 
 <p>
-Extensions can contain ordinary HTML pages that display the extension's UI.
-For example, a browser action can have a popup,
-which is implemented by an HTML file.
-Any extension can have an options page,
-which lets users customize how the extension works.
-Another type of special page is the override page.
-And finally, you can
-use <a href="tabs.html#method-create">chrome.tabs.create()</a>
-or <code>window.open()</code>
-to display any other HTML files that are in the extension.
+扩展程序可以包含普通的HTML页面，用来显示扩展程序的用户界面。例如，浏览器按钮可以包含弹出内容，通过HTML文件实现。任何一个扩展程序都可以有选项页面，让用户自定义扩展程序的工作方式。另外一种特殊页面是替代页面。最后，您可以使用
+    <a href="tabs.html#method-create">chrome.tabs.create()</a>
+或<code>window.open()</code>
+来显示扩展程序中的任何其它HTML文件。
 </p>
 
 <p>
-The HTML pages inside an extension
-have complete access to each other's DOMs,
-and they can invoke functions on each other.
+扩展程序中的HTML页面可以互相访问其它页面的全部DOM，并且可以互相调用函数。
 </p>
 
 <!-- PENDING: Change the following example and figure
@@ -580,16 +506,11 @@ to use something that's not a popup?
 (It might lead people to think that popups need background pages.) -->
 
 <p>
-The following figure shows the architecture
-of a browser action's popup.
-The popup's contents are a web page
-defined by an HTML file
+下图显示了浏览器按钮弹出内容的架构。弹出内容是由一个HTML文件
 (<code>popup.html</code>).
-This extension also happens to have a background page
-(<code>background.html</code>).
-The popup doesn't need to duplicate code
-that's in the background page
-because the popup can invoke functions on the background page.
+定义的网页，该扩展程序也正好有一个后台页面
+(<code>background.html</code>)。
+    弹出窗口不用重复后台页面中的代码，因为弹出窗口可以调用后台页面上的函数。
 </p>
 
 <img src="stable/static/images/overview/arch-2.gif"
@@ -597,25 +518,19 @@ because the popup can invoke functions on the background page.
  alt="A browser window containing a browser action that's displaying a popup. The popup's HTML file (popup.html) can communicate with the extension's background page (background.html)." />
 
 <p>
-See <a href="browserAction.html">Browser Actions</a>,
-<a href="options.html">Options</a>,
-<a href="override.html">Override Pages</a>,
-and the <a href="#pageComm">Communication between pages</a> section
-for more details.
+有关更多细节，请参见<a href="browserAction.html">浏览器按钮</a>,
+<a href="options.html">选项</a>,
+<a href="override.html">替代页面</a>,
+和<a href="#pageComm">页面间通信</a>这些部分。
 </p>
 
 
-<h3 id="contentScripts">Content scripts</h3>
+<h3 id="contentScripts">内容脚本</h3>
 
 <p>
-If your extension needs to interact with web pages,
-then it needs a <em>content script</em>.
-A content script is some JavaScript
-that executes in the context of a page
-that's been loaded into the browser.
-Think of a content script as part of that loaded page,
-not as part of the extension it was packaged with
-(its <em>parent extension</em>).
+如果您的扩展程序需要与网页交互，您就需要使用<em>内容脚本</em>。
+内容脚本是一些JavaScript代码，它们在浏览器中已载入页面的上下文中执行。您应该将内容脚本视为已载入页面的一部分，而不是打包在一起的扩展程序
+(<em>它所属的扩展程序</em>).的一部分。
 </p>
 
 <!-- [PENDING: Consider explaining that the reason content scripts are separated from the extension is due to chrome's multiprocess design.  Something like:
@@ -628,13 +543,7 @@ Extensions accomplish this with content scripts.]
 -->
 
 <p>
-Content scripts can read details of the web pages the browser visits,
-and they can make changes to the pages.
-In the following figure,
-the content script
-can read and modify
-the DOM for the displayed web page.
-It cannot, however, modify the DOM of its parent extension's background page.
+内容脚本可以读取浏览器访问的网页的细节，并且可以修改页面。在下图中，内容脚本可以读取并且修改显示的网页的DOM。然而，它不能修改所属扩展程序的后台页面的DOM。
 </p>
 
 <img src="stable/static/images/overview/arch-3.gif"
@@ -642,13 +551,7 @@ It cannot, however, modify the DOM of its parent extension's background page.
  alt="A browser window with a browser action (controlled by background.html) and a content script (controlled by contentscript.js)." />
 
 <p>
-Content scripts aren't completely cut off from their parent extensions.
-A content script can exchange messages with its parent extension,
-as the arrows in the following figure show.
-For example, a content script might send a message
-whenever it finds an RSS feed in a browser page.
-Or a background page might send a message
-asking a content script to change the appearance of its browser page.
+内容脚本并不是完全与所属扩展程序隔离的。内容脚本可以与所属扩展程序交换消息，如下图箭头所示。例如，每当在浏览器页面中发现RSS供稿时，内容脚本可以发送消息，反过来后台页面也可以发送消息要求内容脚本更改浏览器页面的外观。
 </p>
 
 <img src="stable/static/images/overview/arch-cs.gif"
@@ -658,35 +561,27 @@ asking a content script to change the appearance of its browser page.
 
 
 <p>
-For more information,
-see <a href="content_scripts.html">Content Scripts</a>.
+有关更多信息，请参见<a href="content_scripts.html">内容脚本</a>。
 </p>
 
 
-<h2 id="apis"> Using the chrome.* APIs </h2>
+<h2 id="apis"> 使用chrome.* API </h2>
 
 <p>
-In addition to having access to all the APIs that web pages and apps can use,
-extensions can also use Chrome-only APIs
-(often called <em>chrome.* APIs</em>)
-that allow tight integration with the browser.
-For example, any extension or web app can use the
-standard <code>window.open()</code> method to open a URL.
-But if you want to specify which window that URL should be displayed in,
-your extension can use the Chrome-only 
+扩展程序除了能够使用网页和应用程序可以使用的所有API外，还能使用仅用于Chrome浏览器的API（通常称为
+    <em>chrome.* APIs</em>)
+来更好地与浏览器集成。例如，任何扩展程序或网上应用程序可以使用标准的
+    <code>window.open()</code>方法来打开一个网页，但是如果您想指定网页应该显示在哪个窗口中，您的扩展程序就可以使用仅用于Chrome浏览器的
 <a href="tabs.html#method-create">chrome.tabs.create()</a>
-method instead.
+方法。
 </p>
 
-<h3 id="sync"> Asynchronous vs. synchronous methods </h3>
+<h3 id="sync"> 异步方法与同步方法的区别 </h3>
 <p>
-Most methods in the chrome.* APIs are <b>asynchronous</b>:
-they return immediately, without waiting for the operation to finish.
-If you need to know the outcome of that operation,
-then you pass a callback function into the method.
-That callback is executed later (potentially <em>much</em> later),
-sometime after the method returns.
-Here's an example of the signature for an asynchronous method:
+大部分chrome.* API的方法都是<b>异步的</b>:
+它们不等待操作完成就立即返回。如果您需要知道操作结果，您可以向方法传递一个回调函数，回调函数将稍后执行（可能
+    <em>很久</em> 之后）,
+在方法返回后的某个时刻。下面是一个异步方法签名的例子：
 </p>
 
 <p>
@@ -696,12 +591,9 @@ chrome.tabs.create(object <em>createProperties</em>, function <em>callback</em>)
 </p>
 
 <p>
-Other chrome.* methods are <b>synchronous</b>.
-Synchronous methods never have a callback
-because they don't return until they've completed all their work.
-Often, synchronous methods have a return type.
-Consider the
-<a href="runtime.html#method-getURL">chrome.runtime.getURL()</a> method:
+少数chrome.*方法是<b>同步的</b>。
+同步的方法没有回调参数，因为它们只有当所有操作完成后才返回。通常，同步方法有返回值类型。考虑
+<a href="runtime.html#method-getURL">chrome.runtime.getURL()</a>方法：
 </p>
 
 <p>
@@ -711,43 +603,35 @@ string chrome.runtime.getURL()
 </p>
 
 <p>
-This method has no callback and a return type of <code>string</code>
-because it synchronously returns the URL
-and performs no other, asynchronous work.
+该方法没有回调参数，但是有返回值类型<code>string</code>
+，因为它同步地返回URL，不进行任何其它异步操作。
 </p>
 
 
-<h3 id="sync-example"> Example: Using a callback </h3>
+<h3 id="sync-example">例子：使用回调函数</h3>
 
 <p>
-Say you want to navigate
-the user's currently selected tab to a new URL.
-To do this, you need to get the current tab's ID
-(using <a href="tabs.html#method-getSelected">chrome.tabs.getSelected()</a>)
-and then make that tab go to the new URL
-(using <a href="tabs.html#method-update">chrome.tabs.update()</a>).
+假设您想在用户当前选定的标签页中打开新的页面。要想这么做，您首先需要获得当前标签页的唯一标识符（使用
+    <a href="tabs.html#method-getSelected">chrome.tabs.getSelected()</a>)
+，然后使该标签转到指定的新的URL（使用
+    <a href="tabs.html#method-update">chrome.tabs.update()</a>)。
 </p>
 
 <p>
-If <code>getSelected()</code> were synchronous,
-you might write code like this:
+假如<code>getSelected()</code>是同步的，您可能会写这样的代码：
 </p>
 
 <pre>
-   <b>//THIS CODE DOESN'T WORK</b>
-<span class="linenumber">1: </span>var tab = chrome.tabs.getSelected(null); <b>//WRONG!!!</b>
+   <b>//以下代码不能正常工作</b>
+<span class="linenumber">1: </span>var tab = chrome.tabs.getSelected(null); <b>//错误!!!</b>
 <span class="linenumber">2: </span>chrome.tabs.update(tab.id, {url:newUrl});
 <span class="linenumber">3: </span>someOtherFunction();
 </pre>
 
 <p>
-That approach fails
-because <code>getSelected()</code> is asynchronous.
-It returns without waiting for its work to complete,
-and it doesn't even return a value
-(although some asynchronous methods do).
-You can tell that <code>getSelected()</code> is asynchronous
-by the <em>callback</em> parameter in its signature:
+这样的方法不行，因为<code>getSelected()</code> 是异步的。
+它不等待操作完成就返回了，并且它事实上都不返回任何值（尽管有些异步方法会返回信息）。您可以通过它签名中的<em>callback</em>参数看出
+    <code>getSelected()</code>是异步的：
 
 <p>
 <code>
@@ -756,17 +640,14 @@ chrome.tabs.getSelected(integer <em>windowId</em>, function <em>callback</em>)
 </p>
 
 <p>
-To fix the preceding code,
-you must use that callback parameter.
-The following code shows
-how to define a callback function
-that gets the results from <code>getSelected()</code>
-(as a parameter named <code>tab</code>)
-and calls <code>update()</code>.
+要改正上面的代码，您必须使用那个回调参数。以下代码显示如何定义一个回调函数，从
+    <code>getSelected()</code>
+获得结果（通过名为<code>tab</code>的参数）
+并调用<code>update()</code>。
 </p>
 
 <pre>
-   <b>//THIS CODE WORKS</b>
+   <b>//以下代码可以正常工作</b>
 <span class="linenumber">1: </span>chrome.tabs.getSelected(null, <b>function(tab) {</b>
 <span class="linenumber">2: </span>  chrome.tabs.update(tab.id, {url:newUrl});
 <span class="linenumber">3: </span><b>}</b>);
@@ -774,122 +655,91 @@ and calls <code>update()</code>.
 </pre>
 
 <p>
-In this example, the lines are executed in the following order: 1, 4, 2.
-The callback function specified to <code>getSelected</code> is called
-(and line 2 executed)
-only after information about the currently selected tab is available,
-which is sometime after <code>getSelected()</code> returns.
-Although <code>update()</code> is asynchronous,
-this example doesn't use its callback parameter,
-since we don't do anything about the results of the update.
+在这一例子中，以上几行是按照这样的顺序执行的：1、4、2。只有在有关当前选定标签的信息可用后，即
+    <code>getSelected</code>返回后的某一时刻，才调用在
+    <code>getSelected()</code>中指定的回调函数（并且执行第二行）。尽管
+    <code>update()</code>是异步的，这一例子没有使用回调参数，因为我们对于调用的结果并不感兴趣。
 </p>
 
 
-<h3 id="chrome-more"> More details </h3>
+<h3 id="chrome-more"> 更多细节</h3>
 
 <p>
-For more information, see the
-<a href="api_index.html">chrome.* API docs</a>
-and watch this video:
+有关更多信息，请参见
+<a href="api_index.html">chrome.* API 文档</a>
+并观看以下视频（英文）：
 </p>
 
 <p>
 <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/bmxr75CV36A?rel=0" frameborder="0" allowfullscreen></iframe>
 </p>
 
-<h2 id="pageComm">Communication between pages </h2>
+<h2 id="pageComm">页面间的通信</h2>
 
 <p>
-The HTML pages within an extension often need to communicate.
-
-Because all of an extension's pages
-execute in same process on the same thread,
-the pages can make direct function calls to each other.
+扩展程序中的HTML页面通常需要通信。因为一个扩展程序的所有页面在同一个进程中的同一个线程上执行，页面可以直接互相调用函数。
 </p>
 
 <p>
-To find pages in the extension, use
+要获得扩展程序中的页面，使用
 <a href="extension.html"><code>chrome.extension</code></a>
-methods such as
-<code>getViews()</code> and
-<code>getBackgroundPage()</code>.
-Once a page has a reference to other pages within the extension,
-the first page can invoke functions on the other pages,
-and it can manipulate their DOMs.
+方法，例如
+<code>getViews()</code>和
+<code>getBackgroundPage()</code>
+。一旦一个页面引用了扩展程序中的其它页面，第一个页面可以执行其它页面上的函数，并且可以操纵它们的DOM。
 </p>
 
-<h2 id="incognito"> Saving data and incognito mode </h2>
+<h2 id="incognito"> 保存数据和隐身模式 </h2>
 
 <p>
-Extensions can save data using
-the HTML5 <a href="http://dev.w3.org/html5/webstorage/">web storage API</a>
-(such as <code>localStorage</code>)
-or by making server requests that result in saving data.
-Whenever you want to save something,
-first consider whether it's
-from a window that's in incognito mode.
-By default, extensions don't run in incognito windows.
-You need to consider what a user expects
-from your extension
-when the browser is incognito.
+扩展程序可以使用HTML5<a href="http://dev.w3.org/html5/webstorage/">网页存储API</a>
+(例如<code>localStorage</code>)
+或者向服务器发出请求保存数据。每当您要保存任何数据前，首先考虑是否来自隐身窗口。默认情况下，扩展程序不在隐身窗口中运行，但是打包应用程序会在隐身窗口中运行。当浏览器处于隐身模式时，您需要考虑用户对您的扩展程序或打包应用程序的需求。
 </p>
 
 <p>
-<em>Incognito mode</em> promises that the window will leave no tracks.
-When dealing with data from incognito windows,
-do your best to honor this promise.
-For example, if your extension normally
-saves browsing history to the cloud,
-don't save history from incognito windows.
-On the other hand, you can store
-your extension's settings from any window,
-incognito or not.
+<em>隐身模式</em>确保不会留下任何痕迹。当处理来自隐身窗口的数据时，尽可能地遵守这一约定。例如，如果您的扩展程序通常将浏览器历史记录保存至云端，不要保存来自隐身窗口的历史记录。另一方面，您可以在任何窗口中保存您的扩展程序设置，无论隐身与否。
 </p>
 
 <p class="note">
-<b>Rule of thumb:</b>
-If a piece of data might show where a user
-has been on the web or what the user has done,
-don't store it if it's from an incognito window.
+<b>准则：</b>
+如果某些数据可能显示用户在网上的访问记录或者用户所做的事情，千万不要保存来自隐身窗口的这些数据。
 </p>
 
 <p>
-To detect whether a window is in incognito mode,
-check the <code>incognito</code> property of the relevant
-<a href="tabs.html#type-Tab">Tab</a> or
-<a href="windows.html#type-Window">Window</a> object.
-For example:
+要确定窗口是否处于隐身模式,检查相关的
+<a href="tabs.html#type-Tab">Tab</a>或
+<a href="windows.html#type-Window">Window</a>对象的
+    <code>icognito</code>属性。例如：
 </p>
 
 <pre>
 function saveTabData(tab, data) {
   if (tab.incognito) {
     chrome.runtime.getBackgroundPage(function(bgPage) {
-      bgPage[tab.url] = data;      // Persist data ONLY in memory
+      bgPage[tab.url] = data;      // 仅留在内存中的数据
     });
   } else {
-    localStorage[tab.url] = data;  // OK to store data
+    localStorage[tab.url] = data;  // 可以保存数据
   }
 }
 </pre>
 
 
-<h2 id="now-what"> Now what? </h2>
+<h2 id="now-what"> 现在做什么呢？ </h2>
 
 <p>
-Now that you've been introduced to extensions,
-you should be ready to write your own.
-Here are some ideas for where to go next:
+现在您已经大致了解扩展程序了，您应该准备好编写您自己的扩展了。您接下来可以参考以下内容：
 </p>
 
 <ul>
-  <li> <a href="getstarted.html">Tutorial: Getting Started</a> </li>
-  <li> <a href="tut_debugging.html">Tutorial: Debugging</a> </li>
-  <li> <a href="devguide.html">Developer's Guide</a> </li>
-  <li> <a href="http://dev.chromium.org/developers/design-documents/extensions/samples">Samples</a> </li>
-  <li> <a href="http://www.youtube.com/view_play_list?p=CA101D6A85FE9D4B">Videos</a>,
-    such as
-    <a href="http://www.youtube.com/watch?v=B4M_a7xejYI&feature=PlayList&p=CA101D6A85FE9D4B&index=6">Extension Message Passing</a>
+  <li> <a href="getstarted.html">教程：入门</a> </li>
+  <li> <a href="tut_debugging.html">教程：调试</a> </li>
+  <li> <a href="devguide.html">开发者指南</a> </li>
+  <li> <a href="http://dev.chromium.org/developers/design-documents/extensions/samples">示例</a> </li>
+  <li> <a href="http://www.youtube.com/view_play_list?p=CA101D6A85FE9D4B">视频（英文）</a>,
+    例如
+    <a href="http://www.youtube.com/watch?v=B4M_a7xejYI&feature=PlayList&p=CA101D6A85FE9D4B&index=6">扩展程序消息传递（Extension Message Passing）</a>
     </li>
 </ul>
       </div>
@@ -925,32 +775,7 @@ Here are some ideas for where to go next:
           prettyPrint();
         })();
       </script>
-      <script src="https://www.google-analytics.com/urchin.js" type="text/javascript"></script>
-      <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
-      <script type="text/javascript">
-        // chrome doc tracking
-        try {
-          var engdocs = _gat._getTracker("YT-10763712-2");
-          engdocs._trackPageview();
-        } catch(err) {}
-        // code.google.com site-wide tracking
-        try {
-          _uacct="UA-18071-1";
-          _uanchor=1;
-          _uff=0;
-          urchinTracker();
-        }
-        catch(e) {/* urchinTracker not available. */}
-      </script>
-      <script>
-        (function() {
-          var cx = '002967670403910741006:61_cvzfqtno';
-          var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//www.google.com/cse/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-        })();
-      </script>
+      <div id="footer_cus">{Footer}</div>
   
     </div>
   </div>

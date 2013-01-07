@@ -1,0 +1,197 @@
+<div id="gc-sidebar">
+        <ul 
+            class="level1 ">
+          <li class="level2">
+                <a href="getstarted.html" class="level2 ">入门</a>
+          </li>
+          <li class="level2">
+                <a href="overview.html" class="level2 ">概述</a>
+          </li>
+          <li class="level2">
+                <a href="whats_new.html" class="level2 ">新功能</a>
+          </li>
+          <li class="level2">
+                <a href="devguide.html" class="level2 ">开发者指南</a>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">用户界面</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="browserAction.html" class="level4 ">浏览器按钮</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contextMenus.html" class="level4 ">右键菜单</a>
+                      </li>
+                      <li class="level4">
+                            <a href="notifications.html" class="level4 ">桌面通知</a>
+                      </li>
+                      <li class="level4">
+                            <a href="omnibox.html" class="level4 ">多功能地址栏</a>
+                      </li>
+                      <li class="level4">
+                            <a href="options.html" class="level4 ">选项页面</a>
+                      </li>
+                      <li class="level4">
+                            <a href="override.html" class="level4 ">代替页面</a>
+                      </li>
+                      <li class="level4">
+                            <a href="pageAction.html" class="level4 ">页面按钮</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">浏览器交互</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="bookmarks.html" class="level4 ">书签</a>
+                      </li>
+                      <li class="level4">
+                            <a href="cookies.html" class="level4 ">Cookies</a>
+                      </li>
+                      <li class="level4">
+                            <a href="devtools.html" class="level4 ">开发人员工具</a>
+                      </li>
+                      <li class="level4">
+                            <a href="events.html" class="level4 ">事件</a>
+                      </li>
+                      <li class="level4">
+                            <a href="history.html" class="level4 ">历史记录</a>
+                      </li>
+                      <li class="level4">
+                            <a href="management.html" class="level4 ">管理</a>
+                      </li>
+                      <li class="level4">
+                            <a href="tabs.html" class="level4 ">标签页</a>
+                      </li>
+                      <li class="level4">
+                            <a href="windows.html" class="level4 ">窗口</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">实现</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="a11y.html" class="level4 ">辅助功能</a>
+                      </li>
+                      <li class="level4">
+                            <a href="event_pages.html" class="level4 ">事件页面</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contentSecurityPolicy.html" class="level4 ">内容安全策略(CSP)</a>
+                      </li>
+                      <li class="level4">
+                            <a href="content_scripts.html" class="level4 ">内容脚本</a>
+                      </li>
+                      <li class="level4">
+                            <a href="xhr.html" class="level4 ">跨站XMLHttpRequest</a>
+                      </li>
+                      <li class="level4">
+                            <a href="i18n.html" class="level4 ">国际化</a>
+                      </li>
+                      <li class="level4">
+                            <a href="messaging.html" class="level4 ">消息传递</a>
+                      </li>
+                      <li class="level4">
+                            <a href="permissions.html" class="level4 ">可选权限</a>
+                      </li>
+                      <li class="level4">
+                            <a href="npapi.html" class="level4 ">NPAPI插件</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">完成</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="hosting.html" class="level4 ">托管</a>
+                      </li>
+                      <li class="level4">
+                            <a href="external_extensions.html" class="level4 ">其他部署方案</a>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <a href="tutorials.html" class="level2 ">教程</a>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                      <a href="tut_migration_to_manifest_v2.html" class="level3 ">清单文件V2</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_debugging.html" class="level3 ">调试</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_analytics.html" class="level3 ">Google Analytics(分析)</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_oauth.html" class="level3 ">OAuth</a>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <span class="level2">参考</span>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">格式</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="manifest.html" class="level4 ">清单文件</a>
+                      </li>
+                      <li class="level4">
+                            <a href="match_patterns.html" class="level4 ">匹配表达式</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                      <a href="permission_warnings.html" class="level3 ">权限警告</a>
+                </li>
+                <li class="level3">
+                      <a href="api_index.html" class="level3 ">chrome.* APIs</a>
+                </li>
+                <li class="level3">
+                      <a href="api_other.html" class="level3 ">其他APIs</a>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <span class="level2">更多</span>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                      <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">chrome商店</a>
+                </li>
+                <li class="level3">
+                      <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">托管应用程序</a>
+                </li>
+                <li class="level3">
+                      <a href="themes.html" class="level3 ">主题</a>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </div>
