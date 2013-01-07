@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="stable/static/css/site.css" rel="stylesheet" type="text/css">
+    <link href="stable/static/css/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
+    <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
+    <title>Using eval in Chrome Extensions. Safely. - Google Chrome</title>
+  </head>
+  <body>
+    <a id="top"></a>
+    <div id="header">
+      <span id="logo">
+        <a href="http://code.google.com/"><img src="stable/static/images/chrome_logo.gif" alt="Google Code Labs"></a>
+      </span>
+      <span id="cse">
+        <gcse:searchbox-only enableAutoComplete="true" autoCompleteMatchTyple="prefix"></gcse:searchbox-only>
+      </span>
+    </div>
+    <a id="gc-topnav-anchor"></a>
+    <div id="gc-topnav">
+      <h1>Google Chrome Extensions</h1>
+      <ul id="home" class="gc-topnav-tabs">
+        <li id="home_link">
+          <a href="index.html" title="Google Chrome Extensions home page"><div>Home</div></a>
+        </li>
+        <li id="docs_link">
+          <a href="docs.html" title="Official Google Chrome Extensions documentation"><div>Docs</div></a>
+        </li>
+        <li id="faq_link">
+          <a href="faq.html" title="Answers to frequently asked questions about Google Chrome Extensions"><div>FAQ</div></a>
+        </li>
+        <li id="samples_link">
+          <a href="samples.html" title="Sample Extensions (with source code)"><div>Samples</div></a>
+        </li>
+        <li id="group_link">
+          <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions" title="Google Chrome Extensions developer forum"><div>Group</div></a>
+        </li>
+        <li id="so_link">
+          <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension" title="[google-chrome-extension] tag on Stack Overflow"><div>Questions?</div></a>
+        </li>
+      </ul>
+    </div>
+    <div id="gc-container">
+      <div id="gc-sidebar">
+        <ul 
+            class="level1 ">
+          <li class="level2">
+                <a href="getstarted.html" class="level2 ">Getting Started</a>
+          </li>
+          <li class="level2">
+                <a href="overview.html" class="level2 ">Overview</a>
+          </li>
+          <li class="level2">
+                <a href="whats_new.html" class="level2 ">What's New?</a>
+          </li>
+          <li class="level2">
+                <a href="devguide.html" class="level2 ">Developer's Guide</a>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Browser UI</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="browserAction.html" class="level4 ">Browser Actions</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contextMenus.html" class="level4 ">Context Menus</a>
+                      </li>
+                      <li class="level4">
+                            <a href="notifications.html" class="level4 ">Desktop Notifications</a>
+                      </li>
+                      <li class="level4">
+                            <a href="omnibox.html" class="level4 ">Omnibox</a>
+                      </li>
+                      <li class="level4">
+                            <a href="options.html" class="level4 ">Options Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="override.html" class="level4 ">Override Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="pageAction.html" class="level4 ">Page Actions</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Browser Interaction</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="bookmarks.html" class="level4 ">Bookmarks</a>
+                      </li>
+                      <li class="level4">
+                            <a href="cookies.html" class="level4 ">Cookies</a>
+                      </li>
+                      <li class="level4">
+                            <a href="devtools.html" class="level4 ">Developer Tools</a>
+                      </li>
+                      <li class="level4">
+                            <a href="events.html" class="level4 ">Events</a>
+                      </li>
+                      <li class="level4">
+                            <a href="history.html" class="level4 ">History</a>
+                      </li>
+                      <li class="level4">
+                            <a href="management.html" class="level4 ">Management</a>
+                      </li>
+                      <li class="level4">
+                            <a href="tabs.html" class="level4 ">Tabs</a>
+                      </li>
+                      <li class="level4">
+                            <a href="windows.html" class="level4 ">Windows</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Implementation</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="a11y.html" class="level4 ">Accessibility</a>
+                      </li>
+                      <li class="level4">
+                            <a href="event_pages.html" class="level4 ">Event Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contentSecurityPolicy.html" class="level4 ">Content Security Policy</a>
+                      </li>
+                      <li class="level4">
+                            <a href="content_scripts.html" class="level4 ">Content Scripts</a>
+                      </li>
+                      <li class="level4">
+                            <a href="xhr.html" class="level4 ">Cross-Origin XHR</a>
+                      </li>
+                      <li class="level4">
+                            <a href="i18n.html" class="level4 ">Internationalization</a>
+                      </li>
+                      <li class="level4">
+                            <a href="messaging.html" class="level4 ">Message Passing</a>
+                      </li>
+                      <li class="level4">
+                            <a href="permissions.html" class="level4 ">Optional Permissions</a>
+                      </li>
+                      <li class="level4">
+                            <a href="npapi.html" class="level4 ">NPAPI Plugins</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Finishing</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="hosting.html" class="level4 ">Hosting</a>
+                      </li>
+                      <li class="level4">
+                            <a href="external_extensions.html" class="level4 ">Other Deployment Options</a>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <a href="tutorials.html" class="level2 ">Tutorials</a>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                      <a href="tut_migration_to_manifest_v2.html" class="level3 ">Manifest V2</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_debugging.html" class="level3 ">Debugging</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_analytics.html" class="level3 ">Google Analytics</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_oauth.html" class="level3 ">OAuth</a>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <span class="level2">Reference</span>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Formats</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="manifest.html" class="level4 ">Manifest Files</a>
+                      </li>
+                      <li class="level4">
+                            <a href="match_patterns.html" class="level4 ">Match Patterns</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                      <a href="permission_warnings.html" class="level3 ">Permission Warnings</a>
+                </li>
+                <li class="level3">
+                      <a href="api_index.html" class="level3 ">chrome.* APIs</a>
+                </li>
+                <li class="level3">
+                      <a href="api_other.html" class="level3 ">Other APIs</a>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <span class="level2">More</span>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                      <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">Chrome Web Store</a>
+                </li>
+                <li class="level3">
+                      <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">Hosted Apps</a>
+                </li>
+                <li class="level3">
+                      <a href="themes.html" class="level3 ">Themes</a>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="gc-pagecontent">
+        <h1 class="page_title">Using eval in Chrome Extensions. Safely.</h1>
+        <div id="toc">
+          <h2>Contents</h2>
+          <ol>
+            <li>
+              <a href=#why_sandbox>Why sandbox?</a>
+            </li>
+            <li>
+              <a href=#creating_and_using>Creating and using a sandbox.</a>
+              <ol>
+                <li><a href=#list_files>List files in manifest</a></li><li><a href=#load_file>Load the sandboxed file</a></li><li><a href=#do_something>Do something dangerous</a></li><li><a href=#pass_result>Pass the result back</a></li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+
+
+
+
+<p>
+  Chrome's extension system enforces a fairly strict default
+  <a href='contentSecurityPolicy.html'>
+    <strong>Content Security Policy (CSP)</strong>
+  </a>. The policy restrictions are straightforward: script must be moved
+  out-of-line into separate JavaScript files, inline event handlers must be
+  converted to use <code>addEventListener</code>, and <code>eval()</code> is
+  disabled. Chrome Apps have an
+  <a href='http://developer.chrome.com/trunk/apps/app_csp.html'>even more strict
+  policy</a>, and we're quite happy with the security properties these policies
+  provide.
+</p>
+
+<p>
+  We recognize, however, that a variety of libraries use <code>eval()</code> and
+  <code>eval</code>-like constructs such as <code>new Function()</code> for
+  performance optimization and ease of expression. Templating libraries are
+  especially prone to this style of implementation. While some (like
+  <a href='http://angularjs.org/'>Angular.js</a>) support CSP out of the box,
+  many popular frameworks haven't yet updated to a mechanism that is compatible
+  with extensions' <code>eval</code>-less world. Removing support for that
+  functionality has therefore proven <a href='http://crbug.com/107538'>more
+  problematic than expected</a> for developers.
+</p>
+
+<p>
+  This document introduces sandboxing as a safe mechanism to include these
+  libraries in your projects without compromising on security. For brevity,
+  we'll be using the term <em>extensions</em> throughout, but the concept
+  applies equally to applications.
+</p>
+
+<h2 id="why_sandbox">Why sandbox?</h2>
+
+<p>
+  <code>eval</code> is dangerous inside an extension because the code it
+  executes has access to everything in the extension's high-permission
+  environment. A slew of powerful <code>chrome.*</code> APIs are available that
+  could severely impact a user's security and privacy; simple data exfiltration
+  is the least of our worries. The solution on offer is a sandbox in which
+  <code>eval</code> can execute code without access either to the extension's
+  data or the extension's high-value APIs. No data, no APIs, no problem.
+</p>
+
+<p>
+  We accomplish this by listing specific HTML files inside the extension package
+  as being sandboxed. Whenever a sandboxed page is loaded, it will be moved to a
+  <a href='http://www.whatwg.org/specs/web-apps/current-work/multipage/origin-0.html#sandboxed-origin-browsing-context-flag'>unique origin</a>,
+  and will be denied access to <code>chrome.*</code> APIs. If we load this
+  sandboxed page into our extension via an <code>iframe</code>, we can pass it
+  messages, let it act upon those messages in some way, and wait for it to pass
+  us back a result. This simple messaging mechanism gives us everything we need
+  to safely include <code>eval</code>-driven code in our extension's workflow.
+</p>
+
+<h2 id="creating_and_using">Creating and using a sandbox.</h2>
+
+<p>
+  If you'd like to dive straight into code, please grab the
+  <a href='http://code.google.com/chrome/extensions/samples.html#3c6dfba67f6a7480d931b5a4a646c151ad1a049b'>sandboxing
+  sample extension and take off</a>. It's a working example of a tiny messaging
+  API built on top of the <a href='http://handlebarsjs.com'>Handlebars</a>
+  templating library, and it should give you everything you need to get going.
+  For those of you who'd like a little more explanation, let's walk through that
+  sample together here.
+</p>
+
+<h3 id="list_files">List files in manifest</h3>
+
+<p>
+  Each file that ought to be run inside a sandbox must be listed in the
+  extension manifest by adding a <code>sandbox</code> property. This is a
+  critical step, and it's easy to forget, so please double check that your
+  sandboxed file is listed in the manifest. In this sample, we're sandboxing the
+  file cleverly named "sandbox.html". The manifest entry looks like this:
+</p>
+
+<pre>{
+  ...,
+  "sandbox": {
+     "pages": ["sandbox.html"]
+  },
+  ...
+}</pre>
+
+<h3 id="load_file">Load the sandboxed file</h3>
+
+<p>
+  In order to do something interesting with the sandboxed file, we need to load
+  it in a context where it can be addressed by the extension's code. Here,
+  <a href='http://code.google.com/chrome/extensions/examples/howto/sandbox/sandbox.html'>sandbox.html</a>
+  has been loaded into the extension's <a href='http://code.google.com/chrome/extensions/dev/event_pages.html'>Event
+  Page</a> (<a href='http://code.google.com/chrome/extensions/examples/howto/sandbox/eventpage.html'>eventpage.html</a>)
+  via an <code>iframe</code>. <a href='http://code.google.com/chrome/extensions/examples/howto/sandbox/eventpage.js'>eventpage.js</a>
+  contains code that sends a message into the sandbox whenever the browser
+  action is clicked by finding the <code>iframe</code> on the page, and
+  executing the <code>postMessage</code> method on its
+  <code>contentWindow</code>. The message is an object containing two
+  properties: <code>context</code> and <code>command</code>. We'll dive into
+  both in a moment.
+</p>
+
+<pre>chrome.browserAction.onClicked.addListener(function() {
+ var iframe = document.getElementById('theFrame');
+ var message = {
+   command: 'render',
+   context: {thing: 'world'}
+ };
+ iframe.contentWindow.postMessage(message, '*');
+});</pre>
+
+<p class="note">
+  For general information about the <code>postMessage</code> API, take a look at
+  the <a href="https://developer.mozilla.org/en/DOM/window.postMessage">
+    <code>postMessage</code> documentation on MDN
+  </a>. It's quite complete and worth reading. In particular, note that data can
+  only be passed back and forth if it's serializable. Functions, for instance,
+  are not.
+</p>
+
+<h3 id="do_something">Do something dangerous</h3>
+
+<p>
+  When <code>sandbox.html</code> is loaded, it loads the Handlebars library, and
+  creates and compiles an inline template in the way Handlebars suggests:
+</p>
+
+<pre>&lt;script src="handlebars-1.0.0.beta.6.js"&gt;&lt;/script&gt;
+ &lt;script id="hello-world-template" type="text/x-handlebars-template"&gt;
+   &lt;div class="entry"&gt;
+     &lt;h1&gt;Hello, &#123&#123thing&#125&#125!&lt;/h1&gt;
+   &lt;/div&gt;
+ &lt;/script&gt;
+ &lt;script&gt;
+   var templates = [];
+   var source = document.getElementById('hello-world-template').innerHTML;
+   templates['hello'] = Handlebars.compile(source);
+ &lt;/script&gt;</pre>
+
+<p>
+  This doesn't fail! Even though <code>Handlebars.compile</code> ends up using
+  <code>new Function</code>, things work exactly as expected, and we end up with
+  a compiled template in <code>templates[‘hello']</code>.
+</p>
+
+<h3 id="pass_result">Pass the result back</h3>
+
+<p>
+  We'll make this template available for use by setting up a message listener
+  that accepts commands from the Event Page. We'll use the <code>command</code>
+  passed in to determine what ought to be done (you could imagine doing more
+  than simply rendering; perhaps creating templates? Perhaps managing them in
+  some way?), and the <code>context</code> will be passed into the template
+  directly for rendering. The rendered HTML will be passed back to the Event
+  Page so the extension can do something useful with it later on:
+</p>
+
+<pre>window.addEventListener('message', function(event) {
+  var command = event.data.command;
+  var name = event.data.name || 'hello';
+  switch(command) {
+    case 'render':
+      event.source.postMessage({
+        name: name,
+        html: templates[name](event.data.context)
+      }, event.origin);
+      break;
+
+    // case 'somethingElse':
+    //   ...
+  }
+});</pre>
+
+<p>
+  Back in the Event Page, we'll receive this message, and do something
+  interesting with the <code>html</code> data we've been passed. In this case,
+  we'll just echo it out via a <a href='http://code.google.com/chrome/extensions/notifications.html'>Desktop
+  Notification</a>, but it's entirely possible to use this HTML safely as part
+  of the extension's UI. Inserting it via <code>innerHTML</code> doesn't pose a
+  significant security risk, as even a complete compromise of the sandboxed code
+  through some clever attack would be unable to inject dangerous script or
+  plugin content into the high-permission extension context.
+</p>
+
+<p>
+  This mechanism makes templating straightforward, but it of course isn't
+  limited to templating. Any code that doesn't work out of the box under a
+  strict Content Security Policy can be sandboxed; in fact, it's often useful
+  to sandbox components of your extensions that <em>would</em> run correctly in
+  order to restrict each piece of your program to the smallest set of privileges
+  necessary for it to properly execute. The
+  <a href="http://www.youtube.com/watch?v=GBxv8SaX0gg">Writing Secure Web Apps
+  and Chrome Extensions</a> presentation from Google I/O 2012 gives some good
+  examples of these technique in action, and is worth 56 minutes of your time.
+</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.bootstrap = {
+      api_names: [{"name":"alarms"},{"name":"bookmarks"},{"name":"browserAction"},{"name":"browsingData"},{"name":"commands"},{"name":"contentSettings"},{"name":"contextMenus"},{"name":"cookies"},{"name":"debugger"},{"name":"declarativeWebRequest"},{"name":"devtools.inspectedWindow"},{"name":"devtools.network"},{"name":"devtools.panels"},{"name":"downloads"},{"name":"events"},{"name":"extension"},{"name":"fileBrowserHandler"},{"name":"fontSettings"},{"name":"history"},{"name":"i18n"},{"name":"idle"},{"name":"input.ime"},{"name":"management"},{"name":"omnibox"},{"name":"pageAction"},{"name":"pageCapture"},{"name":"permissions"},{"name":"privacy"},{"name":"proxy"},{"name":"runtime"},{"name":"scriptBadge"},{"name":"storage"},{"name":"tabs"},{"name":"topSites"},{"name":"tts"},{"name":"ttsEngine"},{"name":"types"},{"name":"webNavigation"},{"name":"webRequest"},{"name":"webstore"},{"last":true,"name":"windows"}].concat(
+          [{"name":"experimental.bluetooth"},{"name":"experimental.devtools.audits"},{"name":"experimental.devtools.console"},{"name":"experimental.discovery"},{"name":"experimental.identity"},{"name":"experimental.infobars"},{"name":"experimental.offscreenTabs"},{"name":"experimental.processes"},{"name":"experimental.record"},{"name":"experimental.speechInput"},{"name":"experimental.systemInfo.cpu"},{"name":"experimental.systemInfo.storage"},{"last":true,"name":"experimental.usb"}]),
+      branchInfo: {"channels":[{"path":"stable","name":"Stable"},{"path":"dev","name":"Dev"},{"path":"beta","name":"Beta"},{"path":"trunk","name":"Trunk"}],"current":"stable","showWarning":false}
+    };
+  </script>
+  <div id="gc-footer">
+    <div class="text">
+      <p>
+        Except as otherwise <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+        the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+        Attribution 3.0 License</a>, and code samples are licensed under the
+        <a rel="license" href="http://code.google.com/google_bsd_license.html">BSD License</a>.
+      </p>
+      <p>
+        ©2012 Google
+      </p>
+      <script src="stable/static/js/branch.js" type="text/javascript"></script>
+      <script src="stable/static/js/sidebar.js" type="text/javascript"></script>
+      <script src="stable/static/js/prettify.js" type="text/javascript"></script>
+      <script>
+        (function() {
+          // Auto syntax highlight all pre tags.
+          var preElements = document.getElementsByTagName('pre');
+          for (var i = 0; i < preElements.length; i++)
+            preElements[i].classList.add('prettyprint');
+          prettyPrint();
+        })();
+      </script>
+      <script src="https://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+      <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        // chrome doc tracking
+        try {
+          var engdocs = _gat._getTracker("YT-10763712-2");
+          engdocs._trackPageview();
+        } catch(err) {}
+        // code.google.com site-wide tracking
+        try {
+          _uacct="UA-18071-1";
+          _uanchor=1;
+          _uff=0;
+          urchinTracker();
+        }
+        catch(e) {/* urchinTracker not available. */}
+      </script>
+      <script>
+        (function() {
+          var cx = '002967670403910741006:61_cvzfqtno';
+          var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+  
+    </div>
+  </div>
+</html>

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="stable/static/css/site.css" rel="stylesheet" type="text/css">
+    <link href="stable/static/css/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
+    <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
+    <link href="stable/static/css/api.css" rel="stylesheet" type="text/css">
+    <title>chrome.proxy - Google Chrome</title>
+  </head>
+  <body>
+    <a id="top"></a>
+    <div id="header">
+      <span id="logo">
+        <a href="http://code.google.com/"><img src="stable/static/images/chrome_logo.gif" alt="Google Code Labs"></a>
+      </span>
+      <span id="cse">
+        <gcse:searchbox-only enableAutoComplete="true" autoCompleteMatchTyple="prefix"></gcse:searchbox-only>
+      </span>
+    </div>
+    <a id="gc-topnav-anchor"></a>
+    <div id="gc-topnav">
+      <h1>Google Chrome Extensions</h1>
+      <ul id="home" class="gc-topnav-tabs">
+        <li id="home_link">
+          <a href="index.html" title="Google Chrome Extensions home page"><div>Home</div></a>
+        </li>
+        <li id="docs_link">
+          <a href="docs.html" title="Official Google Chrome Extensions documentation"><div>Docs</div></a>
+        </li>
+        <li id="faq_link">
+          <a href="faq.html" title="Answers to frequently asked questions about Google Chrome Extensions"><div>FAQ</div></a>
+        </li>
+        <li id="samples_link">
+          <a href="samples.html" title="Sample Extensions (with source code)"><div>Samples</div></a>
+        </li>
+        <li id="group_link">
+          <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions" title="Google Chrome Extensions developer forum"><div>Group</div></a>
+        </li>
+        <li id="so_link">
+          <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension" title="[google-chrome-extension] tag on Stack Overflow"><div>Questions?</div></a>
+        </li>
+      </ul>
+    </div>
+    <div id="gc-container">
+      <div id="gc-sidebar">
+        <ul 
+            class="level1 ">
+          <li class="level2">
+                <a href="getstarted.html" class="level2 ">Getting Started</a>
+          </li>
+          <li class="level2">
+                <a href="overview.html" class="level2 ">Overview</a>
+          </li>
+          <li class="level2">
+                <a href="whats_new.html" class="level2 ">What's New?</a>
+          </li>
+          <li class="level2">
+                <a href="devguide.html" class="level2 ">Developer's Guide</a>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Browser UI</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="browserAction.html" class="level4 ">Browser Actions</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contextMenus.html" class="level4 ">Context Menus</a>
+                      </li>
+                      <li class="level4">
+                            <a href="notifications.html" class="level4 ">Desktop Notifications</a>
+                      </li>
+                      <li class="level4">
+                            <a href="omnibox.html" class="level4 ">Omnibox</a>
+                      </li>
+                      <li class="level4">
+                            <a href="options.html" class="level4 ">Options Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="override.html" class="level4 ">Override Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="pageAction.html" class="level4 ">Page Actions</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Browser Interaction</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="bookmarks.html" class="level4 ">Bookmarks</a>
+                      </li>
+                      <li class="level4">
+                            <a href="cookies.html" class="level4 ">Cookies</a>
+                      </li>
+                      <li class="level4">
+                            <a href="devtools.html" class="level4 ">Developer Tools</a>
+                      </li>
+                      <li class="level4">
+                            <a href="events.html" class="level4 ">Events</a>
+                      </li>
+                      <li class="level4">
+                            <a href="history.html" class="level4 ">History</a>
+                      </li>
+                      <li class="level4">
+                            <a href="management.html" class="level4 ">Management</a>
+                      </li>
+                      <li class="level4">
+                            <a href="tabs.html" class="level4 ">Tabs</a>
+                      </li>
+                      <li class="level4">
+                            <a href="windows.html" class="level4 ">Windows</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Implementation</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="a11y.html" class="level4 ">Accessibility</a>
+                      </li>
+                      <li class="level4">
+                            <a href="event_pages.html" class="level4 ">Event Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contentSecurityPolicy.html" class="level4 ">Content Security Policy</a>
+                      </li>
+                      <li class="level4">
+                            <a href="content_scripts.html" class="level4 ">Content Scripts</a>
+                      </li>
+                      <li class="level4">
+                            <a href="xhr.html" class="level4 ">Cross-Origin XHR</a>
+                      </li>
+                      <li class="level4">
+                            <a href="i18n.html" class="level4 ">Internationalization</a>
+                      </li>
+                      <li class="level4">
+                            <a href="messaging.html" class="level4 ">Message Passing</a>
+                      </li>
+                      <li class="level4">
+                            <a href="permissions.html" class="level4 ">Optional Permissions</a>
+                      </li>
+                      <li class="level4">
+                            <a href="npapi.html" class="level4 ">NPAPI Plugins</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Finishing</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="hosting.html" class="level4 ">Hosting</a>
+                      </li>
+                      <li class="level4">
+                            <a href="external_extensions.html" class="level4 ">Other Deployment Options</a>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <a href="tutorials.html" class="level2 ">Tutorials</a>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                      <a href="tut_migration_to_manifest_v2.html" class="level3 ">Manifest V2</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_debugging.html" class="level3 ">Debugging</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_analytics.html" class="level3 ">Google Analytics</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_oauth.html" class="level3 ">OAuth</a>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <span class="level2">Reference</span>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Formats</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="manifest.html" class="level4 ">Manifest Files</a>
+                      </li>
+                      <li class="level4">
+                            <a href="match_patterns.html" class="level4 ">Match Patterns</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                      <a href="permission_warnings.html" class="level3 ">Permission Warnings</a>
+                </li>
+                <li class="level3">
+                      <a href="api_index.html" class="level3 ">chrome.* APIs</a>
+                </li>
+                <li class="level3">
+                      <a href="api_other.html" class="level3 ">Other APIs</a>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <span class="level2">More</span>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                      <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">Chrome Web Store</a>
+                </li>
+                <li class="level3">
+                      <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">Hosted Apps</a>
+                </li>
+                <li class="level3">
+                      <a href="themes.html" class="level3 ">Themes</a>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="gc-pagecontent">
+        <h1 class="page_title">chrome.proxy</h1>
+        
+        
+        
+        <div id="toc">
+          <h2>Contents</h2>
+          <ol>
+            <li>
+              <a href=#manifest>Manifest</a>
+            </li>
+            <li>
+              <a href=#description>Objects and properties</a>
+              <ol>
+                <li><a href=#proxy_modes>Proxy modes</a></li><li><a href=#proxy_rules>Proxy rules</a></li><li><a href=#proxy_server_objects>Proxy server objects</a></li><li><a href=#bypass_list>Bypass list</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href=#overview-examples>Examples</a>
+            </li>
+            <li>
+              <a href="#apiReference">API reference: chrome.proxy</a>
+              <ol>
+                  <li><a href="#types">Types</a><ol>  <li>    <a href="#type-ProxyServer">ProxyServer</a>  </li>  <li>    <a href="#type-ProxyRules">ProxyRules</a>  </li>  <li>    <a href="#type-PacScript">PacScript</a>  </li>  <li>    <a href="#type-ProxyConfig">ProxyConfig</a>  </li></ol></li>
+                  <li><a href="#properties">Properties</a><ol>  <li>    <a href="#property-settings">settings</a>  </li></ol></li>
+                  
+                  <li><a href="#events">Events</a><ol>  <li><a href="#event-onProxyError">onProxyError</a></li></ol></li>
+                  <li><a href="#samples">Sample Extensions</a></li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+
+<p id="classSummary">
+Use the <code>chrome.proxy</code> module to manage Chrome's
+proxy settings. This module relies on the <a href="types.html#ChromeSetting">
+ChromeSetting prototype of the type API</a> for getting and setting the proxy
+configuration.
+</p>
+
+<h2 id="manifest">Manifest</h2>
+<p>You must declare the "proxy" permission
+in the <a href="manifest.html">extension manifest</a>
+to use the proxy settings API.
+For example:</p>
+<pre>{
+  "name": "My extension",
+  ...
+  <b>"permissions": [
+    "proxy"
+  ]</b>,
+  ...
+}</pre>
+
+<h2 id="description">Objects and properties</h2>
+
+<p>
+Proxy settings are defined in a
+<a href="#type-ProxyConfig"><code>ProxyConfig</code></a> object. Depending on
+Chrome's proxy settings, the settings may contain
+<a href="#type-ProxyRules"><code>ProxyRules</code></a> or a <a
+  href="#type-PacScript"><code>PacScript</code></a>.
+</p>
+
+<h3 id="proxy_modes">Proxy modes</h3>
+
+<p>
+A ProxyConfig object's <code>mode</code> attribute determines the overall
+behavior of Chrome with regards to proxy usage. It can take the following
+values:
+<dl>
+  <dt><code>direct</code></dt>
+  <dd>In <code>direct</code> mode all connections are created directly, without
+  any proxy involved. This mode allows no further parameters in the
+  <code>ProxyConfig</code> object.</dd>
+
+  <dt><code>auto_detect</code></dt>
+  <dd>In <code>auto_detect</code> mode the proxy configuration is determined by
+  a PAC script that can be downloaded at
+  <a href="http://wpad/wpad.dat">http://wpad/wpad.dat</a>.
+  This mode allows no further parameters in the <code>ProxyConfig</code>
+  object.</dd>
+
+  <dt><code>pac_script</code></dt>
+  <dd>In <code>pac_script</code> mode the proxy configuration is determined by
+  a PAC script that is either retrieved from the URL specified in the
+  <a href="#type-PacScript"><code>PacScript</code></a> object or
+  taken literally from the <code>data</code> element specified in the
+  <a href="#type-PacScript"><code>PacScript</code></a> object.
+  Besides this, this mode allows no further parameters in the
+  <code>ProxyConfig</code> object.</dd>
+
+  <dt><code>fixed_servers</code></dt>
+  <dd>In <code>fixed_servers</code> mode the proxy configuration is codified in
+  a <a href="#type-ProxyRules><code>ProxyRules"><code>ProxyRules</code></a>
+  object. Its structure is described in <a href="#proxy_rules">Proxy rules</a>.
+  Besides this, the <code>fixed_servers</code> mode allows no further parameters
+  in the <code>ProxyConfig</code> object.</dd>
+
+  <dt><code>system</code></dt>
+  <dd>In <code>system</code> mode the proxy configuration is taken from the
+  operating system. This mode allows no further parameters in the
+  <code>ProxyConfig</code> object. Note that the <code>system</code> mode is
+  different from setting no proxy configuration. In the latter case, Chrome
+  falls back to the system settings only if no command-line options influence
+  the proxy configuration.</dd>
+</dl>
+</p>
+
+<h3 id="proxy_rules">Proxy rules</h3>
+
+<p>
+The <a href="#type-ProxyRules"><code>ProxyRules</code></a> object can contain
+either a <code>singleProxy</code> attribute or a subset of
+<code>proxyForHttp</code>, <code>proxyForHttps</code>, <code>proxyForFtp</code>,
+and <code>fallbackProxy</code>.
+</p>
+
+<p>
+In the first case, HTTP, HTTPS and FTP traffic is proxied through the specified
+proxy server. Other traffic is sent directly. In the latter case the behavior is
+slightly more subtle: If a proxy server is configured for the HTTP, HTTPS or FTP
+protocol, the respective traffic is proxied through the specified server. If no
+such proxy server is specified or traffic uses a different protocol than HTTP,
+HTTPS or FTP, the <code>fallbackProxy</code> is used. If no
+<code>fallbackProxy</code> is specified, traffic is sent directly without a
+proxy server.
+</p>
+
+<h3 id="proxy_server_objects">Proxy server objects</h3>
+
+<p>
+A proxy server is configured in a
+<a href="#type-ProxyServer"><code>ProxyServer</code></a> object. The connection
+to the proxy server (defined by the <code>host</code> attribute) uses the
+protocol defined in the <code>scheme</code> attribute. If no <code>scheme</code>
+is specified, the proxy connection defaults to <code>http</code>.
+</p>
+
+<p>
+If no <code>port</code> is defined in a
+<a href="#type-ProxyServer"><code>ProxyServer</code></a> object, the port is
+derived from the scheme. The default ports are:
+<table>
+  <tr><th>Scheme</th><th>Port</th></tr>
+  <tr><td>http</td><td>80</td></tr>
+  <tr><td>https</td><td>443</td></tr>
+  <tr><td>socks4</td><td>1080</td></tr>
+  <tr><td>socks5</td><td>1080</td></tr>
+</table>
+</p>
+
+<h3 id="bypass_list">Bypass list</h3>
+
+<p>
+Individual servers may be excluded from being proxied with the
+<code>bypassList</code>. This list may contain the following entries:
+<dl>
+  <dt><code>[<em>&lt;scheme&gt;</em>://]<em>&lt;host-pattern&gt;</em>[:<em>&lt;port&gt;</em>]</code></dt>
+  <dd>Match all hostnames that match the pattern <em>&lt;host-pattern&gt;</em>.<br>
+  Examples: <code>"foobar.com", "*foobar.com", "*.foobar.com", "*foobar.com:99",
+    "https://x.*.y.com:99"</code></dd>
+
+  <dt><code>[<em>&lt;scheme&gt;</em>://]<em>&lt;ip-literal&gt;</em>[:<em>&lt;port&gt;</em>]</code></dt>
+  <dd>Match URLs that are IP address literals.<br>
+  Conceptually this is the similar to the first case, but with special cases
+  to handle IP literal canonicalization. For example, matching
+  on "[0:0:0::1]" is the same as matching on "[::1]" because
+  the IPv6 canonicalization is done internally.<br>
+  Examples: <code>"127.0.1", "[0:0::1]", "[::1]", "http://[::1]:99"</code></dd>
+
+  <dt><code><em>&lt;ip-literal&gt;</em>/<em>&lt;prefix-length-in-bits&gt;</em></code></dt>
+  <dd>Match any URL containing an IP literal within the given range. The IP
+  range is specified using CIDR notation.<br>
+  Examples: <code>"192.168.1.1/16", "fefe:13::abc/33"</code></dd>
+
+  <dt><code>&lt;local&gt;</code></dt>
+  <dd>Match local addresses. An address is local if the host is "127.0.0.1",
+  "::1", or "localhost".<br>
+  Example: <code>"&lt;local&gt;"</code></dd>
+</dl>
+
+
+<h2 id="overview-examples">Examples</h2>
+
+<p>
+The following code sets a SOCKS 5 proxy for HTTP connections to all servers but
+foobar.com and uses direct connections for all other protocols. The settings
+apply to regular and incognito windows, as incognito windows inherit settings
+from regular windows. Please also consult the <a
+  href="types.html#ChromeSetting">Types API</a> documentation.
+</p>
+
+<pre>
+var config = {
+  mode: "fixed_servers",
+  rules: {
+    proxyForHttp: {
+      scheme: "socks5",
+      host: "1.2.3.4"
+    },
+    bypassList: ["foobar.com"]
+  }
+};
+chrome.proxy.settings.set(
+    {value: config, scope: 'regular'},
+    function() {});
+</pre>
+
+<p>
+The following code sets a custom PAC script.
+</p>
+
+<pre>
+var config = {
+  mode: "pac_script",
+  pacScript: {
+    data: "function FindProxyForURL(url, host) {\n" +
+          "  if (host == 'foobar.com')\n" +
+          "    return 'PROXY blackhole:80';\n" +
+          "  return 'DIRECT';\n" +
+          "}"
+  }
+};
+chrome.proxy.settings.set(
+    {value: config, scope: 'regular'},
+    function() {});
+</pre>
+
+<p>
+The next snippet queries the currently effective proxy settings. The effective
+proxy settings can be determined by another extension or by a policy. See the <a
+  href="types.html#ChromeSetting">Types API</a> documentation for details.
+</p>
+
+<pre>
+chrome.proxy.settings.get(
+    {'incognito': false},
+    function(config) {console.log(JSON.stringify(config));});
+</pre>
+
+<p>
+Note that the <code>value</code> object passed to <code>set()</code> is not
+identical to the <code>value</code> object passed to callback function of
+<code>get()</code>. The latter will contain a
+<code>rules.proxyForHttp.port</code> element.
+</p>
+        <h2 id="apiReference">API Reference: chrome.proxy</h2>
+        <div class="api_reference">
+            <h3 id="types">Types</h3>
+              <div>
+                <h3 id="type-ProxyServer">ProxyServer</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    An object encapsulating a single proxy server's specification.
+                  </dd>    <h4 id="ProxyServer-properties">
+                    Properties of <a href="#type-ProxyServer">ProxyServer</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-ProxyServer-scheme"></a>
+                      <dt>
+                        <span class="variable">scheme</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">enumerated string ["http", "https", "socks4", "socks5"]</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        The scheme (protocol) of the proxy server itself. Defaults to 'http'.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ProxyServer-host"></a>
+                      <dt>
+                        <span class="variable">host</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        The URI of the proxy server. This must be an ASCII hostname (in Punycode format). IDNA is not supported, yet.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ProxyServer-port"></a>
+                      <dt>
+                        <span class="variable">port</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">integer</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        The port of the proxy server. Defaults to a port that depends on the scheme.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-ProxyRules">ProxyRules</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    An object encapsulating the set of proxy rules for all protocols. Use either 'singleProxy' or (a subset of) 'proxyForHttp', 'proxyForHttps', 'proxyForFtp' and 'fallbackProxy'.
+                  </dd>    <h4 id="ProxyRules-properties">
+                    Properties of <a href="#type-ProxyRules">ProxyRules</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-ProxyRules-singleProxy"></a>
+                      <dt>
+                        <span class="variable">singleProxy</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate"><a href="proxy.html#type-ProxyServer">ProxyServer</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        The proxy server to be used for all per-URL requests (that is http, https, and ftp).
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ProxyRules-proxyForHttp"></a>
+                      <dt>
+                        <span class="variable">proxyForHttp</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate"><a href="proxy.html#type-ProxyServer">ProxyServer</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        The proxy server to be used for HTTP requests.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ProxyRules-proxyForHttps"></a>
+                      <dt>
+                        <span class="variable">proxyForHttps</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate"><a href="proxy.html#type-ProxyServer">ProxyServer</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        The proxy server to be used for HTTPS requests.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ProxyRules-proxyForFtp"></a>
+                      <dt>
+                        <span class="variable">proxyForFtp</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate"><a href="proxy.html#type-ProxyServer">ProxyServer</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        The proxy server to be used for FTP requests.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ProxyRules-fallbackProxy"></a>
+                      <dt>
+                        <span class="variable">fallbackProxy</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate"><a href="proxy.html#type-ProxyServer">ProxyServer</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        The proxy server to be used for everthing else or if any of the specific proxyFor... is not specified.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ProxyRules-bypassList"></a>
+                      <dt>
+                        <span class="variable">bypassList</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">array of string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        List of servers to connect to without a proxy server.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-PacScript">PacScript</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    An object holding proxy auto-config information. Exactly one of the fields should be non-empty.
+                  </dd>    <h4 id="PacScript-properties">
+                    Properties of <a href="#type-PacScript">PacScript</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-PacScript-url"></a>
+                      <dt>
+                        <span class="variable">url</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        URL of the PAC file to be used.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-PacScript-data"></a>
+                      <dt>
+                        <span class="variable">data</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        A PAC script.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-PacScript-mandatory"></a>
+                      <dt>
+                        <span class="variable">mandatory</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">boolean</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        If true, an invalid PAC script will prevent the network stack from falling back to direct connections. Defaults to false.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-ProxyConfig">ProxyConfig</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    An object encapsulating a complete proxy configuration.
+                  </dd>    <h4 id="ProxyConfig-properties">
+                    Properties of <a href="#type-ProxyConfig">ProxyConfig</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-ProxyConfig-rules"></a>
+                      <dt>
+                        <span class="variable">rules</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate"><a href="proxy.html#type-ProxyRules">ProxyRules</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        The proxy rules describing this configuration. Use this for 'fixed_servers' mode.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ProxyConfig-pacScript"></a>
+                      <dt>
+                        <span class="variable">pacScript</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate"><a href="proxy.html#type-PacScript">PacScript</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        The proxy auto-config (PAC) script for this configuration. Use this for 'pac_script' mode.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ProxyConfig-mode"></a>
+                      <dt>
+                        <span class="variable">mode</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">enumerated string ["direct", "auto_detect", "pac_script", "fixed_servers", "system"]</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        'direct' = Never use a proxy<br>'auto_detect' = Auto detect proxy settings<br>'pac_script' = Use specified PAC script<br>'fixed_servers' = Manually specify proxy servers<br>'system' = Use system proxy settings
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+            <h3 id="properties">Properties</h3>
+              <div>
+                <h3 id="property-settings">settings</h3>
+                <div class="summary">
+                  <span>chrome.proxy.settings</span>
+                </div>
+                <div>
+                  <dt><span class="property">settings</span> <span class="type_name">  (    <span id="typeTemplate"><a href="types.html#type-ChromeSetting">types.ChromeSetting</a></span>  )</span></dt>
+              <dd>
+                    Proxy settings to be used. The value of this setting is a ProxyConfig object.
+                  </dd>  </div>
+              </div>
+            <h3 id="events">Events</h3>
+              <div>
+                <h4 id="event-onProxyError">onProxyError</h4>
+                <div class="summary">
+                  <span class="subdued">chrome.proxy.</span>onProxyError<span class="subdued">.addListener</span>(function(<span>object <span class="variable">details</span></span>)<span class="subdued"> {...}</span>);
+                </div>
+                <div class="description">
+              <p>
+                    Notifies about proxy errors.
+                  </p>      <h4>Listener Parameters</h4>
+                    <dl>
+                      <div>  <a name="property-onProxyError-details"></a>  <dt>    <span class="variable">details</span>    <span class="property">      (                <span id="typeTemplate">object</span>      )    </span>  </dt>  <dd>    <dl>      <div>        <a name="property-details-fatal"></a>        <dt>          <span class="variable">fatal</span>          <span class="property">            (                            <span id="typeTemplate">boolean</span>            )          </span>        </dt>        <dd>          If true, the error was fatal and the network transaction was aborted. Otherwise, a direct connection is used instead.        </dd>      </div>      <div>        <a name="property-details-error"></a>        <dt>          <span class="variable">error</span>          <span class="property">            (                            <span id="typeTemplate">string</span>            )          </span>        </dt>        <dd>          The error description.        </dd>      </div>      <div>        <a name="property-details-details"></a>        <dt>          <span class="variable">details</span>          <span class="property">            (                            <span id="typeTemplate">string</span>            )          </span>        </dt>        <dd>          Additional details about the error such as a JavaScript runtime error.        </dd>      </div>    </dl>  </dd></div>
+                    </dl>
+                </div>
+              </div>
+        </div>
+          <h2 id="samples">Sample Extensions that use chrome.proxy</h2>
+            <li><strong><a href="samples.html#bea7f3606e50b59b0f8b08cbab6236da">Proxy Extension API Sample</a></strong> &ndash;
+            Set Chrome-specific proxies; a demonstration of Chrome's Proxy API
+        </li>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.bootstrap = {
+      api_names: [{"name":"alarms"},{"name":"bookmarks"},{"name":"browserAction"},{"name":"browsingData"},{"name":"commands"},{"name":"contentSettings"},{"name":"contextMenus"},{"name":"cookies"},{"name":"debugger"},{"name":"declarativeWebRequest"},{"name":"devtools.inspectedWindow"},{"name":"devtools.network"},{"name":"devtools.panels"},{"name":"downloads"},{"name":"events"},{"name":"extension"},{"name":"fileBrowserHandler"},{"name":"fontSettings"},{"name":"history"},{"name":"i18n"},{"name":"idle"},{"name":"input.ime"},{"name":"management"},{"name":"omnibox"},{"name":"pageAction"},{"name":"pageCapture"},{"name":"permissions"},{"name":"privacy"},{"name":"proxy"},{"name":"runtime"},{"name":"scriptBadge"},{"name":"storage"},{"name":"tabs"},{"name":"topSites"},{"name":"tts"},{"name":"ttsEngine"},{"name":"types"},{"name":"webNavigation"},{"name":"webRequest"},{"name":"webstore"},{"last":true,"name":"windows"}].concat(
+          [{"name":"experimental.bluetooth"},{"name":"experimental.devtools.audits"},{"name":"experimental.devtools.console"},{"name":"experimental.discovery"},{"name":"experimental.identity"},{"name":"experimental.infobars"},{"name":"experimental.offscreenTabs"},{"name":"experimental.processes"},{"name":"experimental.record"},{"name":"experimental.speechInput"},{"name":"experimental.systemInfo.cpu"},{"name":"experimental.systemInfo.storage"},{"last":true,"name":"experimental.usb"}]),
+      branchInfo: {"channels":[{"path":"stable","name":"Stable"},{"path":"dev","name":"Dev"},{"path":"beta","name":"Beta"},{"path":"trunk","name":"Trunk"}],"current":"stable","showWarning":false}
+    };
+  </script>
+  <div id="gc-footer">
+    <div class="text">
+      <p>
+        Except as otherwise <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+        the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+        Attribution 3.0 License</a>, and code samples are licensed under the
+        <a rel="license" href="http://code.google.com/google_bsd_license.html">BSD License</a>.
+      </p>
+      <p>
+        ©2012 Google
+      </p>
+      <script src="stable/static/js/branch.js" type="text/javascript"></script>
+      <script src="stable/static/js/sidebar.js" type="text/javascript"></script>
+      <script src="stable/static/js/prettify.js" type="text/javascript"></script>
+      <script>
+        (function() {
+          // Auto syntax highlight all pre tags.
+          var preElements = document.getElementsByTagName('pre');
+          for (var i = 0; i < preElements.length; i++)
+            preElements[i].classList.add('prettyprint');
+          prettyPrint();
+        })();
+      </script>
+      <script src="https://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+      <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        // chrome doc tracking
+        try {
+          var engdocs = _gat._getTracker("YT-10763712-2");
+          engdocs._trackPageview();
+        } catch(err) {}
+        // code.google.com site-wide tracking
+        try {
+          _uacct="UA-18071-1";
+          _uanchor=1;
+          _uff=0;
+          urchinTracker();
+        }
+        catch(e) {/* urchinTracker not available. */}
+      </script>
+      <script>
+        (function() {
+          var cx = '002967670403910741006:61_cvzfqtno';
+          var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+  
+    </div>
+  </div>
+</html>

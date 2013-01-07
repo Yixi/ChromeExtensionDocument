@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="stable/static/css/site.css" rel="stylesheet" type="text/css">
+    <link href="stable/static/css/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
+    <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
+    <link href="stable/static/css/api.css" rel="stylesheet" type="text/css">
+    <title>chrome.declarativeWebRequest - Google Chrome</title>
+  </head>
+  <body>
+    <a id="top"></a>
+    <div id="header">
+      <span id="logo">
+        <a href="http://code.google.com/"><img src="stable/static/images/chrome_logo.gif" alt="Google Code Labs"></a>
+      </span>
+      <span id="cse">
+        <gcse:searchbox-only enableAutoComplete="true" autoCompleteMatchTyple="prefix"></gcse:searchbox-only>
+      </span>
+    </div>
+    <a id="gc-topnav-anchor"></a>
+    <div id="gc-topnav">
+      <h1>Google Chrome Extensions</h1>
+      <ul id="home" class="gc-topnav-tabs">
+        <li id="home_link">
+          <a href="index.html" title="Google Chrome Extensions home page"><div>Home</div></a>
+        </li>
+        <li id="docs_link">
+          <a href="docs.html" title="Official Google Chrome Extensions documentation"><div>Docs</div></a>
+        </li>
+        <li id="faq_link">
+          <a href="faq.html" title="Answers to frequently asked questions about Google Chrome Extensions"><div>FAQ</div></a>
+        </li>
+        <li id="samples_link">
+          <a href="samples.html" title="Sample Extensions (with source code)"><div>Samples</div></a>
+        </li>
+        <li id="group_link">
+          <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions" title="Google Chrome Extensions developer forum"><div>Group</div></a>
+        </li>
+        <li id="so_link">
+          <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension" title="[google-chrome-extension] tag on Stack Overflow"><div>Questions?</div></a>
+        </li>
+      </ul>
+    </div>
+    <div id="gc-container">
+      <div id="gc-sidebar">
+        <ul 
+            class="level1 ">
+          <li class="level2">
+                <a href="getstarted.html" class="level2 ">Getting Started</a>
+          </li>
+          <li class="level2">
+                <a href="overview.html" class="level2 ">Overview</a>
+          </li>
+          <li class="level2">
+                <a href="whats_new.html" class="level2 ">What's New?</a>
+          </li>
+          <li class="level2">
+                <a href="devguide.html" class="level2 ">Developer's Guide</a>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Browser UI</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="browserAction.html" class="level4 ">Browser Actions</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contextMenus.html" class="level4 ">Context Menus</a>
+                      </li>
+                      <li class="level4">
+                            <a href="notifications.html" class="level4 ">Desktop Notifications</a>
+                      </li>
+                      <li class="level4">
+                            <a href="omnibox.html" class="level4 ">Omnibox</a>
+                      </li>
+                      <li class="level4">
+                            <a href="options.html" class="level4 ">Options Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="override.html" class="level4 ">Override Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="pageAction.html" class="level4 ">Page Actions</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Browser Interaction</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="bookmarks.html" class="level4 ">Bookmarks</a>
+                      </li>
+                      <li class="level4">
+                            <a href="cookies.html" class="level4 ">Cookies</a>
+                      </li>
+                      <li class="level4">
+                            <a href="devtools.html" class="level4 ">Developer Tools</a>
+                      </li>
+                      <li class="level4">
+                            <a href="events.html" class="level4 ">Events</a>
+                      </li>
+                      <li class="level4">
+                            <a href="history.html" class="level4 ">History</a>
+                      </li>
+                      <li class="level4">
+                            <a href="management.html" class="level4 ">Management</a>
+                      </li>
+                      <li class="level4">
+                            <a href="tabs.html" class="level4 ">Tabs</a>
+                      </li>
+                      <li class="level4">
+                            <a href="windows.html" class="level4 ">Windows</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Implementation</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="a11y.html" class="level4 ">Accessibility</a>
+                      </li>
+                      <li class="level4">
+                            <a href="event_pages.html" class="level4 ">Event Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contentSecurityPolicy.html" class="level4 ">Content Security Policy</a>
+                      </li>
+                      <li class="level4">
+                            <a href="content_scripts.html" class="level4 ">Content Scripts</a>
+                      </li>
+                      <li class="level4">
+                            <a href="xhr.html" class="level4 ">Cross-Origin XHR</a>
+                      </li>
+                      <li class="level4">
+                            <a href="i18n.html" class="level4 ">Internationalization</a>
+                      </li>
+                      <li class="level4">
+                            <a href="messaging.html" class="level4 ">Message Passing</a>
+                      </li>
+                      <li class="level4">
+                            <a href="permissions.html" class="level4 ">Optional Permissions</a>
+                      </li>
+                      <li class="level4">
+                            <a href="npapi.html" class="level4 ">NPAPI Plugins</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Finishing</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="hosting.html" class="level4 ">Hosting</a>
+                      </li>
+                      <li class="level4">
+                            <a href="external_extensions.html" class="level4 ">Other Deployment Options</a>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <a href="tutorials.html" class="level2 ">Tutorials</a>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                      <a href="tut_migration_to_manifest_v2.html" class="level3 ">Manifest V2</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_debugging.html" class="level3 ">Debugging</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_analytics.html" class="level3 ">Google Analytics</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_oauth.html" class="level3 ">OAuth</a>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <span class="level2">Reference</span>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Formats</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="manifest.html" class="level4 ">Manifest Files</a>
+                      </li>
+                      <li class="level4">
+                            <a href="match_patterns.html" class="level4 ">Match Patterns</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                      <a href="permission_warnings.html" class="level3 ">Permission Warnings</a>
+                </li>
+                <li class="level3">
+                      <a href="api_index.html" class="level3 ">chrome.* APIs</a>
+                </li>
+                <li class="level3">
+                      <a href="api_other.html" class="level3 ">Other APIs</a>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <span class="level2">More</span>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                      <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">Chrome Web Store</a>
+                </li>
+                <li class="level3">
+                      <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">Hosted Apps</a>
+                </li>
+                <li class="level3">
+                      <a href="themes.html" class="level3 ">Themes</a>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="gc-pagecontent">
+        <h1 class="page_title">chrome.declarativeWebRequest</h1>
+        
+        
+        <p class="warning">  <em>Warning:</em> This API is still under development. It is only  available for Chrome users on the  <span>    <strong>dev</strong>      <a href="http://www.chromium.org/getting-involved/beta-channel">early      release channel</a> and <strong>beta</strong>      <a href="https://www.google.com/landing/chrome/beta/"> release channel.      </span></p>
+        <div id="toc">
+          <h2>Contents</h2>
+          <ol>
+            <li>
+              <a href=#notes>Notes</a>
+            </li>
+            <li>
+              <a href=#manifest>Manifest</a>
+            </li>
+            <li>
+              <a href=#rules>Rules</a>
+            </li>
+            <li>
+              <a href=#evaluation>Evaluation of conditions and actions</a>
+            </li>
+            <li>
+              <a href=#precedences>Using priorities to override rules</a>
+            </li>
+            <li>
+              <a href="#apiReference">API reference: chrome.declarativeWebRequest</a>
+              <ol>
+                  <li><a href="#types">Types</a><ol>  <li>    <a href="#type-HeaderFilter">HeaderFilter</a>  </li>  <li>    <a href="#type-RequestMatcher">RequestMatcher</a>  </li>  <li>    <a href="#type-CancelRequest">CancelRequest</a>  </li>  <li>    <a href="#type-RedirectRequest">RedirectRequest</a>  </li>  <li>    <a href="#type-RedirectToTransparentImage">RedirectToTransparentImage</a>  </li>  <li>    <a href="#type-RedirectToEmptyDocument">RedirectToEmptyDocument</a>  </li>  <li>    <a href="#type-RedirectByRegEx">RedirectByRegEx</a>  </li>  <li>    <a href="#type-SetRequestHeader">SetRequestHeader</a>  </li>  <li>    <a href="#type-RemoveRequestHeader">RemoveRequestHeader</a>  </li>  <li>    <a href="#type-AddResponseHeader">AddResponseHeader</a>  </li>  <li>    <a href="#type-RemoveResponseHeader">RemoveResponseHeader</a>  </li>  <li>    <a href="#type-IgnoreRules">IgnoreRules</a>  </li>  <li>    <a href="#type-RequestCookie">RequestCookie</a>  </li>  <li>    <a href="#type-ResponseCookie">ResponseCookie</a>  </li>  <li>    <a href="#type-AddRequestCookie">AddRequestCookie</a>  </li>  <li>    <a href="#type-AddResponseCookie">AddResponseCookie</a>  </li>  <li>    <a href="#type-EditRequestCookie">EditRequestCookie</a>  </li>  <li>    <a href="#type-EditResponseCookie">EditResponseCookie</a>  </li>  <li>    <a href="#type-RemoveRequestCookie">RemoveRequestCookie</a>  </li>  <li>    <a href="#type-RemoveResponseCookie">RemoveResponseCookie</a>  </li></ol></li>
+                  
+                  
+                  <li><a href="#events">Events</a><ol>  <li><a href="#event-onRequest">onRequest</a></li></ol></li>
+                  <li><a href="#samples">Sample Extensions</a></li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+
+<h2 id="notes">Notes</h2>
+
+<p>
+Use the <code>chrome.declarativeWebRequest</code> module to intercept, block, or
+modify requests in-flight. It is significantly faster than the <a
+  href="webRequest.html"><code>chrome.webRequest</code> API</a> because you can
+register rules that are evaluated in the browser rather than the
+JavaScript engine which reduces roundtrip latencies and allows for very high
+efficiency.
+</p>
+
+<h2 id="manifest">Manifest</h2>
+
+<p>
+You must declare the "declarativeWebRequest" permission in the
+<a href="manifest.html">extension manifest</a> to use this API,
+along with <a href="manifest.html#permissions">host permissions</a> for any
+hosts whose network requests you want to access.
+</p>
+
+<pre>{
+  "name": "My extension",
+  ...
+<b>  "permissions": [
+    "declarativeWebRequest",
+    "*://*.google.com"
+  ]</b>,
+  ...
+}</pre>
+
+<h2 id="rules">Rules</h2>
+
+<p>
+The Declarative Web Request API follows the concepts of the <a
+  href="events.html#declarative">Declarative API</a>. You can register rules to
+the <code>chrome.declarativeWebRequest.onRequest</code> event object.
+</p>
+
+<p>
+The Declarative Web Request API supports a single type of match criteria, the
+<code>RequestMatcher</code>. The <code>RequestMatcher</code> matches network
+requests if and only if all listed criteria are met. The following
+<code>RequestMatcher</code> would match a network request when the user enters
+"http://www.example.com" in the URL bar:
+</p>
+
+<pre>
+var matcher = new chrome.declarativeWebRequest.RequestMatcher({
+  url: { hostSuffix: 'example.com', schemes: ['http'] },
+  resourceType: ['main_frame']
+  });
+</pre>
+
+<p>
+Requests to "https://www.example.com" would be rejected by the
+<code>RequestMatcher</code> due to the scheme. Also all requests for an embedded
+iframe would be rejected due to the <code>resourceType</code>.
+</p>
+
+<p class="note">
+<strong>Note:</strong> All conditions and actions are created via a constructor
+as shown in the example above.
+<p>
+
+<p>
+In order to cancel all requests to "example.com", you can define a rule as
+follows:
+</p>
+<pre>
+var rule = {
+  conditions: [
+    new chrome.declarativeWebRequest.RequestMatcher({
+      url: { hostSuffix: 'example.com' } })
+  ],
+  actions: [
+    new chrome.declarativeWebRequest.CancelRequest()
+  ]};
+</pre>
+
+<p>
+In order to cancel all requests to "example.com" and "foobar.com", you can add a
+second condition, as each condition is sufficient to trigger all specified
+actions:
+</p>
+<pre>
+var rule2 = {
+  conditions: [
+    new chrome.declarativeWebRequest.RequestMatcher({
+      url: { hostSuffix: 'example.com' } }),
+    new chrome.declarativeWebRequest.RequestMatcher({
+      url: { hostSuffix: 'foobar.com' } })
+  ],
+  actions: [
+    new chrome.declarativeWebRequest.CancelRequest()
+  ]};
+</pre>
+
+<p>
+Register rules as follows:
+</p>
+<pre>
+chrome.declarativeWebRequest.onRequest.addRules([rule2]);
+</pre>
+
+<p class="note">
+<strong>Note:</strong> You should always register or unregister rules in bulk rather than
+individually because each of these operations recreates internal data
+structures.  This re-creation is computationally expensive but facilitates a
+very fast URL matching algorithm for hundreds of thousands of URLs.
+</p>
+
+
+<h2 id="evaluation">Evaluation of conditions and actions</h2>
+
+<p>
+The Declarative Web Request API follows the
+<a href="webRequest.html#life_cycle">Life cycle model for web requests</a> of
+the <a href="webRequest.html">Web Request API</a>. This means that conditions
+can only be tested at specific stages of a web request and, likewise, actions
+can also only be executed at specific stages. The following tables list the
+request stages that are compatible with conditions and actions.
+</p>
+
+<p>
+<table>
+  <tr>
+    <th colspan="5">Request stages during which condition attributes can be processed.
+  </tr>
+  <tr>
+    <th>Condition attribute
+    <th>onBeforeRequest
+    <th>onBeforeSendHeaders
+    <th>onHeadersReceived
+    <th>onAuthRequired
+  </tr>
+  <tr><td>url<td>✓<td>✓<td>✓<td>✓
+  <tr><td>resourceType<td>✓<td>✓<td>✓<td>✓
+  <tr><td>contentType<td><td><td>✓<td>
+  <tr><td>excludeContentType<td><td><td>✓<td>
+  <tr><td>responseHeaders<td><td><td>✓<td>
+  <tr><td>excludeResponseHeaders<td><td><td>✓<td>
+  <tr>
+    <th colspan="5" style="padding-top:2em">Request stages during which actions can be executed.
+  </tr>
+  <tr>
+    <th>Event
+    <th>onBeforeRequest
+    <th>onBeforeSendHeaders
+    <th>onHeadersReceived
+    <th>onAuthRequired
+  </tr>
+  <tr><td>AddRequestCookie<td><td>✓<td><td>
+  <tr><td>AddResponseCookie<td><td><td>✓<td>
+  <tr><td>AddResponseHeader<td><td><td>✓<td>
+  <tr><td>CancelRequest<td>✓<td>✓<td>✓<td>✓
+  <tr><td>EditRequestCookie<td><td>✓<td><td>
+  <tr><td>EditResponseCookie<td><td><td>✓<td>
+  <tr><td>IgnoreRules<td>✓<td>✓<td>✓<td>✓
+  <tr><td>RedirectByRegEx<td>✓<td><td><td>
+  <tr><td>RedirectRequest<td>✓<td><td><td>
+  <tr><td>RedirectToEmptyDocument<td>✓<td><td><td>
+  <tr><td>RedirectToTransparentImage<td>✓<td><td><td>
+  <tr><td>RemoveRequestCookie<td><td>✓<td><td>
+  <tr><td>RemoveRequestHeader<td><td>✓<td><td>
+  <tr><td>RemoveResponseCookie<td><td><td>✓<td>
+  <tr><td>RemoveResponseHeader<td><td><td>✓<td>
+  <tr><td>SetRequestHeader<td><td>✓<td><td>
+</table>
+</p>
+
+<p>
+<strong>Example:</strong> It is possible to combine a
+<code>new chrome.declarativeWebRequest.RequestMatcher({contentType: ["image/jpeg"]})</code>
+condition with a <code>new chrome.declarativeWebRequest.CancelRequest()</code>
+action because both of them can be evaluated in the onHeadersReceived stage.
+It is, however, impossible to combine the request matcher with a
+<code>new chrome.declarativeWebRequest.RedirectToTransparentImage()</code>
+because redirects cannot be executed any more by the time the content
+type has been determined.
+</p>
+
+<h2 id="precedences">Using priorities to override rules</h2>
+
+<p>
+Rules can be associated with priorities as described in the
+<a href="events.html#declarative">Events API</a>. This mechanism can be used
+to express exceptions. The following example will block all requests to
+images named "evil.jpg" except on the server "myserver.com".
+</p>
+
+<pre>
+var rule1 = {
+  priority: 100,
+  conditions: [
+    new chrome.declarativeWebRequest.RequestMatcher({
+        url: { pathEquals: 'evil.jpg' } })
+  ],
+  actions: [
+    new chrome.declarativeWebRequest.CancelRequest()
+  ]
+};
+var rule2 = {
+  priority: 1000,
+  conditions: [
+    new chrome.declarativeWebRequest.RequestMatcher({
+      url: { hostSuffix: '.myserver.com' } })
+  ],
+  actions: [
+    new chrome.declarativeWebRequest.IgnoreRules({
+      lowerPriorityThan: 1000 })
+  ]
+};
+chrome.declarativeWebRequest.onRequest.addRules([rule1, rule2]);
+</pre>
+
+<p>
+It is important to recognize that the <code>IgnoreRules</code> action is not
+persisted across <a href="#evaluation">request stages</a>. All conditions of
+all rules are evaluated at each stage of a web request. If an
+<code>IgnoreRules</code> action is executed, it applies only to other actions
+that are executed for the same web request in the same stage.
+</p>
+        <h2 id="apiReference">API Reference: chrome.declarativeWebRequest</h2>
+        <div class="api_reference">
+            <h3 id="types">Types</h3>
+              <div>
+                <h3 id="type-HeaderFilter">HeaderFilter</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Filters request headers for various criteria.
+                  </dd>    <h4 id="HeaderFilter-properties">
+                    Properties of <a href="#type-HeaderFilter">HeaderFilter</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-HeaderFilter-namePrefix"></a>
+                      <dt>
+                        <span class="variable">namePrefix</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the header name starts with the specified string.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-HeaderFilter-nameSuffix"></a>
+                      <dt>
+                        <span class="variable">nameSuffix</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the header name ends with the specified string.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-HeaderFilter-nameContains"></a>
+                      <dt>
+                        <span class="variable">nameContains</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">array of string or string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the header name contains all of the specified strings.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-HeaderFilter-nameEquals"></a>
+                      <dt>
+                        <span class="variable">nameEquals</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the header name is equal to the specified string.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-HeaderFilter-valuePrefix"></a>
+                      <dt>
+                        <span class="variable">valuePrefix</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the header value starts with the specified string.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-HeaderFilter-valueSuffix"></a>
+                      <dt>
+                        <span class="variable">valueSuffix</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the header value ends with the specified string.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-HeaderFilter-valueContains"></a>
+                      <dt>
+                        <span class="variable">valueContains</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">array of string or string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the header value contains all of the specified strings.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-HeaderFilter-valueEquals"></a>
+                      <dt>
+                        <span class="variable">valueEquals</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the header value is equal to the specified string.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-RequestMatcher">RequestMatcher</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Matches network events by various criteria.
+                  </dd>    <h4 id="RequestMatcher-properties">
+                    Properties of <a href="#type-RequestMatcher">RequestMatcher</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-RequestMatcher-url"></a>
+                      <dt>
+                        <span class="variable">url</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate"><a href="events.html#type-UrlFilter">events.UrlFilter</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the condition of the UrlFilter are fulfilled for the URL of the request.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-RequestMatcher-resourceType"></a>
+                      <dt>
+                        <span class="variable">resourceType</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">array of enumerated string ["main_frame", "sub_frame", "stylesheet", "script", "image", "object", "xmlhttprequest", "other"]</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the request type of a request is contained in the list. Requests that cannot match any of the types will be filtered out.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-RequestMatcher-contentType"></a>
+                      <dt>
+                        <span class="variable">contentType</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">array of string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the MIME media type of a response (from the HTTP Content-Type header) is contained in the list.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-RequestMatcher-excludeContentType"></a>
+                      <dt>
+                        <span class="variable">excludeContentType</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">array of string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if the MIME media type of a response (from the HTTP Content-Type header) is <em>not</em> contained in the list.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-RequestMatcher-responseHeaders"></a>
+                      <dt>
+                        <span class="variable">responseHeaders</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">array of <a href="declarativeWebRequest.html#type-HeaderFilter">HeaderFilter</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if some of the response headers is matched by one of the HeaderFilters.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-RequestMatcher-excludeResponseHeaders"></a>
+                      <dt>
+                        <span class="variable">excludeResponseHeaders</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">array of <a href="declarativeWebRequest.html#type-HeaderFilter">HeaderFilter</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Matches if none of the response headers is matched by one of the HeaderFilters.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-CancelRequest">CancelRequest</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Declarative event action that cancels a network request.
+                  </dd>  </div>
+              </div>
+              <div>
+                <h3 id="type-RedirectRequest">RedirectRequest</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Declarative event action that redirects a network request.
+                  </dd>    <h4 id="RedirectRequest-properties">
+                    Properties of <a href="#type-RedirectRequest">RedirectRequest</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-RedirectRequest-redirectUrl"></a>
+                      <dt>
+                        <span class="variable">redirectUrl</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Destination to where the request is redirected.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-RedirectToTransparentImage">RedirectToTransparentImage</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Declarative event action that redirects a network request to a transparent image.
+                  </dd>  </div>
+              </div>
+              <div>
+                <h3 id="type-RedirectToEmptyDocument">RedirectToEmptyDocument</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Declarative event action that redirects a network request to an empty document.
+                  </dd>  </div>
+              </div>
+              <div>
+                <h3 id="type-RedirectByRegEx">RedirectByRegEx</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Redirects a request by applying a regular expression on the URL. The regular expressions use the <a href="http://code.google.com/p/re2/wiki/Syntax">RE2 syntax</a>.
+                  </dd>    <h4 id="RedirectByRegEx-properties">
+                    Properties of <a href="#type-RedirectByRegEx">RedirectByRegEx</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-RedirectByRegEx-from"></a>
+                      <dt>
+                        <span class="variable">from</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        A match pattern that may contain capture groups. Capture groups are referenced in the Perl syntax ($1, $2, ...) instead of the RE2 syntax (\1, \2, ...) in order to be closer to JavaScript Regular Expressions.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-RedirectByRegEx-to"></a>
+                      <dt>
+                        <span class="variable">to</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Destination pattern.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-SetRequestHeader">SetRequestHeader</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Sets the request header of the specified name to the specified value. If a header with the specified name did not exist before, a new one is created. Header name comparison is always case-insensitive. Each request header name occurs only once in each request.
+                  </dd>    <h4 id="SetRequestHeader-properties">
+                    Properties of <a href="#type-SetRequestHeader">SetRequestHeader</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-SetRequestHeader-name"></a>
+                      <dt>
+                        <span class="variable">name</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        HTTP request header name.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-SetRequestHeader-value"></a>
+                      <dt>
+                        <span class="variable">value</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        HTTP request header value.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-RemoveRequestHeader">RemoveRequestHeader</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Removes the request header of the specified name. Do not use SetRequestHeader and RemoveRequestHeader with the same header name on the same request. Each request header name occurs only once in each request.
+                  </dd>    <h4 id="RemoveRequestHeader-properties">
+                    Properties of <a href="#type-RemoveRequestHeader">RemoveRequestHeader</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-RemoveRequestHeader-name"></a>
+                      <dt>
+                        <span class="variable">name</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        HTTP request header name (case-insensitive).
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-AddResponseHeader">AddResponseHeader</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Adds the response header to the response of this web request. As multiple response headers may share the same name, you need to first remove and then add a new response header in order to replace one.
+                  </dd>    <h4 id="AddResponseHeader-properties">
+                    Properties of <a href="#type-AddResponseHeader">AddResponseHeader</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-AddResponseHeader-name"></a>
+                      <dt>
+                        <span class="variable">name</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        HTTP response header name.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-AddResponseHeader-value"></a>
+                      <dt>
+                        <span class="variable">value</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        HTTP response header value.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-RemoveResponseHeader">RemoveResponseHeader</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Removes all response headers of the specified names and values.
+                  </dd>    <h4 id="RemoveResponseHeader-properties">
+                    Properties of <a href="#type-RemoveResponseHeader">RemoveResponseHeader</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-RemoveResponseHeader-name"></a>
+                      <dt>
+                        <span class="variable">name</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        HTTP request header name (case-insensitive).
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-RemoveResponseHeader-value"></a>
+                      <dt>
+                        <span class="variable">value</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        HTTP request header value (case-insensitive).
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-IgnoreRules">IgnoreRules</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Masks all rules that match the specified criteria.
+                  </dd>    <h4 id="IgnoreRules-properties">
+                    Properties of <a href="#type-IgnoreRules">IgnoreRules</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-IgnoreRules-lowerPriorityThan"></a>
+                      <dt>
+                        <span class="variable">lowerPriorityThan</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate">integer</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        If set, rules with a lower priority than the specified value are ignored. This boundary is not persisted, it affects only rules and their actions of the same network request stage.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-RequestCookie">RequestCookie</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    A filter or specification of a cookie in HTTP Requests.
+                  </dd>    <h4 id="RequestCookie-properties">
+                    Properties of <a href="#type-RequestCookie">RequestCookie</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-RequestCookie-name"></a>
+                      <dt>
+                        <span class="variable">name</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Name of a cookie.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-RequestCookie-value"></a>
+                      <dt>
+                        <span class="variable">value</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Value of a cookie, may be padded in double-quotes.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-ResponseCookie">ResponseCookie</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    A filter or specification of a cookie in HTTP Responses.
+                  </dd>    <h4 id="ResponseCookie-properties">
+                    Properties of <a href="#type-ResponseCookie">ResponseCookie</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-ResponseCookie-name"></a>
+                      <dt>
+                        <span class="variable">name</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Name of a cookie.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ResponseCookie-value"></a>
+                      <dt>
+                        <span class="variable">value</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Value of a cookie, may be padded in double-quotes.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ResponseCookie-expires"></a>
+                      <dt>
+                        <span class="variable">expires</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Value of the Expires cookie attribute.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ResponseCookie-maxAge"></a>
+                      <dt>
+                        <span class="variable">maxAge</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">double</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Value of the Max-Age cookie attribute
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ResponseCookie-domain"></a>
+                      <dt>
+                        <span class="variable">domain</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Value of the Domain cookie attribute.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ResponseCookie-path"></a>
+                      <dt>
+                        <span class="variable">path</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Value of the Path cookie attribute.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ResponseCookie-secure"></a>
+                      <dt>
+                        <span class="variable">secure</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Existence of the Secure cookie attribute.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-ResponseCookie-httpOnly"></a>
+                      <dt>
+                        <span class="variable">httpOnly</span>
+                        <span class="property">
+                          (
+                            <span class="optional">optional</span>
+                            <span id="typeTemplate">string</span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Existence of the HttpOnly cookie attribute.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-AddRequestCookie">AddRequestCookie</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Adds a cookie to the request or overrides a cookie, in case another cookie of the same name exists already. Note that it is preferred to use the Cookies API because this is computationally less expensive.
+                  </dd>    <h4 id="AddRequestCookie-properties">
+                    Properties of <a href="#type-AddRequestCookie">AddRequestCookie</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-AddRequestCookie-cookie"></a>
+                      <dt>
+                        <span class="variable">cookie</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate"><a href="declarativeWebRequest.html#type-RequestCookie">RequestCookie</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Cookie to be added to the request. No field may be undefined.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-AddResponseCookie">AddResponseCookie</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Adds a cookie to the response or overrides a cookie, in case another cookie of the same name exists already. Note that it is preferred to use the Cookies API because this is computationally less expensive.
+                  </dd>    <h4 id="AddResponseCookie-properties">
+                    Properties of <a href="#type-AddResponseCookie">AddResponseCookie</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-AddResponseCookie-cookie"></a>
+                      <dt>
+                        <span class="variable">cookie</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate"><a href="declarativeWebRequest.html#type-ResponseCookie">ResponseCookie</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Cookie to be added to the response. The name and value need to be specified.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-EditRequestCookie">EditRequestCookie</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Edits one or more cookies of request. Note that it is preferred to use the Cookies API because this is computationally less expensive.
+                  </dd>    <h4 id="EditRequestCookie-properties">
+                    Properties of <a href="#type-EditRequestCookie">EditRequestCookie</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-EditRequestCookie-filter"></a>
+                      <dt>
+                        <span class="variable">filter</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate"><a href="declarativeWebRequest.html#type-RequestCookie">RequestCookie</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Filter for cookies that will be modified. All empty entries are ignored.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-EditRequestCookie-modification"></a>
+                      <dt>
+                        <span class="variable">modification</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate"><a href="declarativeWebRequest.html#type-RequestCookie">RequestCookie</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Attributes that shall be overridden in cookies that machted the filter. Attributes that are set to an empty string are removed.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-EditResponseCookie">EditResponseCookie</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Edits one or more cookies of response. Note that it is preferred to use the Cookies API because this is computationally less expensive.
+                  </dd>    <h4 id="EditResponseCookie-properties">
+                    Properties of <a href="#type-EditResponseCookie">EditResponseCookie</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-EditResponseCookie-filter"></a>
+                      <dt>
+                        <span class="variable">filter</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate"><a href="declarativeWebRequest.html#type-ResponseCookie">ResponseCookie</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Filter for cookies that will be modified. All empty entries are ignored.
+                      </dd>
+                    </div>
+                    <div>
+                      <a name="property-EditResponseCookie-modification"></a>
+                      <dt>
+                        <span class="variable">modification</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate"><a href="declarativeWebRequest.html#type-ResponseCookie">ResponseCookie</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Attributes that shall be overridden in cookies that machted the filter. Attributes that are set to an empty string are removed.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-RemoveRequestCookie">RemoveRequestCookie</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Removes one or more cookies of request. Note that it is preferred to use the Cookies API because this is computationally less expensive.
+                  </dd>    <h4 id="RemoveRequestCookie-properties">
+                    Properties of <a href="#type-RemoveRequestCookie">RemoveRequestCookie</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-RemoveRequestCookie-filter"></a>
+                      <dt>
+                        <span class="variable">filter</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate"><a href="declarativeWebRequest.html#type-RequestCookie">RequestCookie</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Filter for cookies that will be removed. All empty entries are ignored.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+              <div>
+                <h3 id="type-RemoveResponseCookie">RemoveResponseCookie</h3>
+                <div>
+                  <dt><span class="type_name">  (    <span id="typeTemplate">object</span>  )</span></dt>
+              <dd>
+                    Removes one or more cookies of response. Note that it is preferred to use the Cookies API because this is computationally less expensive.
+                  </dd>    <h4 id="RemoveResponseCookie-properties">
+                    Properties of <a href="#type-RemoveResponseCookie">RemoveResponseCookie</a>
+                  </h4>
+                  <dd><dl>      <div>
+                      <a name="property-RemoveResponseCookie-filter"></a>
+                      <dt>
+                        <span class="variable">filter</span>
+                        <span class="property">
+                          (
+                            
+                            <span id="typeTemplate"><a href="declarativeWebRequest.html#type-ResponseCookie">ResponseCookie</a></span>
+                          )
+                        </span>
+                      </dt>
+                      <dd>
+                        Filter for cookies that will be removed. All empty entries are ignored.
+                      </dd>
+                    </div>
+              </dl></dd>
+                </div>
+              </div>
+            <h3 id="events">Events</h3>
+              <div>
+                <h4 id="event-onRequest">onRequest</h4>
+                <div class="summary">
+                  <span class="subdued">chrome.declarativeWebRequest.</span>onRequest<span class="subdued">.addListener</span>(function()<span class="subdued"> {...}</span>);
+                </div>
+                <div class="description">
+                    <p>See <a href="events.html#method-Event-addRules"><code>chrome.events.Event.addRules()</code></a>.</p>
+                    <h4>Supported conditions</h4>
+                    <dl>
+                      <div><dt><a href="declarativeWebRequest.html#type-RequestMatcher">RequestMatcher</a></dt></div>
+                    </dl>
+                    <h4>Supported actions</h4>
+                    <dl>
+                      <div><dt><a href="declarativeWebRequest.html#type-AddRequestCookie">AddRequestCookie</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-AddResponseCookie">AddResponseCookie</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-AddResponseHeader">AddResponseHeader</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-CancelRequest">CancelRequest</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-EditRequestCookie">EditRequestCookie</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-EditResponseCookie">EditResponseCookie</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-RedirectRequest">RedirectRequest</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-RedirectToTransparentImage">RedirectToTransparentImage</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-RedirectToEmptyDocument">RedirectToEmptyDocument</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-RedirectByRegEx">RedirectByRegEx</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-RemoveRequestCookie">RemoveRequestCookie</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-RemoveResponseCookie">RemoveResponseCookie</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-RemoveRequestHeader">RemoveRequestHeader</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-RemoveResponseHeader">RemoveResponseHeader</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-SetRequestHeader">SetRequestHeader</a></dt></div><div><dt><a href="declarativeWebRequest.html#type-IgnoreRules">IgnoreRules</a></dt></div>
+                    </dl>
+                </div>
+              </div>
+        </div>
+          <h2 id="samples">Sample Extensions that use chrome.declarativeWebRequest</h2>
+            <li><strong><a href="samples.html#d5d930bdcf3f5e1753d0de5924a89a65">Event Page Example</a></strong> &ndash;
+            Demonstrates usage and features of the event page
+        </li>
+            <li><strong><a href="samples.html#ecc227966949f60af19c444222a775d9">Catifier</a></strong> &ndash;
+            Moar cats!
+        </li>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.bootstrap = {
+      api_names: [{"name":"alarms"},{"name":"bookmarks"},{"name":"browserAction"},{"name":"browsingData"},{"name":"commands"},{"name":"contentSettings"},{"name":"contextMenus"},{"name":"cookies"},{"name":"debugger"},{"name":"declarativeWebRequest"},{"name":"devtools.inspectedWindow"},{"name":"devtools.network"},{"name":"devtools.panels"},{"name":"downloads"},{"name":"events"},{"name":"extension"},{"name":"fileBrowserHandler"},{"name":"fontSettings"},{"name":"history"},{"name":"i18n"},{"name":"idle"},{"name":"input.ime"},{"name":"management"},{"name":"omnibox"},{"name":"pageAction"},{"name":"pageCapture"},{"name":"permissions"},{"name":"privacy"},{"name":"proxy"},{"name":"runtime"},{"name":"scriptBadge"},{"name":"storage"},{"name":"tabs"},{"name":"topSites"},{"name":"tts"},{"name":"ttsEngine"},{"name":"types"},{"name":"webNavigation"},{"name":"webRequest"},{"name":"webstore"},{"last":true,"name":"windows"}].concat(
+          [{"name":"experimental.bluetooth"},{"name":"experimental.devtools.audits"},{"name":"experimental.devtools.console"},{"name":"experimental.discovery"},{"name":"experimental.identity"},{"name":"experimental.infobars"},{"name":"experimental.offscreenTabs"},{"name":"experimental.processes"},{"name":"experimental.record"},{"name":"experimental.speechInput"},{"name":"experimental.systemInfo.cpu"},{"name":"experimental.systemInfo.storage"},{"last":true,"name":"experimental.usb"}]),
+      branchInfo: {"channels":[{"path":"stable","name":"Stable"},{"path":"dev","name":"Dev"},{"path":"beta","name":"Beta"},{"path":"trunk","name":"Trunk"}],"current":"stable","showWarning":false}
+    };
+  </script>
+  <div id="gc-footer">
+    <div class="text">
+      <p>
+        Except as otherwise <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+        the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+        Attribution 3.0 License</a>, and code samples are licensed under the
+        <a rel="license" href="http://code.google.com/google_bsd_license.html">BSD License</a>.
+      </p>
+      <p>
+        ©2012 Google
+      </p>
+      <script src="stable/static/js/branch.js" type="text/javascript"></script>
+      <script src="stable/static/js/sidebar.js" type="text/javascript"></script>
+      <script src="stable/static/js/prettify.js" type="text/javascript"></script>
+      <script>
+        (function() {
+          // Auto syntax highlight all pre tags.
+          var preElements = document.getElementsByTagName('pre');
+          for (var i = 0; i < preElements.length; i++)
+            preElements[i].classList.add('prettyprint');
+          prettyPrint();
+        })();
+      </script>
+      <script src="https://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+      <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        // chrome doc tracking
+        try {
+          var engdocs = _gat._getTracker("YT-10763712-2");
+          engdocs._trackPageview();
+        } catch(err) {}
+        // code.google.com site-wide tracking
+        try {
+          _uacct="UA-18071-1";
+          _uanchor=1;
+          _uff=0;
+          urchinTracker();
+        }
+        catch(e) {/* urchinTracker not available. */}
+      </script>
+      <script>
+        (function() {
+          var cx = '002967670403910741006:61_cvzfqtno';
+          var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+  
+    </div>
+  </div>
+</html>

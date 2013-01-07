@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="stable/static/css/site.css" rel="stylesheet" type="text/css">
+    <link href="stable/static/css/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
+    <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
+    <link href="stable/static/css/index.css" rel="stylesheet" type="text/css">
+    <title>Google Chrome Extensions</title>
+  </head>
+  <body>
+    <a id="top"></a>
+    <div id="header">
+      <span id="logo">
+        <a href="http://code.google.com/"><img src="stable/static/images/chrome_logo.gif" alt="Google Code Labs"></a>
+      </span>
+      <span id="cse">
+        <gcse:searchbox-only enableAutoComplete="true" autoCompleteMatchTyple="prefix"></gcse:searchbox-only>
+      </span>
+    </div>
+    <a id="gc-topnav-anchor"></a>
+    <div id="gc-topnav">
+      <h1>Google Chrome Extensions</h1>
+      <ul id="home" class="gc-topnav-tabs">
+        <li id="home_link">
+          <a href="index.html" title="Google Chrome Extensions home page"><div>Home</div></a>
+        </li>
+        <li id="docs_link">
+          <a href="docs.html" title="Official Google Chrome Extensions documentation"><div>Docs</div></a>
+        </li>
+        <li id="faq_link">
+          <a href="faq.html" title="Answers to frequently asked questions about Google Chrome Extensions"><div>FAQ</div></a>
+        </li>
+        <li id="samples_link">
+          <a href="samples.html" title="Sample Extensions (with source code)"><div>Samples</div></a>
+        </li>
+        <li id="group_link">
+          <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions" title="Google Chrome Extensions developer forum"><div>Group</div></a>
+        </li>
+        <li id="so_link">
+          <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension" title="[google-chrome-extension] tag on Stack Overflow"><div>Questions?</div></a>
+        </li>
+      </ul>
+    </div>
+    <div id="gc-container">
+      <div id="gc-pagecontent">
+        <table id="index">
+          <tr>
+            <td>
+              <h3>What are extensions?</h3>
+              <p>
+                Extensions are small software programs that
+                can modify and enhance the functionality of the Chrome browser.
+                You write them using web technologies such as
+                HTML, JavaScript, and CSS.
+              </p>
+              <p>
+                <img src="stable/static/images/index/gmail-small.png" width="91" height="35" align="right" style="margin-top:0px; margin-left:0.5em" alt="A screenshot of an extension's icon in the browser bar">
+                Extensions have little to no user interface.
+                For example, the image to the right shows the icon
+                that provides the UI for the
+                <a href="samples.html#gmail">Gmail extension</a>.
+              </p>
+
+              <p>
+                Extensions bundle all their files
+                into a single file that the user downloads and installs.
+                This bundling means that, unlike ordinary web apps,
+                extensions don't need to depend
+                on content from the web.
+              </p>
+              <p>
+                You can distribute your extension
+                using the
+                <a href="https://chrome.google.com/webstore/developer/dashboard">Chrome Developer Dashboard</a>
+                to publish to the
+                <a href="http://chrome.google.com/webstore">Chrome Web Store</a>.
+                For more information, see the
+                <a href="http://code.google.com/chrome/webstore">store developer documentation</a>.
+              </p>
+            </td>
+            <td id="howDoIStart">
+              <h3>How do I start?</h3>
+              <p></p>
+              <ol>
+                <li>
+                  Follow the <a href="getstarted.html">Getting Started tutorial</a>
+                </li>
+                <li>
+                  Read the
+                  <a href="overview.html">Overview</a>
+                </li>
+                <li>
+                  Keep up-to-date by reading the
+                  <a href="http://blog.chromium.org/">Chromium blog</a>
+                </li>
+                <li>
+                  Subscribe to the
+                  <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions">chromium-extensions group</a>
+                </li>
+              </ol>
+              <p></p>
+              <h3>Featured videos</h3>
+              <p>
+                <a href="http://www.youtube.com/view_play_list?p=CA101D6A85FE9D4B">Technical videos</a> <br>
+                <a href="http://www.youtube.com/view_play_list?p=38DF05697DE372B1">Developer snapshots</a> (below)
+              </p>
+              <p>
+                <iframe title="YouTube video player" width="300" height="199" src="http://www.youtube.com/embed/wRDPTnY3yO8?rel=0" frameborder="0" allowfullscreen=""></iframe>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.bootstrap = {
+      api_names: [{"name":"alarms"},{"name":"bookmarks"},{"name":"browserAction"},{"name":"browsingData"},{"name":"commands"},{"name":"contentSettings"},{"name":"contextMenus"},{"name":"cookies"},{"name":"debugger"},{"name":"declarativeWebRequest"},{"name":"devtools.inspectedWindow"},{"name":"devtools.network"},{"name":"devtools.panels"},{"name":"downloads"},{"name":"events"},{"name":"extension"},{"name":"fileBrowserHandler"},{"name":"fontSettings"},{"name":"history"},{"name":"i18n"},{"name":"idle"},{"name":"input.ime"},{"name":"management"},{"name":"omnibox"},{"name":"pageAction"},{"name":"pageCapture"},{"name":"permissions"},{"name":"privacy"},{"name":"proxy"},{"name":"runtime"},{"name":"scriptBadge"},{"name":"storage"},{"name":"tabs"},{"name":"topSites"},{"name":"tts"},{"name":"ttsEngine"},{"name":"types"},{"name":"webNavigation"},{"name":"webRequest"},{"name":"webstore"},{"last":true,"name":"windows"}].concat(
+          [{"name":"experimental.bluetooth"},{"name":"experimental.devtools.audits"},{"name":"experimental.devtools.console"},{"name":"experimental.discovery"},{"name":"experimental.identity"},{"name":"experimental.infobars"},{"name":"experimental.offscreenTabs"},{"name":"experimental.processes"},{"name":"experimental.record"},{"name":"experimental.speechInput"},{"name":"experimental.systemInfo.cpu"},{"name":"experimental.systemInfo.storage"},{"last":true,"name":"experimental.usb"}]),
+      branchInfo: {"channels":[{"path":"stable","name":"Stable"},{"path":"dev","name":"Dev"},{"path":"beta","name":"Beta"},{"path":"trunk","name":"Trunk"}],"current":"stable","showWarning":false}
+    };
+  </script>
+  <div id="gc-footer">
+    <div class="text">
+      <p>
+        Except as otherwise <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+        the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+        Attribution 3.0 License</a>, and code samples are licensed under the
+        <a rel="license" href="http://code.google.com/google_bsd_license.html">BSD License</a>.
+      </p>
+      <p>
+        ©2012 Google
+      </p>
+      <script src="stable/static/js/branch.js" type="text/javascript"></script>
+      <script src="stable/static/js/sidebar.js" type="text/javascript"></script>
+      <script src="stable/static/js/prettify.js" type="text/javascript"></script>
+      <script>
+        (function() {
+          // Auto syntax highlight all pre tags.
+          var preElements = document.getElementsByTagName('pre');
+          for (var i = 0; i < preElements.length; i++)
+            preElements[i].classList.add('prettyprint');
+          prettyPrint();
+        })();
+      </script>
+      <script src="https://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+      <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        // chrome doc tracking
+        try {
+          var engdocs = _gat._getTracker("YT-10763712-2");
+          engdocs._trackPageview();
+        } catch(err) {}
+        // code.google.com site-wide tracking
+        try {
+          _uacct="UA-18071-1";
+          _uanchor=1;
+          _uff=0;
+          urchinTracker();
+        }
+        catch(e) {/* urchinTracker not available. */}
+      </script>
+      <script>
+        (function() {
+          var cx = '002967670403910741006:61_cvzfqtno';
+          var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+  
+    </div>
+  </div>
+</html>

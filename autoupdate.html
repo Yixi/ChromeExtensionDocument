@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="stable/static/css/site.css" rel="stylesheet" type="text/css">
+    <link href="stable/static/css/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
+    <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
+    <title>Autoupdating - Google Chrome</title>
+  </head>
+  <body>
+    <a id="top"></a>
+    <div id="header">
+      <span id="logo">
+        <a href="http://code.google.com/"><img src="stable/static/images/chrome_logo.gif" alt="Google Code Labs"></a>
+      </span>
+      <span id="cse">
+        <gcse:searchbox-only enableAutoComplete="true" autoCompleteMatchTyple="prefix"></gcse:searchbox-only>
+      </span>
+    </div>
+    <a id="gc-topnav-anchor"></a>
+    <div id="gc-topnav">
+      <h1>Google Chrome Extensions</h1>
+      <ul id="home" class="gc-topnav-tabs">
+        <li id="home_link">
+          <a href="index.html" title="Google Chrome Extensions home page"><div>Home</div></a>
+        </li>
+        <li id="docs_link">
+          <a href="docs.html" title="Official Google Chrome Extensions documentation"><div>Docs</div></a>
+        </li>
+        <li id="faq_link">
+          <a href="faq.html" title="Answers to frequently asked questions about Google Chrome Extensions"><div>FAQ</div></a>
+        </li>
+        <li id="samples_link">
+          <a href="samples.html" title="Sample Extensions (with source code)"><div>Samples</div></a>
+        </li>
+        <li id="group_link">
+          <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions" title="Google Chrome Extensions developer forum"><div>Group</div></a>
+        </li>
+        <li id="so_link">
+          <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension" title="[google-chrome-extension] tag on Stack Overflow"><div>Questions?</div></a>
+        </li>
+      </ul>
+    </div>
+    <div id="gc-container">
+      <div id="gc-sidebar">
+        <ul 
+            class="level1 ">
+          <li class="level2">
+                <a href="getstarted.html" class="level2 ">Getting Started</a>
+          </li>
+          <li class="level2">
+                <a href="overview.html" class="level2 ">Overview</a>
+          </li>
+          <li class="level2">
+                <a href="whats_new.html" class="level2 ">What's New?</a>
+          </li>
+          <li class="level2">
+                <a href="devguide.html" class="level2 ">Developer's Guide</a>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Browser UI</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="browserAction.html" class="level4 ">Browser Actions</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contextMenus.html" class="level4 ">Context Menus</a>
+                      </li>
+                      <li class="level4">
+                            <a href="notifications.html" class="level4 ">Desktop Notifications</a>
+                      </li>
+                      <li class="level4">
+                            <a href="omnibox.html" class="level4 ">Omnibox</a>
+                      </li>
+                      <li class="level4">
+                            <a href="options.html" class="level4 ">Options Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="override.html" class="level4 ">Override Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="pageAction.html" class="level4 ">Page Actions</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Browser Interaction</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="bookmarks.html" class="level4 ">Bookmarks</a>
+                      </li>
+                      <li class="level4">
+                            <a href="cookies.html" class="level4 ">Cookies</a>
+                      </li>
+                      <li class="level4">
+                            <a href="devtools.html" class="level4 ">Developer Tools</a>
+                      </li>
+                      <li class="level4">
+                            <a href="events.html" class="level4 ">Events</a>
+                      </li>
+                      <li class="level4">
+                            <a href="history.html" class="level4 ">History</a>
+                      </li>
+                      <li class="level4">
+                            <a href="management.html" class="level4 ">Management</a>
+                      </li>
+                      <li class="level4">
+                            <a href="tabs.html" class="level4 ">Tabs</a>
+                      </li>
+                      <li class="level4">
+                            <a href="windows.html" class="level4 ">Windows</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Implementation</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="a11y.html" class="level4 ">Accessibility</a>
+                      </li>
+                      <li class="level4">
+                            <a href="event_pages.html" class="level4 ">Event Pages</a>
+                      </li>
+                      <li class="level4">
+                            <a href="contentSecurityPolicy.html" class="level4 ">Content Security Policy</a>
+                      </li>
+                      <li class="level4">
+                            <a href="content_scripts.html" class="level4 ">Content Scripts</a>
+                      </li>
+                      <li class="level4">
+                            <a href="xhr.html" class="level4 ">Cross-Origin XHR</a>
+                      </li>
+                      <li class="level4">
+                            <a href="i18n.html" class="level4 ">Internationalization</a>
+                      </li>
+                      <li class="level4">
+                            <a href="messaging.html" class="level4 ">Message Passing</a>
+                      </li>
+                      <li class="level4">
+                            <a href="permissions.html" class="level4 ">Optional Permissions</a>
+                      </li>
+                      <li class="level4">
+                            <a href="npapi.html" class="level4 ">NPAPI Plugins</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Finishing</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="hosting.html" class="level4 ">Hosting</a>
+                      </li>
+                      <li class="level4">
+                            <a href="external_extensions.html" class="level4 ">Other Deployment Options</a>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <a href="tutorials.html" class="level2 ">Tutorials</a>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                      <a href="tut_migration_to_manifest_v2.html" class="level3 ">Manifest V2</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_debugging.html" class="level3 ">Debugging</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_analytics.html" class="level3 ">Google Analytics</a>
+                </li>
+                <li class="level3">
+                      <a href="tut_oauth.html" class="level3 ">OAuth</a>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <span class="level2">Reference</span>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                    <a class="button level3">
+                      <span class="level3">Formats</span>
+                      <div class="toggleIndicator level3"></div>
+                    </a>
+                    <ul toggleable
+                        class="level3 hidden">
+                      <li class="level4">
+                            <a href="manifest.html" class="level4 ">Manifest Files</a>
+                      </li>
+                      <li class="level4">
+                            <a href="match_patterns.html" class="level4 ">Match Patterns</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="level3">
+                      <a href="permission_warnings.html" class="level3 ">Permission Warnings</a>
+                </li>
+                <li class="level3">
+                      <a href="api_index.html" class="level3 ">chrome.* APIs</a>
+                </li>
+                <li class="level3">
+                      <a href="api_other.html" class="level3 ">Other APIs</a>
+                </li>
+              </ul>
+          </li>
+          <li class="level2">
+                <span class="level2">More</span>
+              <ul 
+                  class="level2 ">
+                <li class="level3">
+                      <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">Chrome Web Store</a>
+                </li>
+                <li class="level3">
+                      <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">Hosted Apps</a>
+                </li>
+                <li class="level3">
+                      <a href="themes.html" class="level3 ">Themes</a>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="gc-pagecontent">
+        <h1 class="page_title">Autoupdating</h1>
+        <div id="toc">
+          <h2>Contents</h2>
+          <ol>
+            <li>
+              <a href=#overview>Overview</a>
+            </li>
+            <li>
+              <a href=#update_url>Update URL</a>
+            </li>
+            <li>
+              <a href=#update_manifest>Update manifest</a>
+            </li>
+            <li>
+              <a href=#testing>Testing</a>
+            </li>
+            <li>
+              <a href=#request_parameters>Advanced usage: request parameters</a>
+            </li>
+            <li>
+              <a href=#minimum_browser_version>Advanced usage: minimum browser version</a>
+            </li>
+          </ol>
+        </div>
+
+
+
+
+<p>We want extensions and apps to be autoupdated for some of the same reasons as Google Chrome itself: to incorporate bug and security fixes, add new features or performance enhancements, and improve user interfaces.</p>
+
+<p>If you publish using the <a href="https://chrome.google.com/webstore/developer/dashboard">Chrome Developer Dashboard</a>, you can <em>ignore this page</em>. You can use the dashboard to release updated versions to users, as well as to the Chrome Web Store.</p>
+
+<p>If you want to host somewhere other than the store, keep reading.
+You should also read <a href="hosting.html">Hosting</a> and
+<a href="packaging.html">Packaging</a>.</p>
+
+
+<h2 id="overview">Overview</h2>
+<ul><li>A manifest may contain an "update_url" field, pointing to a location for doing update checks.</li>
+<li>The content returned by an update check is an <em>update manifest</em> XML document listing the latest version of an extension.</li></ul>
+
+<p>Every few hours, the browser checks whether any installed extensions or apps have an update URL. For each one, it makes a request to that URL looking for an update manifest XML file. If the update manifest mentions a version that is more recent than what's installed, the browser downloads and installs the new version. As with manual updates, the new <code>.crx</code> file must be signed with the same private key as the currently installed version.</p>
+
+
+<h2 id="update_url">Update URL</h2>
+<p>If you're hosting your own extension or app, you need to add the "update_url" field to your <a href="manifest.html"><code>manifest.json</code></a> file,
+like this:</p>
+
+<pre>{
+  "name": "My extension",
+  ...
+  <b>"update_url": "http://myhost.com/mytestextension/updates.xml"</b>,
+  ...
+}
+</pre>
+
+<h2 id="update_manifest">Update manifest</h2>
+<p>The update manifest returned by the server should be an XML document that looks like this (highlights indicate parts you should modify):</p>
+
+<pre>
+&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'&gt;
+  &lt;app appid='<b>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b>'&gt;
+   &nbsp;&lt;updatecheck&nbsp;codebase='<b>http://myhost.com/mytestextension/mte_v2.crx</b>'&nbsp;version='<b>2.0</b>' /&gt;
+  &lt;/app&gt;
+&lt;/gupdate&gt;
+</pre>
+
+<p>This XML format is borrowed from that used by Omaha, Google's update infrastructure. See <a href="http://code.google.com/p/omaha/">http://code.google.com/p/omaha/</a> for more details.
+The extensions system uses the following attributes
+for the <strong>&lt;app></strong>
+and <strong>&lt;updatecheck></strong> elements of the update manifest:
+</p>
+
+<p><b>appid</b><br>
+The extension or app ID, generated based on a hash of the public key,
+as described in <a href="packaging.html">Packaging</a>. You can find the
+ID of an extension or packaged app by going to the Extensions page (<b>chrome://extensions</b>).
+</p>
+
+
+<p><b>codebase</b><br>
+A URL to the <code>.crx</code> file.</p>
+
+<p><b>version</b><br>
+Used by the client to determine whether it should download the <code>.crx</code> file specified by <code>codebase</code>. It should match the value of "version" in the <code>.crx</code> file's <code>manifest.json</code> file.</p>
+<p>The update manifest XML file may contain information about multiple extensions by including multiple &lt;app&gt; elements.</p>
+
+
+<h2 id="testing">Testing</h2>
+<p>The default update check frequency is several hours,
+but you can force an update using the Extensions page's
+<b>Update extensions now</b> button.
+</p>
+
+<p>
+Another option is to use the --extensions-update-frequency command-line flag to set a more frequent interval in seconds. For example, to make checks run every 45 seconds, run Google Chrome like this:</p>
+<pre>
+chrome.exe <b>--extensions-update-frequency=45</b></pre>
+
+<p>Note that this affects checks for all installed extensions and apps, so consider the bandwidth and server load implications of this. You may want to temporarily uninstall all but the one you are testing with, and should not run with this option turned on during normal browser usage.</p>
+
+
+<h2 id="request_parameters">Advanced usage: request parameters</h2>
+<p>The basic autoupdate mechanism is designed to make the server-side work as easy as just dropping a static XML file onto any plain web server such as Apache, and updating that XML file as you release new versions of your extensions.</p>
+<p>More advanced developers may wish to take advantage of the fact that we add on parameters to the request for the update manifest to indicate the extension ID and version. Then they can use the same update URL for all of their extensions, pointing to a URL running dynamic server-side code instead of a static XML file.</p>
+<p>The format of the request parameters is:</p>
+<p><code>&nbsp;&nbsp;?x=<em>&lt;extension_data&gt;</em></code></p>
+<p>Where <code><em>&lt;extension_data&gt;</em></code> is a URL-encoded string of the format:</p>
+<p><code>&nbsp;&nbsp;<em>id=&lt;id&gt;</em>&amp;v=<em>&lt;version&gt;</em></code></p>
+
+<p>For example, say you have two extensions,
+both of which point to the same update URL
+(<code>http://test.com/extension_updates.php</code>):
+</p>
+
+<ul>
+<li> Extension 1
+  <ul>
+    <li> ID: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" </li>
+    <li> Version: "1.1"</li>
+  </ul>
+<li> Extension 2
+  <ul>
+    <li> ID: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" </li>
+    <li> Version: "0.4"</li>
+  </ul>
+</ul>
+
+
+<p>The request to update each individual extension would be:</p>
+
+<ul>
+  <li> <code>http://test.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%26v%3D1.1</code> </li>
+  <li> <code>http://test.com/extension_updates.php?x=id%3Dbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb%26v%3D0.4</code> </li>
+</ul>
+
+<p>
+Multiple extensions can be listed in a single request for each unique update URL.
+For the above example, if a user has both of the extensions installed,
+then the two requests are merged into a single request:</p>
+<p><code>http://test.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%26v%3D1.1&amp;x=id%3Dbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb%26v%3D0.4</code></p>
+
+<p>If the number of installed extensions using the same update URL is large enough that a GET request URL is too long (over 2000 characters or so), the update check issues additional GET requests as necessary.</p>
+
+<p class="note">
+<b>Note:</b>
+In the future, instead of issuing multiple GET requests,
+a single POST request might be issued
+with the request parameters in the POST body.
+</p>
+
+<h2 id="minimum_browser_version">Advanced usage: minimum browser version</h2>
+<p>As we add more APIs to the extensions system, it's possible you will want to release an updated version of an extension or app that will work only with newer versions of the browser. While Google Chrome itself is autoupdated, it can take a few days before the majority of the user base has updated to any given new release. To ensure that a given update will apply only to Google Chrome versions at or higher than a specific version, you add the "prodversionmin" attribute to the &lt;app&gt; element in your update manifest. For example:</p>
+
+<pre>&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'&gt;
+&nbsp;&nbsp;&lt;app appid='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'&gt;
+&nbsp;&nbsp; &nbsp;&lt;updatecheck&nbsp;codebase='http://myhost.com/mytestextension/mte_v2.crx'&nbsp;version='2.0' <b>prodversionmin='3.0.193.0'</b>/&gt;
+&nbsp;&nbsp;&lt;/app&gt;
+&lt;/gupdate&gt;
+</pre>
+
+<p>This would ensure that users would autoupdate to version 2 only if they are running Google Chrome 3.0.193.0 or greater.</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.bootstrap = {
+      api_names: [{"name":"alarms"},{"name":"bookmarks"},{"name":"browserAction"},{"name":"browsingData"},{"name":"commands"},{"name":"contentSettings"},{"name":"contextMenus"},{"name":"cookies"},{"name":"debugger"},{"name":"declarativeWebRequest"},{"name":"devtools.inspectedWindow"},{"name":"devtools.network"},{"name":"devtools.panels"},{"name":"downloads"},{"name":"events"},{"name":"extension"},{"name":"fileBrowserHandler"},{"name":"fontSettings"},{"name":"history"},{"name":"i18n"},{"name":"idle"},{"name":"input.ime"},{"name":"management"},{"name":"omnibox"},{"name":"pageAction"},{"name":"pageCapture"},{"name":"permissions"},{"name":"privacy"},{"name":"proxy"},{"name":"runtime"},{"name":"scriptBadge"},{"name":"storage"},{"name":"tabs"},{"name":"topSites"},{"name":"tts"},{"name":"ttsEngine"},{"name":"types"},{"name":"webNavigation"},{"name":"webRequest"},{"name":"webstore"},{"last":true,"name":"windows"}].concat(
+          [{"name":"experimental.bluetooth"},{"name":"experimental.devtools.audits"},{"name":"experimental.devtools.console"},{"name":"experimental.discovery"},{"name":"experimental.identity"},{"name":"experimental.infobars"},{"name":"experimental.offscreenTabs"},{"name":"experimental.processes"},{"name":"experimental.record"},{"name":"experimental.speechInput"},{"name":"experimental.systemInfo.cpu"},{"name":"experimental.systemInfo.storage"},{"last":true,"name":"experimental.usb"}]),
+      branchInfo: {"channels":[{"path":"stable","name":"Stable"},{"path":"dev","name":"Dev"},{"path":"beta","name":"Beta"},{"path":"trunk","name":"Trunk"}],"current":"stable","showWarning":false}
+    };
+  </script>
+  <div id="gc-footer">
+    <div class="text">
+      <p>
+        Except as otherwise <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+        the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+        Attribution 3.0 License</a>, and code samples are licensed under the
+        <a rel="license" href="http://code.google.com/google_bsd_license.html">BSD License</a>.
+      </p>
+      <p>
+        ©2012 Google
+      </p>
+      <script src="stable/static/js/branch.js" type="text/javascript"></script>
+      <script src="stable/static/js/sidebar.js" type="text/javascript"></script>
+      <script src="stable/static/js/prettify.js" type="text/javascript"></script>
+      <script>
+        (function() {
+          // Auto syntax highlight all pre tags.
+          var preElements = document.getElementsByTagName('pre');
+          for (var i = 0; i < preElements.length; i++)
+            preElements[i].classList.add('prettyprint');
+          prettyPrint();
+        })();
+      </script>
+      <script src="https://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+      <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        // chrome doc tracking
+        try {
+          var engdocs = _gat._getTracker("YT-10763712-2");
+          engdocs._trackPageview();
+        } catch(err) {}
+        // code.google.com site-wide tracking
+        try {
+          _uacct="UA-18071-1";
+          _uanchor=1;
+          _uff=0;
+          urchinTracker();
+        }
+        catch(e) {/* urchinTracker not available. */}
+      </script>
+      <script>
+        (function() {
+          var cx = '002967670403910741006:61_cvzfqtno';
+          var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+  
+    </div>
+  </div>
+</html>
