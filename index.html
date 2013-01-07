@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html xmlns:wb=“http://open.weibo.com/wb”>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="stable/static/css/site.css" rel="stylesheet" type="text/css">
@@ -7,7 +7,8 @@
     <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
     <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
     <link href="stable/static/css/index.css" rel="stylesheet" type="text/css">
-    <title>Google Chrome Extensions</title>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+    <title>chrome插件中文开发文档(非官方)</title>
   </head>
   <body>
     <a id="top"></a>
@@ -41,63 +42,93 @@
         <table id="index">
           <tr>
             <td>
-              <h3>What are extensions?</h3>
+              <h3>什么是扩展程序？</h3>
               <p>
-                Extensions are small software programs that
-                can modify and enhance the functionality of the Chrome browser.
-                You write them using web technologies such as
-                HTML, JavaScript, and CSS.
+                扩展程序是一些能够修改或增强Chrome浏览器功能的小程序。您可以利用各种Web技术，例如HTML、JavaScript和CSS，来编写自己的扩展程序。
               </p>
               <p>
                 <img src="stable/static/images/index/gmail-small.png" width="91" height="35" align="right" style="margin-top:0px; margin-left:0.5em" alt="A screenshot of an extension's icon in the browser bar">
-                Extensions have little to no user interface.
-                For example, the image to the right shows the icon
-                that provides the UI for the
-                <a href="samples.html#gmail">Gmail extension</a>.
+                扩展程序只有很少的用户界面或者完全没有。例如，右边的图片中的图标为
+                  <a href="samples.html#gmail">Gmail扩展程序</a>.
+                  的用户界面。
+                
               </p>
 
               <p>
-                Extensions bundle all their files
-                into a single file that the user downloads and installs.
-                This bundling means that, unlike ordinary web apps,
-                extensions don't need to depend
-                on content from the web.
+                扩展程序将它所需的文件集成在一个文件中，提供给用户下载和安装。这一集成意味着扩展程序不像普通的网上应用程序那样，它们不需要依赖网上的内容。
               </p>
               <p>
-                You can distribute your extension
-                using the
-                <a href="https://chrome.google.com/webstore/developer/dashboard">Chrome Developer Dashboard</a>
-                to publish to the
-                <a href="http://chrome.google.com/webstore">Chrome Web Store</a>.
-                For more information, see the
-                <a href="http://code.google.com/chrome/webstore">store developer documentation</a>.
+                您可以使用
+                <a href="https://chrome.google.com/webstore/developer/dashboard">Chrome开发者信息中心</a>
+                将您的扩展程序发布到
+                <a href="http://chrome.google.com/webstore">Chrome网上应用店</a>。
+                有关更多信息，请参见
+                <a href="http://code.google.com/chrome/webstore">网上应用店开发者文档</a>。
               </p>
+                <p style="color:red;">
+                    此文档大部分翻译内容基于
+                    <a href="https://sites.google.com/site/crxdoczh/home" target="_blank">https://sites.google.com/site/crxdoczh/home</a>
+                </p >
+                <p style="color:red;">
+                    Chrome开发QQ交流群：<b>186758632</b>
+                </p>
+                <p style="color:red;">
+                    Chrome开发google+社群：<a href="https://plus.google.com/u/0/communities/105384952265487436177" target="_blank">Chrome扩展程序/应用程序开发人员文档（非官方中文版）</a>
+                </p>
+                
+                <p style="color:red;">
+                    此文档基于<a href="http://developer.chrome.com/extensions/index.html"  target="_blank">google chrome官方文档</a>,Chrome扩展程序的开发文档在不断地变化,此文档将尽量即使跟进，若有疑问，一切以官方文档为准。
+                </p>
+                <p style="color:red;">
+                    再次感谢<a href="https://plus.google.com/u/0/communities/105384952265487436177" target="_blank">Samuel V</a>辛苦翻译。<b>中文部分持续更新中</b>。
+                </p>
+                <p>
+                    关于<a href="http://liuyixi.com" target="_blank"> 一兮</a>, <a href="http://www.diigo.com" target="_blank">Diigo.com</a>前端工程师，参与开发的chrome插件/应用程序有：
+                    <ul>
+                        <li>
+                            <a href="https://chrome.google.com/webstore/detail/awesome-screenshot-captur/alelhddbbhepgpmgidjdcjakblofbmce?utm_source=chrome-ntp-icon" target="_blank">Awesome Screenshot(网页截图)</a>
+                        </li>
+                        <li>
+                            <a href="https://chrome.google.com/webstore/detail/quick-note/mijlebbfndhelmdpmllgcfadlkankhok?utm_source=chrome-ntp-icon" target="_blank">Quick Note</a>
+                        </li>
+                        <li>
+                            <a href="https://chrome.google.com/webstore/detail/read-later-fast/decdfngdidijkdjgbknlnepdljfaepji?utm_source=chrome-ntp-icon" target="_blank">Read Later Fast</a>
+                        </li>
+                        <li>
+                            <a href="https://chrome.google.com/webstore/detail/diigo-web-collector-captu/oojbgadfejifecebmdnhhkbhdjaphole?utm_source=chrome-ntp-icon" target="_blank">Diigo Web Collector - Capture and Annotate</a>
+                        </li>
+                        <li>
+                            <a href="https://chrome.google.com/webstore/detail/search-all/eekjldapjblgadclklmgolijbagmdnfk?utm_source=chrome-ntp-icon" target="_blank">Search All</a>
+                        </li>
+                    </ul>
+                    <wb:follow-button uid="2011628750" type="red_1" width="67" height="24" ></wb:follow-button>
+                </p>
             </td>
             <td id="howDoIStart">
-              <h3>How do I start?</h3>
+              <h3>我应该如何开始？</h3>
               <p></p>
               <ol>
                 <li>
-                  Follow the <a href="getstarted.html">Getting Started tutorial</a>
+                  遵循<a href="getstarted.html">入门教程</a>
                 </li>
                 <li>
-                  Read the
-                  <a href="overview.html">Overview</a>
+                  阅读
+                  <a href="overview.html">概述</a>
                 </li>
                 <li>
-                  Keep up-to-date by reading the
-                  <a href="http://blog.chromium.org/">Chromium blog</a>
+                  阅读
+                  <a href="http://blog.chromium.org/">Chromium博客（英文）</a>，获取最新信息
                 </li>
                 <li>
-                  Subscribe to the
-                  <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions">chromium-extensions group</a>
+                  订阅
+                  <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions">chromium-extensions群组（英文）</a>
                 </li>
               </ol>
               <p></p>
-              <h3>Featured videos</h3>
+              <h3>特色视频（英文）</h3>
               <p>
-                <a href="http://www.youtube.com/view_play_list?p=CA101D6A85FE9D4B">Technical videos</a> <br>
-                <a href="http://www.youtube.com/view_play_list?p=38DF05697DE372B1">Developer snapshots</a> (below)
+                <a href="http://www.youtube.com/view_play_list?p=CA101D6A85FE9D4B">技术视频</a> <br>
+                <a href="http://www.youtube.com/view_play_list?p=38DF05697DE372B1">开发者快照</a> (below)
               </p>
               <p>
                 <iframe title="YouTube video player" width="300" height="199" src="http://www.youtube.com/embed/wRDPTnY3yO8?rel=0" frameborder="0" allowfullscreen=""></iframe>
