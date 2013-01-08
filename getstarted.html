@@ -6,7 +6,7 @@
     <link href="stable/static/css/print.css" rel="stylesheet" type="text/css" media="print">
     <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
     <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
-    <title>Tutorial: Getting Started (Hello, World!) - chrome插件中文开发文档(非官方)</title>
+    <title>教程: 入门 (Hello, World!) - chrome插件中文开发文档(非官方)</title>
   </head>
   <body>
     <a id="top"></a>
@@ -234,18 +234,18 @@
         </ul>
       </div>
       <div id="gc-pagecontent">
-        <h1 class="page_title">Tutorial: Getting Started (Hello, World!)</h1>
+        <h1 class="page_title">教程:入门 (Hello, World!)</h1>
         <div id="toc">
-          <h2>Contents</h2>
+          <h2>内容</h2>
           <ol>
             <li>
-              <a href=#load>Create and load an extension</a>
+              <a href=#load>创建和载入插件</a>
             </li>
             <li>
-              <a href=#code>Add code to the extension</a>
+              <a href=#code>添加代码</a>
             </li>
             <li>
-              <a href=#summary>Now what?</a>
+              <a href=#summary>现在做什么?</a>
             </li>
           </ol>
         </div>
@@ -254,9 +254,7 @@
 
 
 <p>
-  This tutorial walks you through creating a simple extension. You'll add an
-  icon to Google Chrome that, when clicked, displays an automatically generated
-  page. The icon and page will look something like this:
+  这个教程将带你创建一个简单的扩展.你将会添加一个点击时显示一个自动生成的页面的图标在chrome上图标和页面看起来会是这样：
 </p>
 
 <img src="stable/static/images/hello-world-small.png"
@@ -265,34 +263,31 @@
      alt="a window with a grid of images related to 'Hello World'">
 
 <p>
-  You can develop extensions using any release of Google Chrome, on Windows,
-  Mac, or Linux. Extensions you develop on one platform should run without
-  change on every platform Chrome supports.
+  你可以使用任何已发布版本的chrome开发扩展，在windows上，Mac或者Linux。
+  你开发的扩展在任何chrome支持的平台上运行都不会有任何变化。
 </p>
 
-<h2 id="load">Create and load an extension</h2>
+<h2 id="load">创建和载入插件</h2>
 
 <p>
-  The extension we'll walk through creating here is a
-  <a href="browserAction.html">Browser Action</a>, which adds a button to
-  Chrome's toolbar whose behavior you can control.
+  这个插件我们将创建一个
+  <a href="browserAction.html">浏览器按钮</a>,它添加一个你可以控制其行为的按钮在chrome工具栏上
 </p>
 
 <ol>
   <li>
-    Create a folder somewhere on your computer to contain your extension's code.
+    在你电脑上某个地方创建一个文件夹来包含所有扩展程序代码。
   </li>
   <li>
     <p>
-      Inside your extension's folder, create a text file called
-      <strong><code>manifest.json</code></strong>, and fill it with the
-      following code:
+      在你的扩展文件夹中, 创建一个名为
+      <strong><code>manifest.json</code></strong>的文本文件, 将下面的代码保存进去:
     </p>
     <pre>{
-  "name": "My First Extension",
+  "name": "我的第一个扩展程序",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "The first extension that I made.",
+  "description": "第一个由我开发的扩展",
   "browser_action": {
     "default_icon": "icon.png"
   },
@@ -302,7 +297,7 @@
 }</pre>
   </li>
   <li>
-    <p>Copy this icon to the same folder:</p>
+    <p>保存这个图标到插件目录下:</p>
     <div style="width: 150px; text-align: center;">
       <a href='stable/static/images/icon.png'
          download='icon.png'>
@@ -311,47 +306,36 @@
              height='19'
              alt=''
              style='display: block; margin: 0.25em auto;'>
-        Download icon.png
+        下载 icon.png
       </a>
     </div>
   </li>
   <li id="load-ext">
-    <p>Load the extension.</p>
+    <p>载入插件。</p>
     <ol type="a">
       <li style="margin-top:0" />
-      Bring up the extensions management page
-      by clicking the wrench icon
+        单击多功能框最右边的按钮
       <img src="stable/static/images/toolsmenu.gif" width="29" height="29" alt=""
         style="margin-top:0" />
-      and choosing <b>Tools > Extensions</b>.
+      并选择 <b>工具 > 扩展程序</b>来打开插件管理页面。
       </li>
 
       <li>
-      If <b>Developer mode</b> has a + by it,
-      click the + to add developer information to the page.
-      The + changes to a -,
-      and more buttons and information appear.
+      确保右上角<b>开发者模式</b>复选框已选中。
       </li>
 
       <li>
-      Click the <b>Load unpacked extension</b> button.
-      A file dialog appears.
+      单击 <b>载入正在开发的扩展程序...</b>，弹出文件选择对话框。
       </li>
 
       <li>
-      In the file dialog,
-      navigate to your extension's folder
-      and click <b>OK</b>.
+      浏览至您的扩展程序文件所在的目录，并选择<b>确定</b>.
       </li>
     </ol> </li>
   </ol>
 
 <p>
-If your extension is valid,
-its icon appears next to the address bar,
-and information about the extension
-appears in the extensions page,
-as the following screenshot shows.
+如果扩展程序有效的话，它将被载入并且立刻处于活动状态！如果无效的话，页面顶部将显示错误消息，纠正错误再重试。
 </p>
 
 <p>
@@ -360,15 +344,14 @@ as the following screenshot shows.
   width="300" height="132" /></a>
 </p>
 
-<h2 id="code">Add code to the extension</h2>
+<h2 id="code">添加代码</h2>
 <p>
-  In this step, you'll make your extension <em>do</em> something besides just
-  look good.
+  在这个步骤中，你将会让你的插件做一些看起来不错的事情
 </p>
 
 <ol>
   <li>
-    <p>Edit <code>manifest.json</code> to add the following line:</p>
+    <p>编辑<code>manifest.json</code> 来添加下面的代码:</p>
     <pre>...
   "browser_action": {
     "default_icon": "icon.png"<b>,
@@ -377,10 +360,9 @@ as the following screenshot shows.
   ...</pre>
 
     <p>
-      Inside your extension's folder, create two text files called
-      <strong><code>popup.html</code></strong> and
-      <strong><code>popup.js</code></strong>. Add the following code to
-      these files:
+      在你的插件目录中, 创建后面两个文件
+      <strong><code>popup.html</code></strong> 和
+      <strong><code>popup.js</code></strong>. 添加下面的代码到文件中:
     </p>
     <blockquote>
       <a href="examples/tutorials/getstarted/popup.html" download="popup.html">
@@ -389,69 +371,67 @@ as the following screenshot shows.
         JavaScript code (popup.js)</a> for hello_world</a> </blockquote>
   </li>
   <li>
-    Return to the extensions management page,
-    and click the <b>Reload</b> button
-    to load the new version of the extension.</li>
-  <li>Click the extension's icon.
-  A popup should appear that displays the contents of
-  <code>popup.html</code>. </li>
+    返回到扩展管理页面,点击<b>重新加载</b>按钮
+    来加载新版本的扩展。</li>
+  <li>点击插件图标.
+  一个显示
+  <code>popup.html</code>内容的弹出窗口将会出现. </li>
 </ol>
-<p> It should look something like this:</p>
+<p> 它看起来应该是这样:</p>
 
 <img src="stable/static/images/hello-world.png"
   width="500" height="369"
   alt="a popup with a grid of images related to HELLO WORLD" />
 
-<p> If you don't see the popup,
-try the instructions again,
-following them exactly.
-Don't try loading an HTML file that isn't in the extension's folder &mdash;
-it won't work! </p>
+<p> 如果你没看到弹出窗口,
+试着再次跟着教程再做一次,
+不要尝试加载插件目录外的HTML文件 &mdash;
+它将不会工作! </p>
 
-<h2 id="summary">Now what?</h2>
+<h2 id="summary">现在做什么?</h2>
 
 
 
 <p>
-Here are some suggestions for what to read next:
+这里有一些建议接下来看什么:
 </p>
 
 <ul>
   <li>
-    The <a href="overview.html">Overview</a>,
-    which has important conceptual and practical information
+    <a href="overview.html">概述</a>,
+    里面有重要的理论和实践信息。
   </li>
   <li>
-    The
-    <a href="tut_debugging.html">debugging tutorial</a>,
-    which starts where this tutorial leaves off
+    <a href="tut_debugging.html">调试教程</a>,
+    不要遗漏这个教程
   </li>
   <li>
-    The <a href="hosting.html">hosting</a> page,
-    which tells you about options for distributing your extension
+   <a href="hosting.html">托管</a>页面,
+    它告诉你怎么发布你开发的扩展程序
   </li>
 </ul>
 
 <p>
-If you don't feel like reading, try these:
+如果你不喜欢阅读,尝试下面:
 </p>
 <ul>
   <li>
-    Keep up to date with the latest news:
-    <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions/subscribe">subscribe to chromium-extensions</a>
+    保持最新的资讯:
+    <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions/subscribe">订阅chromium-extensions（英文）</a>
   </li>
   <li>
-    Ask a question tagged [google-chrome-extension] on
-    <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension">Stack Overflow</a>
+    在
+    <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension">Stack Overflow（英文）</a>
+     上问[google-chrome-extension]标签的问题
   </li>
   <li>
-    Look at some
-    <a href="samples.html">sample extensions</a>
+    查阅一些
+    <a href="samples.html">示例</a>
   </li>
   <li>
-    Watch some
-    <a href="http://www.youtube.com/view_play_list?p=CA101D6A85FE9D4B">videos</a>, such as
-    <a href="http://www.youtube.com/watch?v=e3McMaHvlBY&feature=PlayList&p=CA101D6A85FE9D4B&index=3">How to build an extension</a>
+    观看一些
+    <a href="http://www.youtube.com/view_play_list?p=CA101D6A85FE9D4B">视频（英文）</a>, 例如
+    <a href="http://www.youtube.com/watch?v=e3McMaHvlBY&feature=PlayList&p=CA101D6A85FE9D4B&index=3">怎么开发一个扩展（英文）</a>
   </li>
 </ul>
       </div>
