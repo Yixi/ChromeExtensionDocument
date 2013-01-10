@@ -1,475 +1,439 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="stable/static/css/site.css" rel="stylesheet" type="text/css">
     <link href="stable/static/css/print.css" rel="stylesheet" type="text/css" media="print">
     <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
     <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
-    <title>Tutorial: Migrate to Manifest V2 - chrome插件中文开发文档(非官方)</title>
-  </head>
-  <body>
+    <title>教程：迁移的清单文件版本2 - chrome插件中文开发文档(非官方)</title>
+</head>
+<body>
     <a id="top"></a>
     <div id="header">{Header content}</div>
     <a id="gc-topnav-anchor"></a>
     <div id="gc-topnav">
-      <h1>Google Chrome Extensions</h1>
-      <ul id="home" class="gc-topnav-tabs">
-        <li id="home_link">
-          <a href="index.html" title="Google Chrome Extensions home page"><div>Home</div></a>
-        </li>
-        <li id="docs_link">
-          <a href="docs.html" title="Official Google Chrome Extensions documentation"><div>Docs</div></a>
-        </li>
-        <li id="faq_link">
-          <a href="faq.html" title="Answers to frequently asked questions about Google Chrome Extensions"><div>FAQ</div></a>
-        </li>
-        <li id="samples_link">
-          <a href="samples.html" title="Sample Extensions (with source code)"><div>Samples</div></a>
-        </li>
-        <li id="group_link">
-          <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions" title="Google Chrome Extensions developer forum"><div>Group</div></a>
-        </li>
-        <li id="so_link">
-          <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension" title="[google-chrome-extension] tag on Stack Overflow"><div>Questions?</div></a>
-        </li>
-      </ul>
+        <h1>Google Chrome Extensions</h1>
+        <ul id="home" class="gc-topnav-tabs">
+            <li id="home_link">
+                <a href="index.html" title="Google Chrome Extensions home page">
+                    <div>Home</div>
+                </a>
+            </li>
+            <li id="docs_link">
+                <a href="docs.html" title="Official Google Chrome Extensions documentation">
+                    <div>Docs</div>
+                </a>
+            </li>
+            <li id="faq_link">
+                <a href="faq.html" title="Answers to frequently asked questions about Google Chrome Extensions">
+                    <div>FAQ</div>
+                </a>
+            </li>
+            <li id="samples_link">
+                <a href="samples.html" title="Sample Extensions (with source code)">
+                    <div>Samples</div>
+                </a>
+            </li>
+            <li id="group_link">
+                <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions" title="Google Chrome Extensions developer forum">
+                    <div>Group</div>
+                </a>
+            </li>
+            <li id="so_link">
+                <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension" title="[google-chrome-extension] tag on Stack Overflow">
+                    <div>Questions?</div>
+                </a>
+            </li>
+        </ul>
     </div>
     <div id="gc-container">
-      <div id="gc-sidebar">
-        <ul 
-            class="level1 ">
-          <li class="level2">
-                <a href="getstarted.html" class="level2 ">Getting Started</a>
-          </li>
-          <li class="level2">
-                <a href="overview.html" class="level2 ">Overview</a>
-          </li>
-          <li class="level2">
-                <a href="whats_new.html" class="level2 ">What's New?</a>
-          </li>
-          <li class="level2">
-                <a href="devguide.html" class="level2 ">Developer's Guide</a>
-              <ul 
-                  class="level2 ">
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Browser UI</span>
-                      <div class="toggleIndicator level3"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 hidden">
-                      <li class="level4">
-                            <a href="browserAction.html" class="level4 ">Browser Actions</a>
-                      </li>
-                      <li class="level4">
-                            <a href="contextMenus.html" class="level4 ">Context Menus</a>
-                      </li>
-                      <li class="level4">
-                            <a href="notifications.html" class="level4 ">Desktop Notifications</a>
-                      </li>
-                      <li class="level4">
-                            <a href="omnibox.html" class="level4 ">Omnibox</a>
-                      </li>
-                      <li class="level4">
-                            <a href="options.html" class="level4 ">Options Pages</a>
-                      </li>
-                      <li class="level4">
-                            <a href="override.html" class="level4 ">Override Pages</a>
-                      </li>
-                      <li class="level4">
-                            <a href="pageAction.html" class="level4 ">Page Actions</a>
-                      </li>
+        <div id="gc-sidebar">
+            <ul
+                class="level1 ">
+                <li class="level2">
+                    <a href="getstarted.html" class="level2 ">入门</a>
+                </li>
+                <li class="level2">
+                    <a href="overview.html" class="level2 ">概述</a>
+                </li>
+                <li class="level2">
+                    <a href="whats_new.html" class="level2 ">新功能</a>
+                </li>
+                <li class="level2">
+                    <a href="devguide.html" class="level2 ">开发者指南</a>
+                    <ul
+                        class="level2 ">
+                        <li class="level3">
+                            <a class="button level3">
+                                <span class="level3">用户界面</span>
+                                <div class="toggleIndicator level3"></div>
+                            </a>
+                            <ul toggleable
+                                class="level3 hidden">
+                                <li class="level4">
+                                    <a href="browserAction.html" class="level4 ">浏览器按钮</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="contextMenus.html" class="level4 ">右键菜单</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="notifications.html" class="level4 ">桌面通知</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="omnibox.html" class="level4 ">多功能地址栏</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="options.html" class="level4 ">选项页面</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="override.html" class="level4 ">代替页面</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="pageAction.html" class="level4 ">页面按钮</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level3">
+                            <a class="button level3">
+                                <span class="level3">浏览器交互</span>
+                                <div class="toggleIndicator level3"></div>
+                            </a>
+                            <ul toggleable
+                                class="level3 hidden">
+                                <li class="level4">
+                                    <a href="bookmarks.html" class="level4 ">书签</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="cookies.html" class="level4 ">Cookies</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="devtools.html" class="level4 ">开发人员工具</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="events.html" class="level4 ">事件</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="history.html" class="level4 ">历史记录</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="management.html" class="level4 ">管理</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="tabs.html" class="level4 ">标签页</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="windows.html" class="level4 ">窗口</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level3">
+                            <a class="button level3">
+                                <span class="level3">实现</span>
+                                <div class="toggleIndicator level3"></div>
+                            </a>
+                            <ul toggleable
+                                class="level3 hidden">
+                                <li class="level4">
+                                    <a href="a11y.html" class="level4 ">辅助功能</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="event_pages.html" class="level4 ">事件页面</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="contentSecurityPolicy.html" class="level4 ">内容安全策略(CSP)</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="content_scripts.html" class="level4 ">内容脚本</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="xhr.html" class="level4 ">跨站XMLHttpRequest</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="i18n.html" class="level4 ">国际化</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="messaging.html" class="level4 ">消息传递</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="permissions.html" class="level4 ">可选权限</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="npapi.html" class="level4 ">NPAPI插件</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level3">
+                            <a class="button level3">
+                                <span class="level3">完成</span>
+                                <div class="toggleIndicator level3"></div>
+                            </a>
+                            <ul toggleable
+                                class="level3 hidden">
+                                <li class="level4">
+                                    <a href="hosting.html" class="level4 ">托管</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="external_extensions.html" class="level4 ">其他部署方案</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Browser Interaction</span>
-                      <div class="toggleIndicator level3"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 hidden">
-                      <li class="level4">
-                            <a href="bookmarks.html" class="level4 ">Bookmarks</a>
-                      </li>
-                      <li class="level4">
-                            <a href="cookies.html" class="level4 ">Cookies</a>
-                      </li>
-                      <li class="level4">
-                            <a href="devtools.html" class="level4 ">Developer Tools</a>
-                      </li>
-                      <li class="level4">
-                            <a href="events.html" class="level4 ">Events</a>
-                      </li>
-                      <li class="level4">
-                            <a href="history.html" class="level4 ">History</a>
-                      </li>
-                      <li class="level4">
-                            <a href="management.html" class="level4 ">Management</a>
-                      </li>
-                      <li class="level4">
-                            <a href="tabs.html" class="level4 ">Tabs</a>
-                      </li>
-                      <li class="level4">
-                            <a href="windows.html" class="level4 ">Windows</a>
-                      </li>
+                <li class="level2">
+                    <a href="tutorials.html" class="level2 ">教程</a>
+                    <ul
+                        class="level2 ">
+                        <li class="level3">
+                            <a href="tut_migration_to_manifest_v2.html" class="level3 ">清单文件V2</a>
+                        </li>
+                        <li class="level3">
+                            <a href="tut_debugging.html" class="level3 ">调试</a>
+                        </li>
+                        <li class="level3">
+                            <a href="tut_analytics.html" class="level3 ">Google Analytics(分析)</a>
+                        </li>
+                        <li class="level3">
+                            <a href="tut_oauth.html" class="level3 ">OAuth</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Implementation</span>
-                      <div class="toggleIndicator level3"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 hidden">
-                      <li class="level4">
-                            <a href="a11y.html" class="level4 ">Accessibility</a>
-                      </li>
-                      <li class="level4">
-                            <a href="event_pages.html" class="level4 ">Event Pages</a>
-                      </li>
-                      <li class="level4">
-                            <a href="contentSecurityPolicy.html" class="level4 ">Content Security Policy</a>
-                      </li>
-                      <li class="level4">
-                            <a href="content_scripts.html" class="level4 ">Content Scripts</a>
-                      </li>
-                      <li class="level4">
-                            <a href="xhr.html" class="level4 ">Cross-Origin XHR</a>
-                      </li>
-                      <li class="level4">
-                            <a href="i18n.html" class="level4 ">Internationalization</a>
-                      </li>
-                      <li class="level4">
-                            <a href="messaging.html" class="level4 ">Message Passing</a>
-                      </li>
-                      <li class="level4">
-                            <a href="permissions.html" class="level4 ">Optional Permissions</a>
-                      </li>
-                      <li class="level4">
-                            <a href="npapi.html" class="level4 ">NPAPI Plugins</a>
-                      </li>
+                <li class="level2">
+                    <span class="level2">参考</span>
+                    <ul
+                        class="level2 ">
+                        <li class="level3">
+                            <a class="button level3">
+                                <span class="level3">格式</span>
+                                <div class="toggleIndicator level3"></div>
+                            </a>
+                            <ul toggleable
+                                class="level3 hidden">
+                                <li class="level4">
+                                    <a href="manifest.html" class="level4 ">清单文件</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="match_patterns.html" class="level4 ">匹配表达式</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level3">
+                            <a href="permission_warnings.html" class="level3 ">权限警告</a>
+                        </li>
+                        <li class="level3">
+                            <a href="api_index.html" class="level3 ">chrome.* APIs</a>
+                        </li>
+                        <li class="level3">
+                            <a href="api_other.html" class="level3 ">其他APIs</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Finishing</span>
-                      <div class="toggleIndicator level3"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 hidden">
-                      <li class="level4">
-                            <a href="hosting.html" class="level4 ">Hosting</a>
-                      </li>
-                      <li class="level4">
-                            <a href="external_extensions.html" class="level4 ">Other Deployment Options</a>
-                      </li>
+                <li class="level2">
+                    <span class="level2">更多</span>
+                    <ul
+                        class="level2 ">
+                        <li class="level3">
+                            <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">chrome商店</a>
+                        </li>
+                        <li class="level3">
+                            <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">托管应用程序</a>
+                        </li>
+                        <li class="level3">
+                            <a href="themes.html" class="level3 ">主题</a>
+                        </li>
                     </ul>
                 </li>
-              </ul>
-          </li>
-          <li class="level2">
-                <a href="tutorials.html" class="level2 ">Tutorials</a>
-              <ul 
-                  class="level2 ">
-                <li class="level3">
-                      <a  class="level3 selected">Manifest V2</a>
-                </li>
-                <li class="level3">
-                      <a href="tut_debugging.html" class="level3 ">Debugging</a>
-                </li>
-                <li class="level3">
-                      <a href="tut_analytics.html" class="level3 ">Google Analytics</a>
-                </li>
-                <li class="level3">
-                      <a href="tut_oauth.html" class="level3 ">OAuth</a>
-                </li>
-              </ul>
-          </li>
-          <li class="level2">
-                <span class="level2">Reference</span>
-              <ul 
-                  class="level2 ">
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Formats</span>
-                      <div class="toggleIndicator level3"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 hidden">
-                      <li class="level4">
-                            <a href="manifest.html" class="level4 ">Manifest Files</a>
-                      </li>
-                      <li class="level4">
-                            <a href="match_patterns.html" class="level4 ">Match Patterns</a>
-                      </li>
-                    </ul>
-                </li>
-                <li class="level3">
-                      <a href="permission_warnings.html" class="level3 ">Permission Warnings</a>
-                </li>
-                <li class="level3">
-                      <a href="api_index.html" class="level3 ">chrome.* APIs</a>
-                </li>
-                <li class="level3">
-                      <a href="api_other.html" class="level3 ">Other APIs</a>
-                </li>
-              </ul>
-          </li>
-          <li class="level2">
-                <span class="level2">More</span>
-              <ul 
-                  class="level2 ">
-                <li class="level3">
-                      <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">Chrome Web Store</a>
-                </li>
-                <li class="level3">
-                      <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">Hosted Apps</a>
-                </li>
-                <li class="level3">
-                      <a href="themes.html" class="level3 ">Themes</a>
-                </li>
-              </ul>
-          </li>
-        </ul>
-      </div>
-      <div id="gc-pagecontent">
-        <h1 class="page_title">Tutorial: Migrate to Manifest V2</h1>
-        <div id="toc">
-          <h2>Contents</h2>
-          <ol>
-            <li>
-              <a href=#api-checklist>API changes checklist</a>
-            </li>
-            <li>
-              <a href=#security-checklist>Security changes checklist</a>
-            </li>
-            <li>
-              <a href=#api-summary>Summary of API changes</a>
-              <ol>
-                <li><a href=#browser_actions>Changes to browser actions</a></li><li><a href=#page_actions>Changes to page actions</a></li><li><a href=#removed_and_changed>Removed and changed APIs</a></li>
-              </ol>
-            </li>
-            <li>
-              <a href=#security-summary>Summary of security changes</a>
-              <ol>
-                <li><a href=#inline_scripts>Inline scripts and event handlers disallowed</a></li><li><a href=#embedding>Embedding content</a></li><li><a href=#using>Using dynamic script evaluation</a></li>
-              </ol>
-            </li>
-            <li>
-              <a href=#further-reading>Further reading</a>
-            </li>
-          </ol>
+            </ul>
         </div>
+        <div id="gc-pagecontent">
+            <h1 class="page_title">教程：迁移的清单文件版本2</h1>
+            <div id="toc">
+                <h2>内容</h2>
+                <ol>
+                    <li>
+                        <a href="#api-checklist">API更改清单</a>
+                    </li>
+                    <li>
+                        <a href="#security-checklist">安全性更改清单</a>
+                    </li>
+                    <li>
+                        <a href="#api-summary">API更改摘要</a>
+                        <ol>
+                            <li><a href="#browser_actions">对浏览器按钮的更改</a></li>
+                            <li><a href="#page_actions">对页面按钮的更改</a></li>
+                            <li><a href="#removed_and_changed">已移除与已更改的API</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#security-summary">安全性更改摘要</a>
+                        <ol>
+                            <li><a href="#inline_scripts">禁止使用内嵌脚本和事件处理器</a></li>
+                            <li><a href="#embedding">嵌入内容</a></li>
+                            <li><a href="#using">使用动态脚本求值</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#further-reading">进一步的阅读</a>
+                    </li>
+                </ol>
+            </div>
 
 
 
-<p>
-Manifest version 1 was deprecated in Chrome 18,
-and support will be phased out according to the
-<a href="manifestVersion.html">manifest version 1 support schedule</a>.
-The changes from version 1 to version 2
-fall under two broad categories:
-API changes and Security changes. 
-</p>
+            <p>
+                清单文件版本1在Chrome 18中弃用，对它的支持将根据
+                <a href="manifestVersion.html">清单文件版本1支持计划</a>逐渐减少。
+从版本1到版本2的更改分为两大类：API更改和安全性更改。
+            </p>
 
-<p>
-This document provides checklists for migrating your Chrome extensions
-from manifest version 1 to version 2,
-followed by more detailed summaries of what these changes mean and why they were made.
-</p>
+            <p>
+                该文档提供了将您的Chrome扩展程序从清单文件版本1迁移到版本2所需要做的事情清单，并提供有关这些改变会带来什么以及为什么作出这些改变的更多详细摘要。
+            </p>
 
-<h2 id="api-checklist">API changes checklist</h2>
+            <h2 id="api-checklist">API更改清单</h2>
 
-<ul>
-  <li>Are you using the <code>browser_actions</code> property
-    or the <code>chrome.browserActions</code> API?</li>
-    <ul>
-      <li>Replace <code>browser_actions</code>
-        with the singular <code>browser_action</code> property.</li>
-      <li>Replace <code>chrome.browserActions</code> with
-        <code>chrome.browserAction</code>.</li>
-      <li>Replace the <code>icons</code> property with <code>default_icon</code>.</li>
-      <li>Replace the <code>name</code> property with <code>default_title</code>.</li>
-      <li>Replace the <code>popup</code> property with
-        <code>default_popup</code> (and it now must be a string).</li>
-    </ul>
-  <li>Are you using the <code>page_actions</code> property
-    or the <code>chrome.pageActions</code> API?</li>
-    <ul>
-      <li>Replace <code>page_actions</code> with <code>page_action</code>.</li>
-      <li>Replace <code>chrome.pageActions</code> with <code>chrome.pageAction</code>.</li>
-      <li>Replace the <code>icons</code> property with <code>default_icon</code>.</li>
-      <li>Replace the <code>name</code> property with <code>default_title</code>.</li>
-      <li>Replace the <code>popup</code> property with
-        <code>default_popup </code>(and it now must be a string).</li>
-    </ul>
-  <li>Are you using the <code>chrome.self</code> property?</li>
-    <ul>
-      <li>Replace with <code>chrome.extension</code>.</li>
-    </ul>
-  <li>Are you using the <code>Port.tab</code> property?</li>
-    <ul>
-      <li>Replace with <code>Port.sender</code>.</li>
-    </ul>
-  <li>Are you using the <code>chrome.extension.getTabContentses()</code>
-    or the <code>chrome.extension.getExtensionTabs()</code> APIs?</li>
-    <ul>
-      <li>Replace with <code>chrome.extension.getViews( { “type” : “tab” } )</code>.</li>
-    </ul>
-  <li>Does your extension use a background page?</li>
-    <ul>
-      <li>Replace the <code>background_page</code> property
-        with a <code>background</code> property.</li>
-      <li>Add a <code>scripts</code> or <code>page</code>
-        property that contains the code for the page.</li>
-      <li>Add a <code>persistent</code> property and set it
-        to <code>false</code> to convert your background page
-        to an <a href="event_pages.html">event page</a></li>
-    </ul>
-</ul>
+            <ul>
+                <li>您使用<code>browser_actions</code>属性或者
+  
+                    <code>chrome.browserActions</code> API 吗?</li>
+                <ul>
+                    <li>用单数形式的<code>browser_action</code>
+                        属性替换<code>browser_actions</code>。</li>
+                    <li>用<code>chrome.browserAction</code>替换
+     
+                        <code>chrome.browserActions</code>.</li>
+                    <li>用<code>default_icon</code>替换<code>icons</code>属性。</li>
+                    <li>用<code>default_title</code>替换<code>name</code>属性。</li>
+                    <li>用<code>default_popup</code>替换<code>popup</code>属性（并且现在它必须为字符串）。</li>
+                </ul>
+                <li>您使用<code>page_actions</code>属性或者<code>chrome.pageActions</code>&nbsp;API吗？</li>
+                <ul>
+                    <li>用单数形式的<code>page_action</code>属性替换<code>page_actions</code>。</li>
+                    <li>用<code>chrome.pageAction</code>替换<code>chrome.pageActions</code>。</li>
+                    <li>用<code>default_icon</code>替换<code>icons</code>属性。</li>
+                    <li>用<code>default_title</code>替换<code>name</code>属性。</li>
+                    <li>用<code>default_popup</code>替换<code>popup</code>属性（并且现在它必须为字符串）。</li>
+                </ul>
+                <li>您使用<code>chrome.self</code>属性吗？</li>
+                <ul>
+                    <li>替换为<code>chrome.extension</code>。</li>
+                </ul>
+                <li>您使用<code>Port.tab</code>属性吗？</li>
+                <ul>
+                    <li>替换为<code>Port.sender</code>。</li>
+                </ul>
+                <li>您使用<code>chrome.extension.getTabContentses()</code>或者<code>chrome.extension.getExtensionTabs()</code> API吗？</li>
+                <ul>
+                    <li>替换为<code>chrome.extension.getViews( { "type" : "tab" } )</code>。</li>
+                </ul>
+                <li>您的扩展程序使用后台页面吗？</li>
+                <ul>
+                    <li>将<code>background_page</code>属性替换为<code>background</code>属性。</li>
+                    <li>添加<code>scripts</code>或<code>page</code>属性，包含页面的代码。</li>
+                    <li>添加<code>persistent</code>属性，并将它设置为<code>false</code>，将您的后台页面转换为<a href="https://sites.google.com/site/crxdoczh/devguide/implementation/event_pages">事件页面</a>。</li>
+                </ul>
+            </ul>
 
-<h2 id="security-checklist">Security changes checklist</h2>
+            <h2 id="security-checklist">安全性更改清单</h2>
 
-<ul>
-  <li>Are you using inline script blocks in HTML pages?</li>
-    <ul>
-      <li>Remove JS code contained within &lt;script> tags
-        and place it within an external JS file.</li>
-    </ul>
-  <li>Are you using inline event handlers (like onclick, etc)?</li>
-    <ul>
-      <li>Remove them from the HTML code,
-        move them into an external JS file and
-        use <code>addEventListener()</code> instead.</li>
-    </ul>
-  <li>Does your extension inject content scripts into Web pages
-    that need to access resources (like images and scripts)
-    that are contained in the extension’s package?</li>
-    <ul>
-      <li>Define the <a href="manifest.html#web_accessible_resources">web_accessible_resources</a>
-        property and list the resources
-        (and optionally a separate Content Security Policy for those resources).</li>
-    </ul>
-  <li>Does your extension embed external Web pages?</li>
-    <ul>
-      <li>Define the <a href="manifest.html#sandbox">sandbox</a> property.</li>
-    </ul>
-  <li>Is your code or library using <code>eval()</code>, new <code>Function()</code>,
-    <code>innerHTML</code>, <code>setTimeout()</code>, or otherwise passing strings
-    of JS code that are dynamically evaluated?</li>
-    <ul>
-      <li>Use <code>JSON.parse()</code>
-        if you’re parsing JSON code into an object.</li>
-      <li>Use a CSP-friendly library,
-        for example, <a href="http://angularjs.org/">AngularJS</a>.</li>
-      <li>Create a sandbox entry in your manifest and
-        run the affected code in the sandbox,
-        using <code>postMessage()</code> to communicate
-        with the sandboxed page.</li>
-    </ul>
-  <li>Are you loading external code,
-    such as jQuery or Google Analytics?</li>
-    <ul>
-      <li>Consider downloading the library and
-        packaging it in your extension,
-        then loading it from the local package.</li>
-      <li>Whitelist the HTTPS domain that serves the resource
-        in the "content_security_policy” part of your manifest.</li>
-    </ul>
-</ul>
+            <ul>
+                <li>您在HTML页面中使用内嵌脚本块吗？</li>
+                <ul>
+                    <li>移除<code>&lt;script&gt;</code>标签内的JavaScript代码并将它放在外部的JS文件中。</li>
+                </ul>
+                <li>您使用内嵌事件处理器吗（例如<code>onclick</code>等）？</li>
+                <ul>
+                    <li>将它们从HTML代码中移除，移动至外部的JS文件，并改用<code>addEventListener()</code>。</li>
+                </ul>
+                <li>您的扩展程序会向网页中插入需要访问包含在扩展程序包内的资源（例如图片与脚本）的内容脚本吗？</li>
+                <ul>
+                    <li>定义<a href="manifest.html#web_accessible_resources">web_accessible_resources</a>
+                        属性，并列出这些资源（以及可选的单独用于这些资源的内容安全策略）。</li>
+                </ul>
+                <li>您的扩展程序嵌入外部网页吗？</li>
+                <ul>
+                    <li>定义<a href="manifest.html#sandbox">sandbox</a>属性。</li>
+                </ul>
+                <li>您的代码或库使用<code>eval()</code>、<code>new Function()</code>、<code>innerHTML</code>、<code>setTimeout()</code>或者通过其它方式传递动态求值的JavaScript代码字符串吗？</li>
+                <ul>
+                    <li>使用<code>JSON.parse()</code>如果您需要将JSON代码分析为对象。</li>
+                    <li>使用CSP（内容安全策略）友好的库，例如<a href="http://angularjs.org/">AngularJS</a>。</li>
+                    <li>在您的清单文件中创建一个沙箱项，在沙箱中运行受到影响的代码，使用<code>postMessage()</code>与受沙箱保护的页面通信。</li>
+                </ul>
+                <li>您载入外部代码，例如jQuery或Google Analytics（分析）吗？</li>
+                <ul>
+                    <li>考虑下载库文件并将它与扩展程序一起打包，并从本地包中载入。</li>
+                    <li>在清单文件的“content_security_policy”部分将托管资源的HTTPS域名加入白名单。</li>
+                </ul>
+            </ul>
 
-<h2 id="api-summary">Summary of API changes</h2>
+            <h2 id="api-summary">API更改摘要</h2>
 
-<p>
-Manifest version 2 introduces a few changes
-to the browser action and page action APIs,
-and replaces a few old APIs with newer ones.
-</p>
+            <p>
+                清单文件版本2引入了对浏览器按钮与页面按钮API的一些更改，并将少量旧的API用新的来代替。
+            </p>
 
-<h3 id="browser_actions">Changes to browser actions</h3>
+            <h3 id="browser_actions">对浏览器按钮的更改</h3>
 
-<p>
-The browser actions API introduces some naming changes:</p>
+            <p>
+                浏览器按钮API引入了某些名称更改：
+            </p>
 
-<ul>
-  <li>The <code>browser_actions</code> and
-    <code>chrome.browserActions</code> properties have been replaced
-    with their singular counterparts <code>browser_action</code>
-    and <code>chrome.browserAction</code>.</li>
-  <li>Under the old <code>browser_actions</code> property,
-    there were <code>icons</code>, <code>name</code>, and
-    <code>popup</code> properties.
-    These have been replaced with:</li>
-  <ul>
-    <li><code>default_icon</code> for the browser action badge icon</li>
-    <li><code>default_name</code> for the text that appears in the tooltip when you hover over the badge</li>
-    <li><code>default_popup</code> for the HTML page that represents the UI
-      for the browser action (and this must now be a string, it cannot be an object)</li>
-  </ul>
-</ul>
+            <ul>
+                <li><code>browser_actions</code>与<code>chrome.browserActions</code>属性已替换为它们的单数形式<code>browser_action</code>与<code>chrome.browserAction</code>。</li>
+                <li>在旧的<code>browser_actions</code>属性下，有<code>icons</code>、<code>name</code>和<code>popup</code>属性，它们已替换为：</li>
+                <ul>
+                    <li><code>default_icon</code>用于浏览器按钮的图标。</li>
+                    <li><code>default_name</code>用于您将鼠标悬停在图标上时出现在工具提示中的文字。</li>
+                    <li><code>default_popup</code>用于表示浏览器按钮用户界面的HTML网页（并且必须为字符串，不能是对象）。</li>
+                </ul>
+            </ul>
 
-<h3 id="page_actions">Changes to page actions</h3>
+            <h3 id="page_actions">对页面按钮的更改</h3>
 
-<p>Similar to the changes for browser actions,
-  the page actions API has also changed:</p>
-<ul>
-  <li>The <code>page_actions</code> and <code>chrome.pageActions</code> properties
-    have been replaced with their singular counterparts
-    <code>page_action</code> and <code>chrome.pageAction</code>.</li>
-  <li>Under the old <code>page_actions</code> property,
-    there were <code>icons</code>, <code>name</code>,
-    and <code>popup</code> properties.
-    These have been replaced with:</li>
-  <ul>
-    <li><code>default_icon</code> for the page action badge icon</li>
-    <li><code>default_name</code> for the text
-      that appears in the tooltip when you hover over the badge</li>
-    <li><code>default_popup</code> for the HTML page
-      that represents the UI for the page action
-      (and this must now be a string, it cannot be an object)</li>
-  </ul>
-</ul>
+            <p>
+                类似于浏览器按钮的更改，页面按钮API也有变化：
+            </p>
+            <ul>
+                <li><code>page_actions</code>与<code>chrome.pageActions</code>属性已替换为它们的单数形式<code>page_action</code>与<code>chrome.pageAction</code>。</li>
+                <li>在旧的<code>page_actions</code>属性下，有<code>icons</code>、<code>name</code>和<code>popup</code>属性，它们已替换为：</li>
+                <ul>
+                    <li><code>default_icon</code>用于浏览器按钮的图标。</li>
+                    <li><code>default_name</code>用于您将鼠标悬停在图标上时出现在工具提示中的文字。</li>
+                    <li><code>default_popup</code>用于表示浏览器按钮用户界面的HTML网页（并且必须为字符串，不能是对象）。</li>
+                </ul>
+            </ul>
 
-<h3 id="removed_and_changed">Removed and changed APIs</h3>
+            <h3 id="removed_and_changed">已移除与已更改的APIs</h3>
 
-<p>
-A few extension APIs have been removed and replaced with new counterparts:
-</p>
+            <p>
+                一些扩展程序API已经移除，并用对应的新API替换：
+            </p>
 
-<ul>
-  <li>The <code>background_page</code> property has been replaced
-    by <a href="background_pages.html">background</a>.</li>
-  <li>The <code>chrome.self</code> property has been removed,
-    use <code>chrome.extension</code>.</li>
-  <li>The <code>Port.tab</code> property has been replaced
-    with <code>Port.sender</code>.</li>
-  <li>The <code>chrome.extension.getTabContentses()</code> and the
-    <code>chrome.extension.getExtensionTabs()</code> APIs have been replaced
-    by <code>chrome.extension.getViews( { “type” : “tab” } )</code>.</li>
-</ul>
+            <ul>
+                <li><code>background_page</code>属性已替换为<a href="background_pages.html">background</a>。</li>
+                <li><code>chrome.self</code>属性已移除，请改用<code>chrome.extension</code>。</li>
+                <li><code>Port.tab</code>属性已替换为<code>Port.sender</code>。</li>
+                <li><code>chrome.extension.getTabContentses()</code>与<code>chrome.extension.getExtensionTabs()</code> API已替换为<code>chrome.extension.getViews( { "type" : "tab" } )</code>。</li>
+            </ul>
 
-<h2 id="security-summary">Summary of security changes</h2>
+            <h2 id="security-summary">安全性更改摘要</h2>
 
-<p>
-There are a number of security-related changes
-that accompany the move from manifest version 1 to version 2.
-Many of these changes stem from Chrome’s adoption of
-<a href="contentSecurityPolicy.html#H3-1">Content Security Policy</a>;
-you should read more about this policy to understand its implications.
-</p>
+            <p>
+                清单文件版本1到版本2的转换伴随着一系列安全性相关的更改。许多这些更改来源于Chrome浏览器对
+               
+                <a href="contentSecurityPolicy.html#H3-1">内容安全策略</a>的采用，您应该了解这一策略的更多信息来理解它带来的影响。
+            </p>
 
-<h3 id="inline_scripts">Inline scripts and event handlers disallowed</h3>
+            <h3 id="inline_scripts">禁止使用内嵌脚本和事件处理器</h3>
 
-<p>
-Due to the use of <a href="contentSecurityPolicy.html">Content Security Policy</a>,
-you can no longer use &lt;script> tags that are inline with the HTML content.
-These must be moved to external JS files.
-In addition, inline event handlers are also not supported.
-For example, suppose you had the following code in your extension:
-</p>
+            <p>
+                由于<a href="contentSecurityPolicy.html">内容安全策略</a>的使用，
+您不能继续使用HTML内容中内嵌的<code>&lt;script&gt;</code>标签，这些必须移动至外部的JS文件中去。此外，内嵌的事件处理器也不支持。例如，假设您的扩展程序中有如下代码：
+                     
+            </p>
 
-<pre>
+            <pre>
 &lt;html>
 &lt;head>
   &lt;script>
@@ -479,61 +443,51 @@ For example, suppose you had the following code in your extension:
 &lt;/html>
 </pre>
 
-<p>
-This code would cause an error at runtime.
-To fix this, move &lt;script> tag contents to external files
-and reference them with a <code>src=’path_to_file.js’</code> attribute.
-</p>
+            <p>
+                这一代码在运行时会产生错误。要修复它，请将<code>&lt;script&gt;</code>标签的内容移至外部文件，并使用<code>src=’文件路径.js’</code>属性引用它们。
+            </p>
 
-<p>
-Similarly, inline event handlers,
-which are a common occurrence and convenience feature
-used by many Web developers, will not execute.
-For example, consider common instances such as:
-</p>
+            <p>
+                类似的，常见并且许多Web开发者为方便而使用的内嵌事件处理器不会执行。例如，考虑如下常见情况：
+            </p>
 
-<pre>
+            <pre>
 &lt;body onload=”initialize()”>
 &lt;button onclick=”handleClick()” id=”button1”>
 </pre>
 
-<p>
-These will not work in manifest V2 extensions.
-Remove the inline event handlers,
-place them in your external JS file and use <code>addEventListener()</code>
-to register event handlers for them instead.
-For example, in your JS code, use:
-</p>
+            <p>
+                这些不能在清单文件版本2的扩展程序中工作。移除内嵌事件处理器，将它们放在您的外部JS文件中，并改用
+                <code>addEventListener()</code>
+                为它们注册事件处理器。例如，在您的JavaScript代码中使用：
+            </p>
 
-<pre>
+            <pre>
 window.addEventListener(“load”, initialize);
 ...
 document.getElementById(“button1”).addEventListener(“click”,handleClick);
 </pre>
 
-<p>
-This is a much cleaner way of separating
-your extension’s behavior from its user interface markup.
-</p>
+            <p>
+                这样将您的扩展程序的行为与用户界面标记分离的做法要整洁得多。
+            </p>
 
-<h3 id="embedding">Embedding content</h3>
+            <h3 id="embedding">嵌入内容</h3>
 
-<p>
-There are some scenarios where your extension might embed content
-that can be used externally or come from an external source. 
-</p>
+            <p>
+                在某些情况下，您的扩展程序可能会嵌入可以外部使用或者来自外部来源的内容：
+            </p>
 
-<p>
-<strong>Extension content in web pages:</strong><br>
-If your extension embeds resources (like images, script, CSS styles, etc)
-that are used in content scripts that are injected into web pages,
-you need to use the
-<a href="manifest.html#web_accessible_resources">web_accessible_resources</a> property
-to whitelist these resources so that external Web pages can use them:
-</p>
+            <p>
+                <strong>网页中的扩展程序内容：</strong><br>
+                如果您的扩展程序插入网页中的内容脚本嵌入资源（例如图片、脚本、CSS样式等），您需要使用
+               
+                <a href="manifest.html#web_accessible_resources">web_accessible_resources</a>
+                属性将这些资源加入白名单，这样外部网页才能使用它们：
+            </p>
 
-<pre>
-{ // manifest file
+            <pre>
+{ // 清单文件
 ...
   "<strong>web_accessible_resources</strong>": [
     "images/image1.png",
@@ -543,118 +497,96 @@ to whitelist these resources so that external Web pages can use them:
 }
 </pre>
 
-<p>
-<strong>Embedding external content:</strong><br>
-The Content Security Policy only allows local script
-and objects to loaded from your package,
-which prevents external attackers from introducing unknown code to your extension.
-However, there are times when you want to load externally served resources,
-such as jQuery or Google Analytics code.
-There are two ways to do this:
-</p>
+            <p>
+                <strong>嵌入外部内容：</strong><br>
+                内容安全策略仅允许从您的扩展程序包中载入本地脚本与对象，以免外部攻击者向您的扩展程序引入未知代码。然而，有时候您需要载入外部托管的资源，例如jQuery或Google Analytics代码。有两种方式可以实现：
+            </p>
 
-<ol>
-  <li>Download the relevant library locally (like jQuery)
-    and package it with your extension.</li>
-    <li>You can relax the CSP in a limited way by whitelisting HTTPS origins
-      in the “content_security_policy” section of your manifest.
-      To include a library like Google Analytics, this is the approach to take:
-      <pre>
-        { // manifest file
+            <ol>
+                <li>下载相关的库（例如jQuery）并将它与您的扩展程序一起打包。</li>
+                <li>您可以有限地放宽CSP（内容安全策略），在您的清单文件中“content_security_policy”部分将HTTPS来源加入白名单。要包含像Google Analytics之类的库，可以采用如下方式：
+     
+                    <pre>
+        { // 清单文件
           ...,
           "content_security_policy": "script-src 'self'
           <strong>https://ssl.google-analytics.com</strong>; object-src 'self'",
           ...
         }
-      </pre></li>
-</ol>
+      </pre>
+                </li>
+            </ol>
 
-<h3 id="using">Using dynamic script evaluation</h3>
+            <h3 id="using">使用动态脚本求值</h3>
 
-<p>
-Perhaps one of the biggest changes in the new manifest v2 scheme is
-that extensions can no longer use dynamic script evaluation techniques like
-<code>eval()</code> or new <code>Function()</code>,
-or pass strings of JS code to functions
-that will cause an <code>eval()</code> to be used,
-like <code>setTimeout()</code>.
-In addition, certain commonly used JavaScript libraries,
-such as Google Maps and certain templating libraries,
-are known to use some of these techniques.
-</p>
+            <p>也许在新的清单文件版本2架构中最大的变化之一就是扩展程序不能继续使用动态脚本求值技术，例如<code>eval</code>或<code>new Function()</code>或者将JavaScript代码字符串传递给会使用<code>eval()</code>的函数，例如<code>setTimeout()</code>。此外，已知某些常用的JavaScript库，例如Google Maps以及一些模板库，会使用这些技术。</p>
 
-<p>
-Chrome provides a sandbox for pages to run in their own origin,
-which are denied access to chrome.* APIs.
-In order to use <code>eval()</code>
-and the like under the new Content Security Policy:
-</p>
+            <p>
+                Chrome浏览器为页面提供了沙箱，用于在它们自己的来源中运行，拒绝访问chrome.* API。为了在新的内容安全策略下使用<code>eval()</code>
+                及类似技术：
+            </p>
 
-<ol>
-  <li>Create a sandbox entry in your manifest file.</li>
-  <li>In the sandbox entry,
-    list the pages you want to run in the sandbox.</li>
-  <li>Use message passing via <code>postMessage()</code>
-    to communicate with the sandboxed page.</li>
-</ol>
+            <ol>
+                <li>在您的清单文件中创建一个<code>sandbox</code>项。</li>
+                <li>在沙箱项中列出您希望在沙箱中运行的页面。</li>
+                <li>通过<code>postMessage()</code>使用消息传递来跟沙箱中的页面通信。</li>
+            </ol>
 
-<p>
-For more details on how to do this,
-see the <a href="sandboxingEval.html">Sandboxing Eval</a> documentation.
-</p>
+            <p>
+                有关如何做这些的更多详情，请参见<a href="sandboxingEval.html">受沙箱保护的eval</a>文档。
+            </p>
 
-<h2 id="further-reading">Further reading</h2>
+            <h2 id="further-reading">进一步的阅读</h2>
 
-<p>
-The changes in manifest version 2 are designed to guide developers
-toward building more secure and robustly-architected extensions and apps.
-To see a complete list of changes from manifest version 1 to version 2,
-see the <a href="manifestVersion.html">manifest file</a> documentation.
-For more information about using sandboxing to isolate unsafe code,
-read the <a href="sandboxingEval.html">sandboxing eval</a> article.
-You can learn more about Content Security Policy
-by visiting our extensions-related tutorial and a
-<a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">good introduction on HTML5Rocks</a>.
-</p>
+            <p>
+             清单文件版本2带来的更改是为了引导开发人员建立更安全、架构健壮的扩展程序和应用程序。要查看清单文件版本1至版本2的完整更改列表，请参见
+                <a href="manifestVersion.html">清单文件版本</a>文档。
+有关使用沙箱隔离不安全代码的更多信息，请阅读<a href="sandboxingEval.html">受沙箱保护的eval</a>文章。
+您可以访问我们与扩展程序相关的教程以及
+                <a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">HTML5Rocks上一个很棒的简介（英文）</a>了解有关内容安全策略的更多内容。
+            </p>
 
 
 
 
-      </div>
+        </div>
     </div>
-  </body>
-  <script>
+</body>
+<script>
     window.bootstrap = {
-      api_names: [{"name":"alarms"},{"name":"bookmarks"},{"name":"browserAction"},{"name":"browsingData"},{"name":"commands"},{"name":"contentSettings"},{"name":"contextMenus"},{"name":"cookies"},{"name":"debugger"},{"name":"declarativeWebRequest"},{"name":"devtools.inspectedWindow"},{"name":"devtools.network"},{"name":"devtools.panels"},{"name":"downloads"},{"name":"events"},{"name":"extension"},{"name":"fileBrowserHandler"},{"name":"fontSettings"},{"name":"history"},{"name":"i18n"},{"name":"idle"},{"name":"input.ime"},{"name":"management"},{"name":"omnibox"},{"name":"pageAction"},{"name":"pageCapture"},{"name":"permissions"},{"name":"privacy"},{"name":"proxy"},{"name":"runtime"},{"name":"scriptBadge"},{"name":"storage"},{"name":"tabs"},{"name":"topSites"},{"name":"tts"},{"name":"ttsEngine"},{"name":"types"},{"name":"webNavigation"},{"name":"webRequest"},{"name":"webstore"},{"last":true,"name":"windows"}].concat(
-          [{"name":"experimental.bluetooth"},{"name":"experimental.devtools.audits"},{"name":"experimental.devtools.console"},{"name":"experimental.discovery"},{"name":"experimental.identity"},{"name":"experimental.infobars"},{"name":"experimental.offscreenTabs"},{"name":"experimental.processes"},{"name":"experimental.record"},{"name":"experimental.speechInput"},{"name":"experimental.systemInfo.cpu"},{"name":"experimental.systemInfo.storage"},{"last":true,"name":"experimental.usb"}]),
-      branchInfo: {"channels":[{"path":"stable","name":"Stable"},{"path":"dev","name":"Dev"},{"path":"beta","name":"Beta"},{"path":"trunk","name":"Trunk"}],"current":"stable","showWarning":false}
+        api_names: [{ "name": "alarms" }, { "name": "bookmarks" }, { "name": "browserAction" }, { "name": "browsingData" }, { "name": "commands" }, { "name": "contentSettings" }, { "name": "contextMenus" }, { "name": "cookies" }, { "name": "debugger" }, { "name": "declarativeWebRequest" }, { "name": "devtools.inspectedWindow" }, { "name": "devtools.network" }, { "name": "devtools.panels" }, { "name": "downloads" }, { "name": "events" }, { "name": "extension" }, { "name": "fileBrowserHandler" }, { "name": "fontSettings" }, { "name": "history" }, { "name": "i18n" }, { "name": "idle" }, { "name": "input.ime" }, { "name": "management" }, { "name": "omnibox" }, { "name": "pageAction" }, { "name": "pageCapture" }, { "name": "permissions" }, { "name": "privacy" }, { "name": "proxy" }, { "name": "runtime" }, { "name": "scriptBadge" }, { "name": "storage" }, { "name": "tabs" }, { "name": "topSites" }, { "name": "tts" }, { "name": "ttsEngine" }, { "name": "types" }, { "name": "webNavigation" }, { "name": "webRequest" }, { "name": "webstore" }, { "last": true, "name": "windows" }].concat(
+            [{ "name": "experimental.bluetooth" }, { "name": "experimental.devtools.audits" }, { "name": "experimental.devtools.console" }, { "name": "experimental.discovery" }, { "name": "experimental.identity" }, { "name": "experimental.infobars" }, { "name": "experimental.offscreenTabs" }, { "name": "experimental.processes" }, { "name": "experimental.record" }, { "name": "experimental.speechInput" }, { "name": "experimental.systemInfo.cpu" }, { "name": "experimental.systemInfo.storage" }, { "last": true, "name": "experimental.usb" }]),
+        branchInfo: { "channels": [{ "path": "stable", "name": "Stable" }, { "path": "dev", "name": "Dev" }, { "path": "beta", "name": "Beta" }, { "path": "trunk", "name": "Trunk" }], "current": "stable", "showWarning": false }
     };
   </script>
-  <div id="gc-footer">
+<div id="gc-footer">
     <div class="text">
-      <p>
-        Except as otherwise <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+        <p>
+            Except as otherwise <a href="http://code.google.com/policies.html#restrictions">noted</a>,
         the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
         Attribution 3.0 License</a>, and code samples are licensed under the
-        <a rel="license" href="http://code.google.com/google_bsd_license.html">BSD License</a>.
-      </p>
-      <p>
-        ©2012 Google
-      </p>
-      <script src="stable/static/js/branch.js" type="text/javascript"></script>
-      <script src="stable/static/js/sidebar.js" type="text/javascript"></script>
-      <script src="stable/static/js/prettify.js" type="text/javascript"></script>
-      <script>
-        (function() {
-          // Auto syntax highlight all pre tags.
-          var preElements = document.getElementsByTagName('pre');
-          for (var i = 0; i < preElements.length; i++)
-            preElements[i].classList.add('prettyprint');
-          prettyPrint();
-        })();
+       
+            <a rel="license" href="http://code.google.com/google_bsd_license.html">BSD License</a>.
+     
+        </p>
+        <p>
+            ©2012 Google
+     
+        </p>
+        <script src="stable/static/js/branch.js" type="text/javascript"></script>
+        <script src="stable/static/js/sidebar.js" type="text/javascript"></script>
+        <script src="stable/static/js/prettify.js" type="text/javascript"></script>
+        <script>
+            (function () {
+                // Auto syntax highlight all pre tags.
+                var preElements = document.getElementsByTagName('pre');
+                for (var i = 0; i < preElements.length; i++)
+                    preElements[i].classList.add('prettyprint');
+                prettyPrint();
+            })();
       </script>
-      <div id="footer_cus">{Footer}<script src="http://s9.cnzz.com/stat.php?id=4928336&web_id=4928336" language="JavaScript"></script></div>
-  
+        <div id="footer_cus">{Footer}<script src="http://s9.cnzz.com/stat.php?id=4928336&web_id=4928336" language="JavaScript"></script></div>
+
     </div>
-  </div>
+</div>
 </html>
