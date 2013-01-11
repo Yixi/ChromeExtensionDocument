@@ -16,6 +16,33 @@ body {
   padding: 0;
 }
 
+/*this place use for header and footer*/
+#header {
+    color:transparent;
+}
+#header .header_info {
+    text-align: right;
+    height:45px;
+    line-height:45px;
+}
+    #header .header_info a {
+        color:red;
+    }
+        #header .header_info a:hover {
+            text-decoration:underline;
+        }
+    #header .header_info img {
+        width:100px;
+        vertical-align:middle;
+    }
+#header .clear {
+ clear:both;
+}
+
+/**/
+
+
+
 p {
   margin: 1em 0 0 0;
   color: #767676;
