@@ -234,21 +234,21 @@
         </ul>
       </div>
       <div id="gc-pagecontent">
-        <h1 class="page_title">Manifest Version</h1>
+        <h1 class="page_title">清单文件版本</h1>
         <div id="toc">
-          <h2>Contents</h2>
+          <h2>内容</h2>
           <ol>
             <li>
-              <a href=#current-version>Current Version</a>
+              <a href=#current-version>当前版本</a>
             </li>
             <li>
-              <a href=#manifest-v1-support-schedule>Manifest version 1 support schedule</a>
+              <a href=#manifest-v1-support-schedule>清单文件版本1支持计划</a>
               <ol>
-                <li><a href=#manifest-v1-m21>Chrome 21</a></li><li><a href=#manifest-v1-m23>Chrome 23</a></li><li><a href=#manifest-v1-2012q1>First Quarter 2013</a></li><li><a href=#manifest-v1-2012q2>Second Quarter 2013</a></li><li><a href=#manifest-v1-2012q3>Third Quarter 2013</a></li>
+                <li><a href=#manifest-v1-m21>Chrome 21</a></li><li><a href=#manifest-v1-m23>Chrome 23</a></li><li><a href=#manifest-v1-2012q1>2013年第一季度</a></li><li><a href=#manifest-v1-2012q2>2013年第二季度</a></li><li><a href=#manifest-v1-2012q3>2013年第三季度</a></li>
               </ol>
             </li>
             <li>
-              <a href=#manifest-v1-changes>Changes between version 1 and 2</a>
+              <a href=#manifest-v1-changes>版本1与版本2之间的改变</a>
             </li>
           </ol>
         </div>
@@ -267,19 +267,15 @@
 </style>
 
 <p>
-  Extensions, themes, and applications are simply bundles of resources, wrapped
-  up with a <a href="manifest.html"><code>manifest.json</code></a> file that
-  describes the package's contents. The format of this file is generally stable,
-  but occasionally breaking changes must be made to address important issues.
-  Developers should specify which version of the manifest specification their
-  package targets by setting a <code>manifest_version</code> key in their
-  manifests.
+  扩展程序、主题背景以及应用程序只是打包的资源，另外附带一个
+    <a href="manifest.html"><code>manifest.json</code></a>文件，描述包的内容。该文件的格式大体上是稳定的，但是偶尔需要重大更改，解决重大问题。开发人员应该在清单文件中设置
+    <code>manifest_version</code>属性，指定它们的包使用的清单文件规范版本。
 </p>
 
-<h2 id="current-version">Current Version</h2>
+<h2 id="current-version">当前版本</h2>
 
 <p>
-  Developers should currently specify
+  目前，开发人员应该指定
   <strong><code>'manifest_version': 2</code></strong>:
 </p>
 
@@ -290,207 +286,184 @@
 }</pre>
 
 <p>
-  Manifest version 1 was <em>deprecated</em> in Chrome 18, and support will
-  be phased out according to the following schedule.
+  清单文件版本1在Chrome 18及更高版本中<em>已弃用</em>，并且根据下列计划，将逐渐减少对它的支持。
 </p>
 
-<h2 id="manifest-v1-support-schedule">Manifest version 1 support schedule</h2>
+<h2 id="manifest-v1-support-schedule">清单文件版本1支持计划</h2>
 
 <div id="schedule">
 <h3 id="manifest-v1-m21">Chrome 21</h3>
-<p><em>Beta: Early July 2012;
-  Stable: Mid-August 2012</em></p>
+<p><em>Beta：2012年7月初；Stable：2012年8月中旬</em></p>
 <ul>
-  <li>The Web Store will block creation of new manifest version 1 items.
-  <li>The Web Store will allow updates to existing manifest version 1 items.
+  <li>网上应用店将不再允许创建清单文件版本为1的项目。
+  <li>网上应用店仍然允许更新现有的清单文件版本为1的项目。
 </ul>
 
 <h3 id="manifest-v1-m23">Chrome 23</h3>
-<p><em>Beta: Late September 2012;
-  Stable: Early November 2012</em></p>
+<p><em>Beta：2012年9月末；Stable：2012年11月初</em></p>
 <ul>
-  <li>The Web Store will block updates to manifest version 1 items.
-  <li>Chrome will stop packaging manifest version 1 items (or loading
-    them for development).
+  <li>网上应用店将不再允许将项目的清单文件版本更新至1。
+  <li>Chrome浏览器将不再为清单文件版本为1的项目打包（或为开发目的而载入）。
 </ul>
 
-<h3 id="manifest-v1-2012q1">First Quarter 2013</h3>
+<h3 id="manifest-v1-2012q1">2013年第一季度</h3>
 <ul>
-  <li>The Web Store will remove manifest version 1 items from the wall,
-    search results, and category pages.
-  <li>Notice emails will be sent to all developers with manifest
-    version 1 items still in the store reminding them that these
-    items will be unpublished and providing update instructions.
+  <li>网上应用店将从展区、搜索结果以及分类页面中移除清单文件版本为1的项目。
+  <li>将会向网上应用店中仍然有清单文件版本为1的项目开发人员发送通知邮件，提醒他们这些项目将不会发布，并提供更新指示。
 </ul>
 
-<h3 id="manifest-v1-2012q2">Second Quarter 2013</h3>
+<h3 id="manifest-v1-2012q2">2013年第二季度</h3>
 <ul>
-  <li>The Web Store will unpublish all manifest version 1 items.
-  <li>Final notice emails will be sent to developers with manifest
-    version 1 items still in the Web Store.
-  <li>Chrome will continue to load and run installed manifest
-    version 1 items.
+  <li>网上应用店将不再发布所有清单文件版本为1的项目。
+  <li>将会向网上应用店中仍然有清单文件版本为1的项目开发人员发送最终的通知邮件。
+  <li>Chrome浏览器仍然会继续载入和运行已安装的清单文件版本为1的项目。
 </ul>
 
-<h3 id="manifest-v1-2012q3">Third Quarter 2013</h3>
+<h3 id="manifest-v1-2012q3">2013年第三季度</h3>
 <ul>
-  <li>Chrome will stop loading or running manifest
-    version 1 items.
+  <li>Chrome浏览器将不再载入或运行清单文件版本为1的项目。
 </ul>
 </div>
 
-<h2 id="manifest-v1-changes">Changes between version 1 and 2</h2>
+<h2 id="manifest-v1-changes">版本1与版本2之间的改变</h2>
 
 <ul>
   <li>
     <p>
-      A content security policy is set to <code>`script-src 'self'
-      chrome-extension-resource:; object-src 'self'</code> by default. This has
-      a variety of impacts on developers, described at length in the
+      内容安全策略默认情况下设置为<code>`script-src 'self'
+      chrome-extension-resource:; object-src 'self'</code>。这会对开发人员产生一系列影响，在
       <a href="contentSecurityPolicy.html">
-      <code>content_security_policy</code></a> documentation.
+      <code>content_security_policy</code></a>文档中详细描述。
     </p>
   </li>
   <li>
     <p>
-      A package's resources are no longer available by default to external
-      websites (as the <code>src</code> of an image, or a <code>script</code>
-      tag). If you want a website to be able to load a resource contained in
-      your package, you'll need to explicitly whitelist it via the
+      扩展程序包的资源默认情况下不再可用于外部网站（作为图片的
+        <code>src</code>属性或者<code>script</code>
+      标签)。如果您希望网站能够载入您的扩展程序包中的资源，您需要通过
       <a href="manifest.html#web_accessible_resources">
         <code>web_accessible_resources</code>
-      </a> manifest attribute. This is particularly relevant for extensions that
-      build up an interface on a website via injected content scripts.
+      </a>清单文件属性明确将它列入白名单。这对于通过插入内容脚本在网页上建立界面的扩展程序特别有用。
     </p>
   </li>
   <li>
     <p>
-      The <code>background_page</code> property has been replaced with a
-      <code>background</code> property that contains <em>either</em> a
-      <code>scripts</code> or <code>page</code> property. Details are available
-      in the <a href="event_pages.html">Event Pages</a> documentation.
+      <code>background_page</code>属性已经由
+      <code>background</code>属性取代，它包含
+      <code>scripts</code>或<code>page</code>属性中的<em>任意一个</em>,详情在
+        <a href="event_pages.html">事件页面</a>文档中可用。
     </p>
   </li>
   <li>
-    <p>Browser action changes:</p>
+    <p>浏览器按钮的更改：</p>
     <ul>
       <li>
         <p>
-          The <code>browser_actions</code> key in the manifest, and the
-          <code>chrome.browserActions</code> API are gone. Use the singular
+          清单文件中的<code>browser_actions</code>键以及
+          <code>chrome.browserActions</code> API已经消失。请改用单数形式的
           <a href="browserAction.html">
-            <code>browser_action</code> and <code>chrome.browserAction</code>
-          </a> instead.
+            <code>browser_action</code>以及<code>chrome.browserAction</code>
+          </a>。
         </p>
       </li>
       <li>
         <p>
-          The <code>icons</code> property of <code>browser_action</code> has
-          been removed. Use <a href="browserAction.html#manifest">
-            the <code>default_icon</code> property
-          </a> or <a href="browserAction.html#method-setIcon">
-            <code>chrome.browserAction.setIcon</code>
-          </a> instead.
+          <code>browser_action</code>的<code>icons</code>属性已移除，请改用
+            <a href="browserAction.html#manifest">
+            <code>default_icon</code>属性
+          </a>或者<a href="browserAction.html#method-setIcon">
+            <code>chrome.browserAction.setIcon</code>属性
+          </a>。
         </p>
       </li>
       <li>
         <p>
-          The <code>name</code> property of <code>browser_action</code> has been
-          removed. Use <a href="browserAction.html#manifest">
-            the <code>default_title</code> property
-          </a> or <a href="browserAction.html#method-setTitle">
-            <code>chrome.browserAction.setTitle</code>
-          </a> instead.
+          <code>browser_action</code>的<code>name</code>属性已移除，请改用
+            <a href="browserAction.html#manifest">
+            <code>default_title</code>属性
+          </a>或者<a href="browserAction.html#method-setTitle">
+            <code>chrome.browserAction.setTitle</code>属性
+          </a>。
         </p>
       </li>
       <li>
         <p>
-          The <code>popup</code> property of <code>browser_action</code> has
-          been removed. Use <a href="browserAction.html#manifest">
-            the <code>default_popup</code> property
-          </a> or <a href="browserAction.html#method-setPopup">
-            <code>chrome.browserAction.setPopup</code>
-          </a> instead.
+          <code>browser_action</code>的<code>popup</code>属性已移除，请改用
+            <a href="browserAction.html#manifest">
+            <code>default_popup</code>属性
+          </a>或者<a href="browserAction.html#method-setPopup">
+            <code>chrome.browserAction.setPopup</code>属性
+          </a>。
         </p>
       </li>
-      <li>
-        <p>
-          The <code>default_popup</code> property of <code>browser_action</code>
-          can no longer be specified as an object. It must be a string.
-        </p>
-      </li>
+      <li><code>browser_action</code>的<code>default_popup</code>属性不能再指定为对象，而必须为字符串。</li>
     </ul>
   </li>
   <li>
-    <p>Page action changes:</p>
+    <p>页面按钮的更改：</p>
     <ul>
       <li>
         <p>
-          The <code>page_actions</code> key in the manifest, and the
-          <code>chrome.pageActions</code> API are gone. Use the singular
+          清单文件中的<code>page_actions</code>属性以及
+          <code>chrome.pageActions</code> API也将消失。 请改用单数形式的
           <a href="pageAction.html">
-            <code>page_action</code> and <code>chrome.pageAction</code>
-          </a> instead.
+            <code>page_action</code>以及<code>chrome.pageAction</code>
+          </a>。
         </p>
       </li>
       <li>
         <p>
-          The <code>icons</code> property of <code>page_action</code> has been
-          removed. Use <a href="pageAction.html#manifest">
-            the <code>default_icon</code> property
-          </a> or <a href="pageAction.html#method-setIcon">
-            <code>chrome.pageAction.setIcon</code>
-          </a> instead.
+         <code>page_action</code>的<code>icons</code>属性已移除，请改用
+            <a href="pageAction.html#manifest">
+            <code>default_icon</code>属性
+          </a>或者<a href="pageAction.html#method-setIcon">
+            <code>chrome.pageAction.setIcon</code>属性
+          </a>。
         </p>
       </li>
       <li>
         <p>
-          The <code>name</code> property of <code>page_action</code> has been
-          removed. Use <a href="pageAction.html#manifest">
-            the <code>default_title</code> property
-          </a> or <a href="pageAction.html#method-setTitle">
-            <code>chrome.pageAction.setTitle</code>
-          </a> instead.
+          <code>page_action</code>的<code>name</code>属性已移除，请改用
+            <a href="pageAction.html#manifest">
+            <code>default_title</code>属性
+          </a>或者<a href="pageAction.html#method-setTitle">
+            <code>chrome.pageAction.setTitle</code>属性
+          </a>。
         </p>
       </li>
       <li>
         <p>
-          The <code>popup</code> property of <code>page_action</code> has been
-          removed. Use <a href="pageAction.html#manifest">
-            the <code>default_popup</code> property
-          </a> or <a href="pageAction.html#method-setPopup">
-            <code>chrome.pageAction.setPopup</code>
-          </a> instead.
+          <code>page_action</code>的<code>popup</code>属性已移除，请改用
+            <a href="pageAction.html#manifest">
+            <code>default_popup</code>属性
+          </a>或者<a href="pageAction.html#method-setPopup">
+            <code>chrome.pageAction.setPopup</code>属性
+          </a>。
         </p>
       </li>
+      <li><code>page_action</code>中的<code>default_popup</code>属性不能再指定为对象，而必须为字符串。</li>
       <li>
         <p>
-          The <code>default_popup</code> property of <code>page_action</code>
-          can no longer be specified as an object. It must be a string.
-        </p>
-      </li>
-      <li>
-        <p>
-          The <code>chrome.self</code> API has been removed. Use
-          <a href="extension.html"><code>chrome.extension</code></a> instead.
+          <code>chrome.self</code> API已移除，请改用
+          <a href="extension.html"><code>chrome.extension</code></a>。
         </p>
       </li>
     </ul>
   </li>
   <li>
     <p>
-      <code>chrome.extension.getTabContentses</code> (!!!) and
-      <code>chrome.extension.getExtensionTabs</code> are gone. Use
+      <code>chrome.extension.getTabContentses</code> (!!!) 和
+      <code>chrome.extension.getExtensionTabs</code> 将消失，请改用
       <a href="extension.html#method-getViews">
         <code>chrome.extension.getViews({ "type": "tab" })</code>
-      </a> instead.
+      </a>。
     </p>
   </li>
   <li>
     <p>
-      <code>Port.tab</code> is gone. Use
+      <code>Port.tab</code>将消失，请改用
       <a href="extension.html#type-Port"><code>Port.sender</code></a>
-      instead.
+      。
     </p>
   </li>
 </ul>
