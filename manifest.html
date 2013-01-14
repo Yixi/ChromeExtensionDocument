@@ -1,293 +1,318 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="stable/static/css/site.css" rel="stylesheet" type="text/css">
     <link href="stable/static/css/print.css" rel="stylesheet" type="text/css" media="print">
     <link href="stable/static/css/prettify.css" rel="stylesheet" type="text/css">
     <link href="//www.google.com/images/icons/product/chrome-16.png" rel="icon" type="image/ico">
-    <title>Formats: Manifest Files - chrome插件中文开发文档(非官方)</title>
-  </head>
-  <body>
+    <title>格式:清单文件 - chrome插件中文开发文档(非官方)</title>
+</head>
+<body>
     <a id="top"></a>
     <div id="header">{Header content}</div>
     <a id="gc-topnav-anchor"></a>
     <div id="gc-topnav">
-      <h1>Google Chrome Extensions</h1>
-      <ul id="home" class="gc-topnav-tabs">
-        <li id="home_link">
-          <a href="index.html" title="Google Chrome Extensions home page"><div>Home</div></a>
-        </li>
-        <li id="docs_link">
-          <a href="docs.html" title="Official Google Chrome Extensions documentation"><div>Docs</div></a>
-        </li>
-        <li id="faq_link">
-          <a href="faq.html" title="Answers to frequently asked questions about Google Chrome Extensions"><div>FAQ</div></a>
-        </li>
-        <li id="samples_link">
-          <a href="samples.html" title="Sample Extensions (with source code)"><div>Samples</div></a>
-        </li>
-        <li id="group_link">
-          <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions" title="Google Chrome Extensions developer forum"><div>Group</div></a>
-        </li>
-        <li id="so_link">
-          <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension" title="[google-chrome-extension] tag on Stack Overflow"><div>Questions?</div></a>
-        </li>
-      </ul>
+        <h1>chrome插件中文开发文档(非官方)</h1>
+        <ul id="home" class="gc-topnav-tabs">
+            <li id="home_link">
+                <a href="index.html" title="Google Chrome Extensions home page">
+                    <div>主页</div>
+                </a>
+            </li>
+            <li id="docs_link">
+                <a href="docs.html" title="Official Google Chrome Extensions documentation">
+                    <div>文档</div>
+                </a>
+            </li>
+            <li id="faq_link">
+                <a href="faq.html" title="Answers to frequently asked questions about Google Chrome Extensions">
+                    <div>常见问题</div>
+                </a>
+            </li>
+            <li id="samples_link">
+                <a href="samples.html" title="Sample Extensions (with source code)">
+                    <div>示例</div>
+                </a>
+            </li>
+            <li id="group_link">
+                <a href="http://groups.google.com/a/chromium.org/group/chromium-extensions" title="Google Chrome Extensions developer forum">
+                    <div>google群组(英文)</div>
+                </a>
+            </li>
+            <li id="so_link">
+                <a href="http://stackoverflow.com/questions/tagged/google-chrome-extension" title="[google-chrome-extension] tag on Stack Overflow">
+                    <div>还有问题?(英文)</div>
+                </a>
+            </li>
+        </ul>
     </div>
     <div id="gc-container">
-      <div id="gc-sidebar">
-        <ul 
-            class="level1 ">
-          <li class="level2">
-                <a href="getstarted.html" class="level2 ">Getting Started</a>
-          </li>
-          <li class="level2">
-                <a href="overview.html" class="level2 ">Overview</a>
-          </li>
-          <li class="level2">
-                <a href="whats_new.html" class="level2 ">What's New?</a>
-          </li>
-          <li class="level2">
-                <a href="devguide.html" class="level2 ">Developer's Guide</a>
-              <ul 
-                  class="level2 ">
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Browser UI</span>
-                      <div class="toggleIndicator level3"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 hidden">
-                      <li class="level4">
-                            <a href="browserAction.html" class="level4 ">Browser Actions</a>
-                      </li>
-                      <li class="level4">
-                            <a href="contextMenus.html" class="level4 ">Context Menus</a>
-                      </li>
-                      <li class="level4">
-                            <a href="notifications.html" class="level4 ">Desktop Notifications</a>
-                      </li>
-                      <li class="level4">
-                            <a href="omnibox.html" class="level4 ">Omnibox</a>
-                      </li>
-                      <li class="level4">
-                            <a href="options.html" class="level4 ">Options Pages</a>
-                      </li>
-                      <li class="level4">
-                            <a href="override.html" class="level4 ">Override Pages</a>
-                      </li>
-                      <li class="level4">
-                            <a href="pageAction.html" class="level4 ">Page Actions</a>
-                      </li>
+        <div id="gc-sidebar">
+            <ul
+                class="level1 ">
+                <li class="level2">
+                    <a href="getstarted.html" class="level2 ">入门</a>
+                </li>
+                <li class="level2">
+                    <a href="overview.html" class="level2 ">概述</a>
+                </li>
+                <li class="level2">
+                    <a href="whats_new.html" class="level2 ">新功能</a>
+                </li>
+                <li class="level2">
+                    <a href="devguide.html" class="level2 ">开发者指南</a>
+                    <ul
+                        class="level2 ">
+                        <li class="level3">
+                            <a class="button level3">
+                                <span class="level3">用户界面</span>
+                                <div class="toggleIndicator level3"></div>
+                            </a>
+                            <ul toggleable
+                                class="level3 hidden">
+                                <li class="level4">
+                                    <a href="browserAction.html" class="level4 ">浏览器按钮</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="contextMenus.html" class="level4 ">右键菜单</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="notifications.html" class="level4 ">桌面通知</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="omnibox.html" class="level4 ">多功能地址栏</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="options.html" class="level4 ">选项页面</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="override.html" class="level4 ">代替页面</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="pageAction.html" class="level4 ">页面按钮</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level3">
+                            <a class="button level3">
+                                <span class="level3">浏览器交互</span>
+                                <div class="toggleIndicator level3"></div>
+                            </a>
+                            <ul toggleable
+                                class="level3 hidden">
+                                <li class="level4">
+                                    <a href="bookmarks.html" class="level4 ">书签</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="cookies.html" class="level4 ">Cookies</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="devtools.html" class="level4 ">开发人员工具</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="events.html" class="level4 ">事件</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="history.html" class="level4 ">历史记录</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="management.html" class="level4 ">管理</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="tabs.html" class="level4 ">标签页</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="windows.html" class="level4 ">窗口</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level3">
+                            <a class="button level3">
+                                <span class="level3">实现</span>
+                                <div class="toggleIndicator level3"></div>
+                            </a>
+                            <ul toggleable
+                                class="level3 hidden">
+                                <li class="level4">
+                                    <a href="a11y.html" class="level4 ">辅助功能</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="event_pages.html" class="level4 ">事件页面</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="contentSecurityPolicy.html" class="level4 ">内容安全策略(CSP)</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="content_scripts.html" class="level4 ">内容脚本</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="xhr.html" class="level4 ">跨站XMLHttpRequest</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="i18n.html" class="level4 ">国际化</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="messaging.html" class="level4 ">消息传递</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="permissions.html" class="level4 ">可选权限</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="npapi.html" class="level4 ">NPAPI插件</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level3">
+                            <a class="button level3">
+                                <span class="level3">完成</span>
+                                <div class="toggleIndicator level3"></div>
+                            </a>
+                            <ul toggleable
+                                class="level3 hidden">
+                                <li class="level4">
+                                    <a href="hosting.html" class="level4 ">托管</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="external_extensions.html" class="level4 ">其他部署方案</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Browser Interaction</span>
-                      <div class="toggleIndicator level3"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 hidden">
-                      <li class="level4">
-                            <a href="bookmarks.html" class="level4 ">Bookmarks</a>
-                      </li>
-                      <li class="level4">
-                            <a href="cookies.html" class="level4 ">Cookies</a>
-                      </li>
-                      <li class="level4">
-                            <a href="devtools.html" class="level4 ">Developer Tools</a>
-                      </li>
-                      <li class="level4">
-                            <a href="events.html" class="level4 ">Events</a>
-                      </li>
-                      <li class="level4">
-                            <a href="history.html" class="level4 ">History</a>
-                      </li>
-                      <li class="level4">
-                            <a href="management.html" class="level4 ">Management</a>
-                      </li>
-                      <li class="level4">
-                            <a href="tabs.html" class="level4 ">Tabs</a>
-                      </li>
-                      <li class="level4">
-                            <a href="windows.html" class="level4 ">Windows</a>
-                      </li>
+                <li class="level2">
+                    <a href="tutorials.html" class="level2 ">教程</a>
+                    <ul
+                        class="level2 ">
+                        <li class="level3">
+                            <a href="tut_migration_to_manifest_v2.html" class="level3 ">清单文件V2</a>
+                        </li>
+                        <li class="level3">
+                            <a href="tut_debugging.html" class="level3 ">调试</a>
+                        </li>
+                        <li class="level3">
+                            <a href="tut_analytics.html" class="level3 ">Google Analytics(分析)</a>
+                        </li>
+                        <li class="level3">
+                            <a href="tut_oauth.html" class="level3 ">OAuth</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Implementation</span>
-                      <div class="toggleIndicator level3"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 hidden">
-                      <li class="level4">
-                            <a href="a11y.html" class="level4 ">Accessibility</a>
-                      </li>
-                      <li class="level4">
-                            <a href="event_pages.html" class="level4 ">Event Pages</a>
-                      </li>
-                      <li class="level4">
-                            <a href="contentSecurityPolicy.html" class="level4 ">Content Security Policy</a>
-                      </li>
-                      <li class="level4">
-                            <a href="content_scripts.html" class="level4 ">Content Scripts</a>
-                      </li>
-                      <li class="level4">
-                            <a href="xhr.html" class="level4 ">Cross-Origin XHR</a>
-                      </li>
-                      <li class="level4">
-                            <a href="i18n.html" class="level4 ">Internationalization</a>
-                      </li>
-                      <li class="level4">
-                            <a href="messaging.html" class="level4 ">Message Passing</a>
-                      </li>
-                      <li class="level4">
-                            <a href="permissions.html" class="level4 ">Optional Permissions</a>
-                      </li>
-                      <li class="level4">
-                            <a href="npapi.html" class="level4 ">NPAPI Plugins</a>
-                      </li>
+                <li class="level2">
+                    <span class="level2">参考</span>
+                    <ul
+                        class="level2 ">
+                        <li class="level3">
+                            <a class="button level3">
+                                <span class="level3">格式</span>
+                                <div class="toggleIndicator level3"></div>
+                            </a>
+                            <ul toggleable
+                                class="level3 hidden">
+                                <li class="level4">
+                                    <a href="manifest.html" class="level4 ">清单文件</a>
+                                </li>
+                                <li class="level4">
+                                    <a href="match_patterns.html" class="level4 ">匹配表达式</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level3">
+                            <a href="permission_warnings.html" class="level3 ">权限警告</a>
+                        </li>
+                        <li class="level3">
+                            <a href="api_index.html" class="level3 ">chrome.* APIs</a>
+                        </li>
+                        <li class="level3">
+                            <a href="api_other.html" class="level3 ">其他APIs</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Finishing</span>
-                      <div class="toggleIndicator level3"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 hidden">
-                      <li class="level4">
-                            <a href="hosting.html" class="level4 ">Hosting</a>
-                      </li>
-                      <li class="level4">
-                            <a href="external_extensions.html" class="level4 ">Other Deployment Options</a>
-                      </li>
+                <li class="level2">
+                    <span class="level2">更多</span>
+                    <ul
+                        class="level2 ">
+                        <li class="level3">
+                            <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">chrome商店</a>
+                        </li>
+                        <li class="level3">
+                            <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">托管应用程序</a>
+                        </li>
+                        <li class="level3">
+                            <a href="themes.html" class="level3 ">主题</a>
+                        </li>
                     </ul>
                 </li>
-              </ul>
-          </li>
-          <li class="level2">
-                <a href="tutorials.html" class="level2 ">Tutorials</a>
-              <ul 
-                  class="level2 ">
-                <li class="level3">
-                      <a href="tut_migration_to_manifest_v2.html" class="level3 ">Manifest V2</a>
-                </li>
-                <li class="level3">
-                      <a href="tut_debugging.html" class="level3 ">Debugging</a>
-                </li>
-                <li class="level3">
-                      <a href="tut_analytics.html" class="level3 ">Google Analytics</a>
-                </li>
-                <li class="level3">
-                      <a href="tut_oauth.html" class="level3 ">OAuth</a>
-                </li>
-              </ul>
-          </li>
-          <li class="level2">
-                <span class="level2">Reference</span>
-              <ul 
-                  class="level2 ">
-                <li class="level3">
-                    <a class="button level3">
-                      <span class="level3">Formats</span>
-                      <div class="toggleIndicator level3 toggled"></div>
-                    </a>
-                    <ul toggleable
-                        class="level3 ">
-                      <li class="level4">
-                            <a  class="level4 selected">Manifest Files</a>
-                      </li>
-                      <li class="level4">
-                            <a href="match_patterns.html" class="level4 ">Match Patterns</a>
-                      </li>
-                    </ul>
-                </li>
-                <li class="level3">
-                      <a href="permission_warnings.html" class="level3 ">Permission Warnings</a>
-                </li>
-                <li class="level3">
-                      <a href="api_index.html" class="level3 ">chrome.* APIs</a>
-                </li>
-                <li class="level3">
-                      <a href="api_other.html" class="level3 ">Other APIs</a>
-                </li>
-              </ul>
-          </li>
-          <li class="level2">
-                <span class="level2">More</span>
-              <ul 
-                  class="level2 ">
-                <li class="level3">
-                      <a href="http://code.google.com/chrome/webstore/docs/index.html" class="level3 ">Chrome Web Store</a>
-                </li>
-                <li class="level3">
-                      <a href="http://code.google.com/chrome/apps/docs/developers_guide.html" class="level3 ">Hosted Apps</a>
-                </li>
-                <li class="level3">
-                      <a href="themes.html" class="level3 ">Themes</a>
-                </li>
-              </ul>
-          </li>
-        </ul>
-      </div>
-      <div id="gc-pagecontent">
-        <h1 class="page_title">Formats: Manifest Files</h1>
-        <div id="toc">
-          <h2>Contents</h2>
-          <ol>
-            <li>
-              <a href=#overview> Field summary </a>
-            </li>
-            <li>
-              <a href=#field_details>Field details</a>
-              <ol>
-                <li><a href=#app>app</a></li><li><a href=#default_locale>default_locale</a></li><li><a href=#description>description</a></li><li><a href=#homepage_url>homepage_url</a></li><li><a href=#icons>icons</a></li><li><a href=#incognito>incognito</a></li><li><a href=#intents>intents</a></li><li><a href=#key>key</a></li><li><a href=#minimum_chrome_version>minimum_chrome_version</a></li><li><a href=#name>name</a></li><li><a href=#nacl_modules>nacl_modules</a></li><li><a href=#offline_enabled>offline_enabled</a></li><li><a href=#permissions>permissions</a></li><li><a href=#requirements>requirements</a></li><li><a href=#version>version</a></li><li><a href=#manifest_version>manifest_version</a></li><li><a href=#web_accessible_resources>web_accessible_resources</a></li><li><a href=#sandbox>sandbox</a></li>
-              </ol>
-            </li>
-          </ol>
+            </ul>
         </div>
+        <div id="gc-pagecontent">
+            <h1 class="page_title">格式: 清单文件</h1>
+            <div id="toc">
+                <h2>内容</h2>
+                <ol>
+                    <li>
+                        <a href="#overview">字段概述 </a>
+                    </li>
+                    <li>
+                        <a href="#field_details">字段详情</a>
+                        <ol>
+                            <li><a href="#app">app</a></li>
+                            <li><a href="#default_locale">default_locale</a></li>
+                            <li><a href="#description">description</a></li>
+                            <li><a href="#homepage_url">homepage_url</a></li>
+                            <li><a href="#icons">icons</a></li>
+                            <li><a href="#incognito">incognito</a></li>
+                            <li><a href="#intents">intents</a></li>
+                            <li><a href="#key">key</a></li>
+                            <li><a href="#minimum_chrome_version">minimum_chrome_version</a></li>
+                            <li><a href="#name">name</a></li>
+                            <li><a href="#nacl_modules">nacl_modules</a></li>
+                            <li><a href="#offline_enabled">offline_enabled</a></li>
+                            <li><a href="#permissions">permissions</a></li>
+                            <li><a href="#requirements">requirements</a></li>
+                            <li><a href="#version">version</a></li>
+                            <li><a href="#manifest_version">manifest_version</a></li>
+                            <li><a href="#web_accessible_resources">web_accessible_resources</a></li>
+                            <li><a href="#sandbox">sandbox</a></li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
 
 
 
 
-<p>
-Every extension, installable web app, and theme has a
-<a href="http://www.json.org">JSON</a>-formatted manifest file,
-named <code>manifest.json</code>,
-that provides important information.
-</p>
+            <p>
+                每一个扩展程序、可安装的网络应用程序以及主题背景都有一个
+                <a href="http://www.json.org">JSON</a>格式的清单文件，名为<code>manifest.json</code>,
+提供重要信息。
+            </p>
 
-<h2 id="overview"> Field summary </h2>
+            <h2 id="overview">字段概述 </h2>
 
-<p>
-The following code shows the supported manifest fields,
-with links to the page that discusses each field.
-The only fields that are always required
-are <b>name</b> and <b>version</b>.
-</p>
+            <p>
+                如下代码展示了支持的清单文件字段，以及讨论每一个字段的链接。只有 <b>name</b> 和 <b>version</b>字段是必需的。
+            </p>
 
-<pre>
+            <pre>
 {
-  <em>// Required</em>
-  "<a href="#name">name</a>": "<em>My Extension</em>",
-  "<a href="#version">version</a>": "<em>versionString</em>",
+  <em>// 必选</em>
+  "<a href="#name">name</a>": "<em>我的扩展程序</em>",
+  "<a href="#version">version</a>": "<em>版本字符串</em>",
   "<a href="#manifest_version">manifest_version</a>": 2,
 
-  <em>// Recommended</em>
-  "<a href="#description">description</a>": "<em>A plain text description</em>",
+  <em>// 推荐</em>
+  "<a href="#description">description</a>": "<em>纯文本描述</em>",
   "<a href="#icons">icons</a>": { ... },
   "<a href="#default_locale">default_locale</a>": "<em>en</em>",
 
-  <em>// Pick one (or none)</em>
+  <em>// 从中选一个（或者没有）</em>
   "<a href="browserAction.html">browser_action</a>": {...},
   "<a href="pageAction.html">page_action</a>": {...},
   "<a href="themes.html">theme</a>": {...},
   "<a href="#app">app</a>": {...},
 
-  <em>// Add any of these that you need</em>
+  <em>// 添加您需要的</em>
   "<a href="event_pages.html">background</a>": {"persistent": false, ...},
   "<a href="background_pages.html">background</a>": {"persistent": true, ...},
   "<a href="override.html">chrome_url_overrides</a>": {...},
@@ -314,159 +339,110 @@ are <b>name</b> and <b>version</b>.
 </pre>
 
 
-<h2 id="field_details">Field details</h2>
+            <h2 id="field_details">字段详情</h2>
 
-<p>
-This section covers fields that aren't described in another page.
-For a complete list of fields,
-with links to where they're described in detail,
-see the <a href="#overview">Field summary</a>.
-</p>
+            <p>
+                这一部分包含了其它页面中没有描述的字段。有关字段的完整列表以及指向描述它们细节的页面链接，请参见
+   
+                <a href="#overview">字段概述</a>。
+            </p>
 
 
-<h3 id="app">app</h3>
+            <h3 id="app">app</h3>
 
-<p>
-Used by <a href="http://developer.chrome.com/trunk/apps/app_lifecycle.html#eventpage">packaged apps</a>
-to specify the app's background scripts.
-Also used by <a href="https://developers.google.com/chrome/apps/docs/developers_guide#live">hosted apps</a>
-to specify the URLs that the app uses.
-</p>
+            <p>
+                用于<a href="http://developer.chrome.com/trunk/apps/app_lifecycle.html#eventpage">打包应用程序</a>
+                ，指定应用程序的后台脚本；
+也用于<a href="https://developers.google.com/chrome/apps/docs/developers_guide#live">托管应用程序</a>
+                ，指定应用程序使用的URL。
+            </p>
 
-<h3 id="default_locale">default_locale</h3>
+            <h3 id="default_locale">default_locale</h3>
+            <p>指定<code>_locales</code>中的子目录，包含该扩展程序默认字符串。对于含有<code>_locales</code>目录的扩展程序来说这一属性是<b>必需的</b>，在没有<code>_locales</code>目录的扩展程序中该属性<b>不能存在</b>。有关更多细节，请参见<a href="i18n.html">国际化支持</a>。</p>
 
-<p>
-Specifies the subdirectory of <code>_locales</code>
-that contains the default strings for this extension.
-This field is <b>required</b> in extensions
-that have a <code>_locales</code> directory;
-it <b>must be absent</b> in extensions
-that have no <code>_locales</code> directory.
-For details, see
-<a href="i18n.html">Internationalization</a>.
-</p>
 
-<h3 id="description">description</h3>
+            <h3 id="description">description</h3>
 
-<p>
-A plain text string
-(no HTML or other formatting;
-no more than 132 characters)
-that describes the extension.
-The description should be suitable for both
-the browser's extension management UI
-and the <a href="https://chrome.google.com/webstore">Chrome Web Store</a>.
-You can specify locale-specific strings for this field;
-see <a href="i18n.html">Internationalization</a> for details.
-</p>
+            <p>
+                描述该扩展程序的纯文本字符串（不能包含HTML或其它格式化内容，不要超过132个字符）。描述应该同时适合在浏览器的扩展程序管理用户界面以及
+                <a href="https://chrome.google.com/webstore">Chrome网上应用店</a>中显示。您可以在该字段中指定语言相关的字符串，有关细节请参见
+<a href="i18n.html">国际化支持</a>。
+            </p>
 
-<h3 id="homepage_url">homepage_url</h3>
+            <h3 id="homepage_url">homepage_url</h3>
 
-<p>
-The URL of the homepage for this extension. The extensions management page (chrome://extensions)
-will contain a link to this URL.  This field is particularly useful if you
-<a href="hosting.html">host the extension on your own site</a>. If you distribute your
-extension using the <a href="https://chrome.google.com/webstore">Chrome Web Store</a>,
-the homepage URL defaults to the extension's own page.
-</p>
+            <p>
+               该扩展程序的主页URL。扩展程序管理页面（chrome://extensions或chrome://settings/extensionSettings）将包含指向该URL的链接。如果您
+                <a href="hosting.html">在您自己的网站上托管扩展程序</a>，该属性将十分有用。如果您通过
+                <a href="https://chrome.google.com/webstore">Chrome网上应用店</a>发布您的扩展程序，主页URL默认为扩展程序自己的页面。
+            </p>
 
-<h3 id="icons">icons</h3>
+            <h3 id="icons">icons</h3>
 
-<p>
-One or more icons that represent the extension, app, or theme.
-You should always provide a 128x128 icon;
-it's used during installation and by the Chrome Web Store.
-Extensions should also provide a 48x48 icon,
-which is used in the extensions management page
-(chrome://extensions).
-You can also specify a 16x16 icon to be used as the favicon
-for an extension's pages.
-The 16x16 icon is also displayed in the experimental extension
-<a href="experimental.infobars.html">infobar</a>
-feature.
-</p>
+            <p>
+                一个或多个代表扩展程序、应用程序或主题背景的图标。您应该确保提供一个128×128大小的图标，用与安装过程中以及Chrome网上应用店。扩展程序同时应该提供一个48×48大小的图标，用于扩展程序管理页面（chrome://extensions或chrome://settings/extensionSettings）。您也可以再指定一个16×16大小的图标，用于扩展程序页面的收藏夹图标，16×16的图标也将显示在实验性的扩展程序
+                <a href="experimental.infobars.html">信息栏</a>
+                中。
+            </p>
 
-<p>
-Icons should generally be in PNG format,
-because PNG has the best support for transparency.
-They can, however, be in any format supported by WebKit,
-including BMP, GIF, ICO, and JPEG.
-Here's an example of specifying the icons:
-</p>
+            <p>
+                通常图标应该使用PNG格式，因为PNG格式对透明度的支持最佳。但图标也可以是其它任何WebKit支持的格式，包括BMP、GIF、ICO和JPEG。如下是一个指定图标的例子：
+            </p>
 
-<pre>
+            <pre>
 "icons": { "16": "icon16.png",
            "48": "icon48.png",
           "128": "icon128.png" },
 </pre>
 
-<p class="note">
-<b>Important:</b>
-Use only the documented icon sizes.
-<br><br>
-You might notice that Chrome sometimes resizes these icons down to smaller
-sizes. For example, the install dialog might shrink the 128-pixel
-icon down to 69 pixels.
-<br><br>
-However, the details of
-Chrome's UI may change between versions, and these changes assume that
-developers are using the documented sizes. If you use other sizes,
-your icon may look bad in future versions of the browser.
-</p>
+            <p class="note">
+                <b>重要提示：</b>
+                只能使用文档中规定的图标大小。
+                <br>
+                <br>
+                您可能注意到Chrome有时候会缩小这些图标。例如，安装对话框可能将128像素的图标缩小至69像素。
+                <br>
+                <br>
+                然而，Chrome浏览器用户界面的细节可能会在不同版本间更改，并且这些更改假定开发者使用了文档中规定的大小。如果您使用其它大小，您的图标在将来版本的浏览器中可能会看起来效果不佳。
+            </p>
 
-<p>
-If you upload your extension, app, or theme using the
-<a href="https://chrome.google.com/webstore/developer/dashboard">Chrome Developer Dashboard</a>,
-you'll need to upload additional images,
-including at least one screenshot of your extension.
-For more information,
-see the
-<a href="http://code.google.com/chrome/webstore/">Chrome Web Store
-developer documentation</a>.
-</p>
+            <p>
+                如果您使用
+                <a href="https://chrome.google.com/webstore/developer/dashboard">Chrome开发者信息中心</a>上传您的扩展程序、应用程序或主题背景，您还需要上传额外的图像，包括至少一张您的扩展程序的屏幕截图。有关更多信息，请参见
+                <a href="http://code.google.com/chrome/webstore/">CChrome网上应用店开发者文档</a>。
+            </p>
 
-<h3 id="incognito">incognito</h3>
+            <h3 id="incognito">incognito</h3>
 
-<p>
-Either "spanning" or "split", to specify how this extension will
-behave if allowed to run in incognito mode.
-</p>
+            <p>
+                可以是"spanning"或"split"，指定该扩展程序如果允许在隐身模式中运行时会如何表现。
+            </p>
 
-<p>
-The default for extensions is "spanning", which means that the extension
-will run in a single shared process. Any events or messages from an incognito
-tab will be sent to the shared process, with an <em>incognito</em> flag
-indicating where it came from. Because incognito tabs cannot use this shared
-process, an extension using the "spanning" incognito mode will not be able to
-load pages from its extension package into the main frame of an incognito tab.
-</p>
+            <p>
+                对于扩展程序来说默认值为"spanning"，意味着扩展程序将会在单个共享进程中运行，任何来自隐身标签页的事件或消息都将发送至共享的进程，以
+                <em>incognito</em>标志指示它的来源。由于隐身标签页无法使用这一共享进程，使用"spanning"隐身模式的扩展程序不能将扩展程序包中的页面载入到隐身标签的主框架。
+            </p>
 
-<p>
-The default for installable web apps is "split",
-which means that all app pages in
-an incognito window will run in their own incognito process. If the app or extension contains a background page, that will also run in the incognito process.
-This incognito process runs along side the regular process, but has a separate
-memory-only cookie store. Each process sees events and messages only from its
-own context (for example, the incognito process will see only incognito tab updates).
-The processes are unable to communicate with each other.
-</p>
+            <p>
+                对于可安装的网络应用程序来说默认值为"split"，意味着隐身窗口中的所有应用程序页面将会在它们自己的隐身进程中运行。如果应用程序或扩展程序包含后台页面，它们也会在隐身进程中运行。隐身进程与普通进程同时运行，但是使用单独的仅保留在内存中的Cookie存储区。每一个进程只能接收到来自它自己上下文的事件与消息（例如，隐身进程只会看到隐身标签页的更新）。两个进程之间无法互相通信。
+            </p>
 
-<p>
-As a rule of thumb, if your extension or app needs to load a tab in an incognito browser, use
-<em>split</em> incognito behavior. If your extension or app needs to be logged
-into a remote server or persist settings locally, use <em>spanning</em>
-incognito behavior.
-</p>
+            <p>
+                选择的准则是，如果您的扩展程序或者应用程序需要在隐身模式下载入标签页，使用
+                <em>split</em>隐身行为。如果您的扩展程序或应用程序需要登录远程服务器或者在本地保留设置，使用<em>spanning</em>
+                隐身模式。
+            </p>
 
-<h3 id="intents">intents</h3>
+            <h3 id="intents">intents</h3>
 
-<p>
-A dictionary that specifies all intent handlers provided by this extension or app. Each key in the dictionary specifies an action verb that is handled by this extension. The following example specifies two handlers for the action verb "<a href="http://webintents.org/share">http://webintents.org/share</a>".
-</p>
+            <p>
+                指定这一扩展程序或应用程序提供的所有Intent处理程序的词典，词典中的每一个键指定这一扩展程序处理的动作谓语。以下例子为动作谓语
+                "<a href="http://webintents.org/share">http://webintents.org/share</a>"指定两个处理程序。
+            </p>
 
-<pre>
+            <pre>
 {
-  "name": "test",
+  "name": "测试",
   "version": "1",
   "intents": {
     "http://webintents.org/share": [
@@ -487,100 +463,86 @@ A dictionary that specifies all intent handlers provided by this extension or ap
 }
 </pre>
 
-<p>
-The value of "type" is an array of mime types that is supported by this handler. The "href" indicates the URL of the page that handles the intent. For hosted apps, these URLs must be within the allowed set of URLs. For extensions, all URLs are inside the extension and considered relative to the extension root URL.
-</p>
+            <p>
+                "type"的值为这一处理程序支持的MIME类型数组，"href"指示处理该Intent的页面URL。对于托管应用程序，这些URL必须包含在允许的URL中。对于扩展程序，所有URL必须在扩展程序中，并且认为相对于扩展程序根URL。
+            </p>
 
-<p>
-The "title" is displayed in the intent picker UI when the user initiates the action specific to the handler.
-</p>
+            <p>
+                当用户执行这一处理程序的操作时"title"将在Intent选择器用户界面中显示。
+            </p>
 
-<p>
-The "disposition" is either "inline" or "window". Intents with "window" disposition will open a new tab when invoked. Intents with "inline" disposition will be displayed inside the intent picker when invoked.
-</p>
+            <p>
+                "disposition"可以为"inline"或"window"。使用"window"方式的Intent调用时将打开新标签页，而使用"inline"方式调用时会显示在Intent选择器中。
+            </p>
 
-<p>
-For more information on intents, refer to the <a href="http://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/Overview.html">Web Intents specification</a> and <a href="http://www.webintents.org">webintents.org</a>.
-</p>
+            <p>
+                有关Intent的更多信息，请参考<a href="http://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/Overview.html">Web Intents规范</a>与<a href="http://www.webintents.org">webintents.org</a>。
+            </p>
 
-<h4 id="content_types">Handling content types via intents</h4>
+            <h4 id="content_types">通过Intent处理内容类型</h4>
 
-<p>
-Web Intents can be registered as content type viewers. To do that, the action verb must be <a href="http://webintents.org/view">"http://webintents.org/view"</a>, and the content type must be a white-listed MIME type.
-</p>
+            <p>
+                Web Intents可以注册为内容类型的查看器，如果要这么做，动作谓语必须为 <a href="http://webintents.org/view">"http://webintents.org/view"</a>，内容类型必须为白名单中的MIME类型。
+            </p>
 
-<table>
-  <tr>
-    <th>Whitelisted MIME types</th>
-  </tr>
-  <tr><td>application/rss+xml</td></tr>
-  <tr><td>application/atom+xml</td></tr>
-</table>
+            <table>
+                <tr>
+                    <th>加入白名单中的MIME类型</th>
+                </tr>
+                <tr>
+                    <td>application/rss+xml</td>
+                </tr>
+                <tr>
+                    <td>application/atom+xml</td>
+                </tr>
+            </table>
 
-<h3 id="key">key</h3>
+            <h3 id="key">key</h3>
 
-<p>
-This value can be used to control
-the unique ID of an extension, app, or theme when
-it is loaded during development.
-</p>
+            <p>
+                这一值用来控制在开发过程中载入的扩展程序、应用程序或主题背景的唯一标识符。
+            </p>
 
-<p class="note">
-<b>Note:</b> You don't usually need to
-use this value. Instead, write your
-code so that the key value doesn't matter
-by using <a href="overview.html#relative-urls">relative paths</a>
-and <a href="extension.html#method-getURL">chrome.extension.getURL()</a>.
-</p>
+            <p class="note">
+                <b>注意：</b>通常您不需要使用这一值。相反，您应该使用
+                <a href="overview.html#relative-urls">相对路径</a>
+                以及<a href="extension.html#method-getURL">chrome.extension.getURL()</a>来编写不依赖这一值的代码。
+            </p>
 
-<p>
-To get a suitable key value, first
-install your extension from a <code>.crx</code> file
-(you may need to
-<a href="https://chrome.google.com/webstore/developer/dashboard">upload your extension</a>
-or <a href="packaging.html">package it manually</a>).
-Then, in your
-<a href="http://www.chromium.org/user-experience/user-data-directory">user
-data directory</a>, look in the file
-<code>Default/Extensions/<em>&lt;extensionId&gt;</em>/<em>&lt;versionString&gt;</em>/manifest.json</code>.
-You will see the key value filled in there.
-</p>
+            <p>
+               要获得合适的键值，首先从<code>.crx</code>文件安装您的扩展程序（您可能需要
+                <a href="https://chrome.google.com/webstore/developer/dashboard">上传您的扩展程序</a>
+                或<a href="packaging.html">手工打包</a>）。然后，在您的
+                <a href="http://www.chromium.org/user-experience/user-data-directory">配置文件目录</a>，查看如下文件：
+                <code>Default/Extensions/<em>&lt;extensionId&gt;</em>/<em>&lt;versionString&gt;</em>/manifest.json</code>，
+您将会看到填在此处的键值。
+            </p>
 
-<h3 id="minimum_chrome_version">minimum_chrome_version</h3>
+            <h3 id="minimum_chrome_version">minimum_chrome_version</h3>
 
-<p>
-The version of Chrome that your extension, app, or theme requires, if any.
-The format for this string is the same as for the
-<a href="#version">version</a> field.
+            <p>
+                您的扩展程序、应用程序或主题背景需要的Chrome浏览器版本，如果有任何要求的话。该字符串的格式与
+                <a href="#version">version</a> 字段相同。
 
-<h3 id="name">name</h3>
+                <h3 id="name">name</h3>
 
-<p>
-A short, plain text string
-(no more than 45 characters)
-that identifies the extension.
-The name is used in the install dialog,
-extension management UI,
-and the <a href="https://chrome.google.com/webstore">store</a>.
-You can specify locale-specific strings for this field;
-see <a href="i18n.html">Internationalization</a> for details.
-</p>
+                <p>
+                   一个较短的纯文本字符串（不超过45个字符）标志该扩展程序。名称将在安装对话框、扩展程序管理用户界面以及
+                    <a href="https://chrome.google.com/webstore">Chrome网上应用店</a>.
+中使用。您可以为该指定语言相关的字符串，有关细节请参见<a href="i18n.html">国际化支持</a>。
+                </p>
 
-<h3 id="nacl_modules">nacl_modules</h3>
+            <h3 id="nacl_modules">nacl_modules</h3>
 
-<p>
-One or more mappings from MIME types to the Native Client module
-that handles each type.
-For example, the bold code in the following snippet
-registers a Native Client module as the content handler
-for the OpenOffice spreadsheet MIME type.
-</p>
+            <p>
+                一个或多个从MIME类型至Native Client模块的映射，用来处理这些类型。例如，如下片段中的加粗代码将一个Native Client模块注册为OpenOffice电子表格MIME类型的内容处理器。
+            </p>
 
-<pre>
+            <pre>
 {
-  "name": "Native Client OpenOffice Spreadsheet Viewer",
+  "name": "Native Client OpenOffice 电子表格查看器",
   "version": "0.1",
-  "description": "Open OpenOffice spreadsheets, right in your browser.",
+  "description": "直接在您的浏览器中打开 OpenOffice 电子表格。",
   <b>"nacl_modules": [{
     "path": "OpenOfficeViewer.nmf",
     "mime_type": "application/vnd.oasis.opendocument.spreadsheet"
@@ -588,27 +550,21 @@ for the OpenOffice spreadsheet MIME type.
 }
 </pre>
 
-<p>
-The value of "path" is the location of a Native Client manifest
-(a <code>.nmf</code> file)
-within the extension directory.
-For more information on Native Client and <code>.nmf</code> files, see the
-<a href="http://code.google.com/chrome/nativeclient/docs/technical_overview.html">Native Client Technical Overview</a>.
-</p>
+            <p>
+               "path"的值为扩展程序目录中Native Client清单文件（一个<code>.nmf</code>文件）的位置。有关Native Client以及
+                <code>.nmf</code>文件的更多信息，请参见
+                <a href="http://code.google.com/chrome/nativeclient/docs/technical_overview.html">Native Client技术概述</a>.
+            </p>
 
-<p>
-Each MIME type can be associated with only one <code>.nmf</code> file,
-but a single <code>.nmf</code> file might handle multiple MIME types.
-The following example shows an extension
-with two <code>.nmf</code> files
-that handle three MIME types.
-</p>
+            <p>
+                每一个MIME类型只能与一个<code>.nmf</code>文件关联，但是一个<code>.nmf</code>文件可以处理多个MIME类型。如下例子演示一个扩展程序，含有两个<code>.nmf</code>文件，处理三种MIME类型。
+            </p>
 
-<pre>
+            <pre>
 {
-  "name": "Spreadsheet Viewer",
+  "name": "电子表格查看器",
   "version": "0.1",
-  "description": "Open OpenOffice and Excel spreadsheets, right in your browser.",
+  "description": "直接在您的浏览器中打开 OpenOffice 和 Excel 电子表格。",
   "nacl_modules": [{
     "path": "OpenOfficeViewer.nmf",
     "mime_type": "application/vnd.oasis.opendocument.spreadsheet"
@@ -624,60 +580,43 @@ that handle three MIME types.
 }
 </pre>
 
-<p class="note">
-<strong>Note:</strong>
-You can use Native Client modules in extensions
-without specifying "nacl_modules".
-Use "nacl_modules" only if you want the browser
-to use your Native Client module
-to display a particular type of content.
-</p>
+            <p class="note">
+                <strong>注意:</strong>
+                您不指定"nacl_modules"也能在扩展程序中使用Native Client模块，只有当您需要浏览器使用您的Native Client模块显示特定类型的内容时才需要使用"nacl_modules"。
+            </p>
 
-<h3 id="offline_enabled">offline_enabled</h3>
+            <h3 id="offline_enabled">offline_enabled</h3>
 
-<p>
-Whether the app or extension is expected to work offline. When Chrome detects
-that it is offline, apps with this field set to true will be highlighted
-on the New Tab page.
-</p>
+            <p>
+                应用程序或者扩展程序能否在离线状态下工作。当Chrome浏览器检测到处于离线状态时，这一属性设为true的应用程序会在新标签页面中高亮显示。
+            </p>
 
-<h3 id="permissions">permissions</h3>
+            <h3 id="permissions">permissions</h3>
 
-<p>
-An array of permissions that the extension or app might use.
-Each permission can be either one of a list of known strings
-(such as "geolocation")
-or a match pattern
-that gives access to one or more hosts.
-Permissions can help to limit damage
-if your extension or app is attacked.
-Some permissions are also displayed to users before installation,
-as detailed in
-<a href="permission_warnings.html">Permission Warnings</a>.
-</p>
+            <p>
+                扩展或应用程序可能会使用到的一组权限。
+每一个权限既可以是已知字符串列表中的某一个（例如"geolocation"），也可以是授予访问一个或多个主机权限的匹配表达式。权限可以帮助您在扩展程序或应用程序受到攻击时尽可能减小损失，某些权限也会在安装前向用户显示，这些将在
+                <a href="permission_warnings.html">权限警告</a>中详细描述。
+            </p>
 
-<p>
-If an extension API requires you to declare a permission in the manifest,
-then its documentation tells you how to do so.
-For example,
-the <a href="tabs.html">Tabs</a> page
-shows you how to
-declare the "tabs" permission.
-</p>
+            <p>
+              如果某个API需要您在清单文件中声明某个权限，它的文档会告诉你如何去做。例如，
+                <a href="tabs.html">标签</a>页面
+会向您演示如何声明"tabs"权限。
+            </p>
 
-<p class="note">
-<b>Note:</b>
-As of Chrome 16, some permissions can be optional.
-For details, see
-<a href="permissions.html">Optional Permissions</a>.
-</p>
+            <p class="note">
+                <b>注意:</b>
+                在Chrome 16后, 一些权限是可选的。
+请查看
+                <a href="permissions.html">可选权限</a>了解更多详情。
+            </p>
 
-<p>
-Here's an example of the permissions part of a manifest file
-for an extension:
-</p>
+            <p>
+              如下是一个扩展程序清单文件的权限部分的例子：
+            </p>
 
-<pre>
+            <pre>
 "permissions": [
   "tabs",
   "bookmarks",
@@ -687,241 +626,249 @@ for an extension:
 ],
 </pre>
 
-<p>
-The following table lists the permissions an extension
-or packaged app can use.
-</p>
+            <p>
+              下面表格中列出的权限只能在扩展或者打包的应用程序中可以使用。
+            </p>
 
-<p class="note">
-<strong>Note:</strong>
-Hosted apps can use the
+            <p class="note">
+                <strong>注意：</strong>
+                托管应用程序只能使用
 "background", "clipboardRead", "clipboardWrite", "geolocation", "notifications",
-and "unlimitedStorage" permissions, but not any other permissions listed in this
-table.
-</p>
+及 "unlimitedStorage"权限，而不能使用下表列出的所有其它权限
+            </p>
 
-<table>
-<tr>
-  <th> Permission </th> <th> Description </th>
-</tr>
-<tr>
-  <td> <em>match pattern</em> </td>
-  <td> Specifies a <em>host permission</em>.
-       Required if the extension wants to interact
-       with the code running on pages.
-       Many extension capabilities, such as
-       <a href="xhr.html">cross-origin XMLHttpRequests</a>,
-       <a href="content_scripts.html#pi">programmatically injected
-       content scripts</a>, and <a href="cookies.html">the cookies API</a>
-       require host permissions. For details on the syntax, see
-       <a href="match_patterns.html">Match Patterns</a>.
+            <table>
+                <tr>
+                    <th>权限</th>
+                    <th>描述 </th>
+                </tr>
+                <tr>
+                    <td><em>匹配表达式</em> </td>
+                    <td>指定<em>主机权限</em>。如果扩展程序或应用程序需要与页面上运行的代码交互则必须指定该权限。许多扩展程序的能力，例如
+                        <a href="xhr.html">跨站XMLHttpRequest</a>,
+      
+                        <a href="content_scripts.html#pi">以编程方式插入内容脚本</a>以及<a href="cookies.html">the cookies API</a>
+                        需要主机权限。有关语法上的细节，请参见
+      
+                        <a href="match_patterns.html">匹配表达式</a>。
   </td>
-</tr>
-<tr id="bg">
-  <td> "background" </td>
-  <td> <p>
-       Makes Chrome start up early and and shut down late,
-       so that apps and extensions can have a longer life.
-       </p>
+                </tr>
+                <tr id="bg">
+                    <td>"background" </td>
+                    <td>
+                        <p>
+                           让Chrome很早就启动很晚才退出，以便应用程序和扩展程序可以有更长的生命周期。
+                        </p>
 
-       <p>
-       When any installed hosted app, packaged app, or extension
-       has "background" permission, Chrome runs (invisibly)
-       as soon as the user logs into their computer&mdash;before
-       the user launches Chrome.
-       The "background" permission also makes Chrome continue running
-       (even after its last window is closed)
-       until the user explicitly quits Chrome.
-       </p>
+                        <p>
+                           当任何已安装的托管应用程序、打包应用程序或扩展程序拥有"background"权限时，Chrome浏览器在用户登录计算机时就（不可见地）运行，那时用户还没有亲自执行Chrome浏览器。"background"权限也使Chrome浏览器继续运行（即使在最后一个窗口已经关闭后），直到用户主动退出Chrome浏览器。
+      
+                        </p>
 
-       <p class="note">
-       <b>Note:</b>
-       Disabled apps and extensions
-       are treated as if they aren't installed.
-       </p>
+                        <p class="note">
+                            <b>注意：</b>
+                        已禁用的应用程序以及扩展程序以未安装对待。
+      
+                        </p>
 
-       <p>
-       You typically use the "background" permission with a
-       <a href="background_pages.html">background page</a>,
-       <a href="event_pages.html">event page</a>
-       or (for hosted apps) a
-       <a href="http://code.google.com/chrome/apps/docs/background.html">background window</a>.
-       </p>
+                        <p>
+                            通常您与
+      
+                            <a href="background_pages.html">后台页面</a>,
+      
+                            <a href="event_pages.html">事件页面</a>
+                          或者（对于托管应用程序）
+      
+                            <a href="http://code.google.com/chrome/apps/docs/background.html">后台窗口</a>一起使用"background"权限。
+      
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>"bookmarks" </td>
+                    <td>如果扩展程序使用
+      
+                        <a href="bookmarks.html">chrome.bookmarks</a>模块则必须指定该权限。</td>
+                </tr>
+                <tr>
+                    <td>"chrome://favicon/" </td>
+                    <td>如果扩展程序使用chrome://favicon/<em>url</em>"机制来显示页面的收藏夹图标则必须指定。例如，要显示http://www.google.com/的收藏夹图标，您声明"chrome://favicon/"权限，并使用如下所示的HTML代码：
+      
+                        <pre>&lt;img src="chrome://favicon/http://www.google.com/"></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>"clipboardRead" </td>
+                    <td>如果扩展程序或应用程序使用
+      
+                        <code>document.execCommand('paste')</code>则必须指定。 </td>
+                </tr>
+                <tr>
+                    <td>"clipboardWrite" </td>
+                    <td>表示扩展程序或应用程序可以使用
+      
+                        <code>document.execCommand('copy')</code>或
+      
+                        <code>document.execCommand('cut')</code>.。<b>托管应用程序必须</b>
+                        指定该权限，同时建议扩展程序和打包应用程序指定该权限。
        </td>
-</tr>
-<tr>
-  <td> "bookmarks" </td>
-  <td> Required if the extension uses the
-       <a href="bookmarks.html">chrome.bookmarks</a> module. </td>
-</tr>
-<tr>
-  <td> "chrome://favicon/" </td>
-  <td> Required if the extension uses the
-       "chrome://favicon/<em>url</em>" mechanism
-       to display the favicon of a page.
-       For example, to display the favicon of http://www.google.com/,
-       you declare the "chrome://favicon/" permission
-       and use HTML code like this:
-       <pre>&lt;img src="chrome://favicon/http://www.google.com/"></pre>
-       </td>
-</tr>
-<tr>
-  <td> "clipboardRead" </td>
-  <td> Required if the extension uses
-       <code>document.execCommand('paste')</code>. </td>
-</tr>
-<tr>
-  <td> "clipboardWrite" </td>
-  <td> Indicates the app or extension uses
-       <code>document.execCommand('copy')</code> or
-       <code>document.execCommand('cut')</code>. This permission is <b>required
-       for hosted apps</b>; it's recommended for extensions and packaged apps.
-       </td>
-</tr>
-<tr>
-  <td> "contentSettings" </td>
-  <td> Required if the extension uses the
-       <a href="contentSettings.html">chrome.contentSettings</a> module. </td>
-</tr>
-<tr>
-  <td> "contextMenus" </td>
-  <td> Required if the extension uses the
-       <a href="contextMenus.html">chrome.contextMenus</a> module. </td>
-</tr>
-<tr>
-  <td> "cookies" </td>
-  <td> Required if the extension uses the
-       <a href="cookies.html">chrome.cookies</a> module. </td>
-</tr>
-<tr>
-  <td> "experimental" </td>
-  <td> Required if the extension uses any
-       <a href="http://code.google.com/chrome/extensions/dev/experimental.html">chrome.experimental.* APIs</a>.</td>
-</tr>
-<tr>
-  <td id="fileBrowserHandler"> "fileBrowserHandler" </td>
-  <td> Required if the extension uses the
-       <a href="fileBrowserHandler.html">fileBrowserhandler</a> module. </td>
-</tr>
-<tr>
-  <td id="geolocation"> "geolocation" </td>
-  <td> Allows the extension to use the proposed HTML5
-       <a href="http://dev.w3.org/geo/api/spec-source.html">geolocation API</a>
-       without prompting the user for permission. </td>
-</tr>
-<tr>
-  <td> "history" </td>
-  <td> Required if the extension uses the
-       <a href="history.html">chrome.history</a> module. </td>
-</tr>
-<tr>
-  <td> "idle" </td>
-  <td> Required if the extension uses the
-       <a href="idle.html">chrome.idle</a> module. </td>
-</tr>
-<tr>
-  <td> "management" </td>
-  <td> Required if the extension uses the
-       <a href="management.html">chrome.management</a> module. </td>
-</tr>
-<tr>
-  <td> "notifications" </td>
-  <td> Allows the extension to use the proposed HTML5
-       <a href="http://www.chromium.org/developers/design-documents/desktop-notifications/api-specification">notification API</a>
-       without calling permission methods
-       (such as <code>checkPermission()</code>).
-       For more information see
-       <a href="notifications.html">Desktop Notifications</a>.</td>
-</tr>
-<tr>
-  <td> "privacy" </td>
-  <td> Required if the extension uses the
-       <a href="privacy.html">chrome.privacy</a> module. </td>
-</tr>
-<tr>
-  <td> "proxy" </td>
-  <td> Required if the extension uses the
-       <a href="proxy.html">chrome.proxy</a> module. </td>
-</tr>
-<tr>
-  <td> "storage" </td>
-  <td> Required if the extension uses the
-       <a href="storage.html">chrome.storage</a> module. </td>
-</tr>
-<tr>
-  <td> "tabs" </td>
-  <td> Required if the extension uses the
-       <a href="tabs.html">chrome.tabs</a> or
-       <a href="windows.html">chrome.windows</a> module. </td>
-</tr>
-<tr>
-  <td> "tts" </td>
-  <td> Required if the extension uses the
-       <a href="tts.html">chrome.tts</a> module. </td>
-</tr>
-<tr>
-  <td> "ttsEngine" </td>
-  <td> Required if the extension uses the
-       <a href="ttsEngine.html">chrome.ttsEngine</a> module. </td>
-</tr>
-<tr>
-  <td> "unlimitedStorage"</td>
-  <td> Provides an unlimited quota for storing HTML5 client-side data,
-       such as databases and local storage files.
-       Without this permission, the extension is limited to
-       5 MB of local storage.
+                </tr>
+                <tr>
+                    <td>"contentSettings" </td>
+                    <td>如果扩展程序使用
+      
+                        <a href="contentSettings.html">chrome.contentSettings</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td>"contextMenus" </td>
+                    <td>如果扩展程序或应用程序使用
+      
+                        <a href="contextMenus.html">chrome.contextMenus</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td>"cookies" </td>
+                    <td>如果扩展程序使用
+      
+                        <a href="cookies.html">chrome.cookies</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td>"experimental" </td>
+                    <td>如果扩展程序或应用程序使用
+      
+                        <a href="http://code.google.com/chrome/extensions/dev/experimental.html">chrome.experimental.* APIs</a>则必须指定。</td>
+                </tr>
+                <tr>
+                    <td id="fileBrowserHandler">"fileBrowserHandler" </td>
+                    <td>如果扩展程序使用
+      
+                        <a href="fileBrowserHandler.html">fileBrowserhandler</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td id="geolocation">"geolocation" </td>
+                    <td>允许扩展程序或应用程序使用提出的HTML5
+      
+                        <a href="http://dev.w3.org/geo/api/spec-source.html">地理位置API</a>
+                        而不用提示用户。</td>
+                </tr>
+                <tr>
+                    <td>"history" </td>
+                    <td>如果扩展程序使用
+      
+                        <a href="history.html">chrome.history</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td>"idle" </td>
+                    <td>如果扩展程序或应用程序使用
+      
+                        <a href="idle.html">chrome.idle</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td>"management" </td>
+                    <td>如果扩展程序使用
+      
+                        <a href="management.html">chrome.management</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td>"notifications" </td>
+                    <td>允许扩展程序或应用程序使用提出的HTML5
+      
+                        <a href="http://www.chromium.org/developers/design-documents/desktop-notifications/api-specification">通知API</a>
+                       而不需要调用方法请求权限（例如<code>checkPermission()</code>).
+。有关更多信息请参见
+      
+                        <a href="notifications.html">桌面通知</a>。</td>
+                </tr>
+                <tr>
+                    <td>"privacy" </td>
+                    <td>如果扩展程序使用
+      
+                        <a href="privacy.html">chrome.privacy</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td>"proxy" </td>
+                    <td>如果扩展程序使用
+      
+                        <a href="proxy.html">chrome.proxy</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td>"storage" </td>
+                    <td>如果扩展程序或应用程序使用
+      
+                        <a href="storage.html">chrome.storage</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td>"tabs" </td>
+                    <td>如果扩展程序使用
+      
+                        <a href="tabs.html">chrome.tabs</a>或
+      
+                        <a href="windows.html">chrome.windows</a>模块则必须指定。</td>
+                </tr>
+                <tr>
+                    <td>"tts" </td>
+                    <td>如果扩展程序或应用程序使用
+      
+                        <a href="tts.html">chrome.tts</a> 模块则必须指定。 </td>
+                </tr>
+                <tr>
+                    <td>"ttsEngine" </td>
+                    <td>如果扩展程序使用
+      
+                        <a href="ttsEngine.html">chrome.ttsEngine</a>模块则必须指定。 </td>
+                </tr>
+                <tr>
+                    <td>"unlimitedStorage"</td>
+                    <td>提供无限的存储空间，保存HTML5客户端数据，例如数据库以及本地存储文件。如果没有这一权限，扩展程序的本地存储将限制在5MB以内。
 
-      <p class="note">
-      <b>Note:</b>
-      This permission applies only to Web SQL Database and application cache
-      (see issue <a href="http://crbug.com/58985">58985</a>).
-      Also, it doesn't currently work with wildcard subdomains such as
-      <code>http://*.example.com</code>.
-      </p>
-  </td>
-<tr>
-<tr>
-  <td> "webNavigation" </td>
-  <td> Required if the extension uses the
-       <a href="webNavigation.html">chrome.webNavigation</a> module. </td>
-</tr>
-<tr>
-  <td> "webRequest" </td>
-  <td> Required if the extension uses the
-       <a href="webRequest.html">chrome.webRequest</a> module. </td>
-</tr>
-<tr>
-  <td> "webRequestBlocking" </td>
-  <td> Required if the extension uses the
-       <a href="webRequest.html">chrome.webRequest</a> module in a blocking
-       fashion. </td>
-</tr>
-</tr>
-</table>
+     
 
-<h3 id="requirements">requirements</h3>
+                        <p class="note">
+                            <b>注意:</b>
+                            该权限仅应用于Web SQL数据库以及应用程序缓存（参见问题
+                            <a href="http://crbug.com/58985">58985</a>)。另外，当前还不能和包含通配符的子域名一起使用，例如
+     
+                            <code>http://*.example.com</code>。
+     
+                        </p>
+                    </td>
+                    <tr>
+                        <tr>
+                            <td>"webNavigation" </td>
+                            <td>如果扩展程序使用
+      
+                                <a href="webNavigation.html">chrome.webNavigation</a>模块则必须指定。</td>
+                        </tr>
+                        <tr>
+                            <td>"webRequest" </td>
+                            <td>如果扩展程序使用
+      
+                                <a href="webRequest.html">chrome.webRequest</a>模块则必须指定。 </td>
+                        </tr>
+                        <tr>
+                            <td>"webRequestBlocking" </td>
+                            <td>如果扩展程序以阻塞方式使用
+      
+                                <a href="webRequest.html">chrome.webRequest</a>模块则必须指定。</td>
+                        </tr>
+                    </tr>
+            </table>
 
-<p>
-Technologies required by the app or extension.
-Hosting sites such as the Chrome Web Store may use this list
-to dissuade users from installing apps or extensions
-that will not work on their computer.
-Supported requirements currently include "3D" and "plugins";
-additional requirements checks may be added in the future.
-</p>
+            <h3 id="requirements">requirements</h3>
 
-<p>
-The "3D" requirement denotes GPU hardware acceleration.
-The "webgl" requirement refers to the
-<a href="http://www.khronos.org/webgl/">WebGL API</a>.
-For more information on Chrome 3D graphics support,
-see the help article on
-<a href="http://www.google.com/support/chrome/bin/answer.py?answer=1220892">WebGL and 3D graphics</a>.
-You can list the 3D-related features your app requires,
-as demonstrated in the following example:
-</p>
+            <p>
+                应用程序或扩展程序要求的技术。托管站点（例如Chrome网上应用店）可能会使用这一列表建议用户不要安装不能在他们的计算机上工作的应用程序或者扩展程序。目前支持的要求包括"3D"与"plugins"（插件），将来还可能增加其它要求检查。
+            </p>
 
-<pre>
+            <p>
+                "3D"要求代表GPU硬件加速。
+"webgl"要求指的是
+                <a href="http://www.khronos.org/webgl/">WebGL API</a>。
+有关Chrome浏览器对3D图形支持的更多信息，请参见有关
+                <a href="http://www.google.com/support/chrome/bin/answer.py?answer=1220892">WebGL和3D图形</a>.
+的帮助文章。您可以列出您的应用程序要求的3D相关功能，如以下例子所示：
+            </p>
+
+            <pre>
 "requirements": {
   "3D": {
     "features": ["webgl"]
@@ -929,21 +876,12 @@ as demonstrated in the following example:
 }
 </pre>
 
-<p>
-The "plugins" requirement indicates
-if an app or extension requires NPAPI to run.
-This requirement is enabled by default
-when the manifest includes the
-<a href="http://developer.chrome.com/extensions/npapi.html">"plugins" field</a>. 
-For apps and extensions that still work when plugins aren't available,
-you can disable this requirement
-by setting NPAPI to false.
-You can also enable this requirement manually,
-by setting NPAPI to true,
-as shown in this example:
-</p>
+            <p>
+                "plugins"（插件）要求表示应用程序或扩展程序是否需要NPAPI才能运行。默认情况下，当清单文件包含
+                <a href="http://developer.chrome.com/extensions/npapi.html">"plugins"字段</a>时将启用该要求。对于插件不可用时仍能正常工作的应用程序与扩展程序，您可以将NPAPI设置为false，禁用这一要求。您也可以手工启用该要求，将NPAPI设置为true，如以下例子所示：
+            </p>
 
-<pre>
+            <pre>
 "requirements": {
   "plugins": {
     "npapi": true
@@ -952,101 +890,75 @@ as shown in this example:
 </pre>
 
 
-<h3 id="version">version</h3>
+            <h3 id="version">version</h3>
 
-<p>
-One to four dot-separated integers
-identifying the version of this extension.
-A couple of rules apply to the integers:
-they must be between 0 and 65535, inclusive,
-and non-zero integers can't start with 0.
-For example, 99999 and 032 are both invalid.
-</p>
+            <p>
+                一至四个用点（半角英文句号）分开的整数，标识扩展程序的版本。这些整数应该符合这两条规则：范围在0-65535之间（包括0和65535），非零整数不能以0开头。例如99999和032都是无效的。
+            </p>
 
-<p>
-Here are some examples of valid versions:
-</p>
+            <p>
+               如下是一些有效的版本号的例子：
+            </p>
 
-<ul>
-  <li> <code>"version": "1"</code> </li>
-  <li> <code>"version": "1.0"</code> </li>
-  <li> <code>"version": "2.10.2"</code> </li>
-  <li> <code>"version": "3.1.2.4567"</code> </li>
-</ul>
+            <ul>
+                <li><code>"version": "1"</code> </li>
+                <li><code>"version": "1.0"</code> </li>
+                <li><code>"version": "2.10.2"</code> </li>
+                <li><code>"version": "3.1.2.4567"</code> </li>
+            </ul>
 
-<p>
-The autoupdate system compares versions
-to determine whether an installed extension
-needs to be updated.
-If the published extension has a newer version string
-than the installed extension,
-then the extension is automatically updated.
-</p>
+            <p>
+               自动更新系统比较版本号来确定已安装的某个扩展程序是否需要更新。如果已发布的扩展程序比已安装的扩展程序有更新的版本字符串，该扩展程序将会自动更新。
+            </p>
 
-<p>
-The comparison starts with the leftmost integers.
-If those integers are equal,
-the integers to the right are compared,
-and so on.
-For example, 1.2.0 is a newer version than 1.1.9.9999.
-</p>
+            <p>
+                比较将从最左边的整数开始。如果相等，比较右边的整数，以此类推。例如，1.2.0比1.1.9.9999新。
+            </p>
 
-<p>
-A missing integer is equal to zero.
-For example, 1.1.9.9999 is newer than 1.1.
-</p>
+            <p>
+                省略整数的等于零，例如1.1.9.9999比1.1新。
+            </p>
 
-<p>
-For more information, see
-<a href="autoupdate.html">Autoupdating</a>.
-</p>
+            <p>
+                有关更多信息，请参见
+                <a href="autoupdate.html">自动更新</a>.
+            </p>
 
 
 
-<h3 id="manifest_version">manifest_version</h3>
+            <h3 id="manifest_version">manifest_version</h3>
 
-<p>
-One integer specifying the version of the manifest file format your package
-requires. As of Chrome 18, developers <em>should</em> specify <code>2</code>
-(without quotes) to use the format as described by this document:
-</p>
+            <p>
+                指定您的扩展程序包要求的清单文件格式的版本。从Chrome 18开始，开发人员
+                <em>应该</em>指定<code>2</code>
+                （不加引号），使用本文档描述的格式：
+            </p>
 
-<pre>"manifest_version": 2</pre>
+            <pre>"manifest_version": 2</pre>
 
-<p>
-Consider manifest version 1 <em>deprecated</em> as of Chrome 18. Version 2 is
-not yet <em>required</em>, but we will, at some point in the not-too-distant
-future, stop supporting packages using deprecated manifest versions. Extensions,
-applications, and themes that aren't ready to make the jump to the new manifest
-version in Chrome 18 can either explicitly specify version <code>1</code>, or
-leave the key off entirely.
-</p>
+            <p>
+                从Chrome 18开始，认为清单文件版本1<em>已弃用</em>，
+                版本2目前还不是<em>必需的</em>, 但是我们在不远的将来某一时刻，将不再支持使用已弃用清单文件版本的扩展程序包。还没有准备转换至Chrome 18中新的清单文件版本的扩展程序、应用程序以及主题背景既可以明确地指定版本<code>1</code>，也可以完全省略该属性。
+            </p>
 
-<p>
-The changes between version 1 and version 2 of the manifest file format are
-described in detail in <a href="manifestVersion.html">the
-<code>manifest_version</code> documentation.</a>
-</p>
+            <p>
+                清单文件格式版本1与版本2之间的改变在 <a href="manifestVersion.html">
+                    <code>manifest_version</code>文档</a>中详细描述。
+            </p>
 
-<p class="caution">
-  Setting <code>manifest_version</code> 2 in Chrome 17 or lower is not
-  recommended. If your extension needs to work in older versions of Chrome,
-  stick with version 1 for the moment. We'll give you ample warning before
-  version 1 stops working.
-</p>
+            <p class="caution">
+                不建议在Chrome 17或更低版本中设置<code>manifest_version</code> 2 。如果您的扩展程序需要在较旧版本的Chrome浏览器中运行，目前请继续使用版本1，在版本1停止工作前我们将会给出充分的警告。
+            </p>
 
-<h3 id="web_accessible_resources">web_accessible_resources</h3>
+            <h3 id="web_accessible_resources">web_accessible_resources</h3>
 
-<p>
-An array of strings specifying the paths (relative to the package root) of
-packaged resources that are expected to be usable in the context of a web page.
-For example, an extension that injects a content script with the intention of
-building up some custom interface for <code>example.com</code> would whitelist
-any resources that interface requires (images, icons, stylesheets, scripts,
-etc.) as follows:
-</p>
+            <p>
+                字符串数组，指定扩展程序包内可以在网页中使用的资源路径（相对于扩展程序包的根目录）。例如，为了在
+                <code>example.com</code>上建立自定义界面，而插入内容脚本的扩展程序可以将界面需要的所有资源（图片、图标、样式表、脚本等等）加入白名单，如下所示：
 
-<pre>{
+            </p>
+
+            <pre>{
   ...
   "web_accessible_resources": [
     "images/my-awesome-image1.png",
@@ -1057,148 +969,141 @@ etc.) as follows:
   ...
 }</pre>
 
-<p>
-These resources would then be available in a webpage via the URL
-<code>chrome-extension://[PACKAGE ID]/[PATH]</code>, which can be generated with
-the <a href="extension.html#method-getURL">
-  <code>chrome.extension.getURL</code>
-</a> method. Whitelisted resources are served with appropriate
-<a href="http://www.w3.org/TR/cors/">CORS</a> headers, so they're available via
-mechanisms like XHR.
-</p>
+            <p>
+                这些资源将可以通过
+                <code>chrome-extension://[PACKAGE ID]/[PATH]</code>使用，URL可以通过
+                <a href="extension.html#method-getURL">
+                    <code>chrome.extension.getURL</code>
+                </a>方法产生。加入白名单的资源将以合适的
+                <a href="http://www.w3.org/TR/cors/">CORS</a>头信息提供，所以它们可以通过XHR之类的机制使用。
+            </p>
 
-<p>
-Injected content scripts themselves do not need to be whitelisted.
-</p>
+            <p>
+              插入的内容脚本本身不需要加入白名单。
+            </p>
 
-<p>
-Prior to manifest version 2 all resources within an extension could be accessed
-from any page on the web. This allowed a malicious website to
-<a href="http://en.wikipedia.org/wiki/Device_fingerprint">fingerprint</a> the
-extensions that a user has installed or exploit vulnerabilities (for example
-<a href="http://en.wikipedia.org/wiki/Cross-site_scripting">XSS bugs</a>)within
-installed extensions. Limiting availability to only resources which are
-explicitly intended to be web accessible serves to both minimize the available
-attack surface and protect the privacy of users.
-</p>
+            <p>
+                在清单文件版本2之前，扩展程序内的所有资源都可以从任何网页中访问，这样恶意网站就能收集用户已安装扩展程序的
+                <a href="http://en.wikipedia.org/wiki/Device_fingerprint">指纹信息</a>或者利用扩展程序中的漏洞（例如
+                <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">XSS漏洞</a>）。将资源访问限制为明确需要可以通过网络访问的那些，有助于尽可能减小可用的攻击层面，并保护用户的隐私。
+            </p>
 
-<h4 id="availability">Default Availability</h4>
+            <h4 id="availability">默认情况</h4>
 
-<p>
-Resources inside of packages using <a href="#manifest_version"><code>manifest_version</code></a>
-2 or above are <strong>blocked by default</strong>, and must be whitelisted
-for use via this property.
-</p>
+            <p>
+                使用<a href="#manifest_version"><code>manifest_version</code></a>
+                2或更高的扩展程序包内的资源<strong>默认情况下被阻止</strong>，必须通过这一属性加入白名单。
+            </p>
 
-<p>
-Resources inside of packages using <code>manifest_version</code> 1 are available
-by default, but <em>if</em> you do set this property, then it will be treated as
-a complete list of all whitelisted resources. Resources not listed will be
-blocked.
-</p>
+            <p>
+                使用<code>manifest_version</code> 的扩展程序包内的资源默认情况下可用，但是
+                <em>只要</em>您设置了这一属性，它将以所有加入白名单资源的完整列表来对待，没有列出的资源将被阻止。
+            </p>
 
-<h3 id="sandbox">sandbox</h3>
+            <h3 id="sandbox">sandbox</h3>
 
-<p>
-Defines an collection of app or extension pages that are to be served
-in a sandboxed unique origin, and optionally a Content Security Policy to use
-with them. Being in a sandbox has two implications:
-</p>
+            <p>
+                要在受沙箱保护的唯一来源中载入的页面路径（相对于扩展程序包根目录）列表，还可以指定可选的内容安全策略来一起使用。在沙箱中意味着如下两点：
+            </p>
 
-<ol>
-<li>A sandboxed page will not have access to extension or app APIs, or
-direct access to non-sandboxed pages (it may communicate with them via
-<code>postMessage()</code>).</li>
-<li>
-  <p>A sandboxed page is not subject to the
-  <a href="../extensions/contentSecurityPolicy.html">Content Security Policy
-  (CSP)</a> used by the rest of the app or extension (it has its own separate
-  CSP value). This means that, for example, it can use inline script and
-  <code>eval</code>.</p>
+            <ol>
+                <li>受沙箱保护的页面不能访问扩展程序或应用程序API，也不能直接访问沙箱外的页面（但是可以通过
+                    <code>postMessage()</code>进行通信）。</li>
+                <li>
+                    <p>
+                        受沙箱保护的页面不受应用程序或扩展程序其余部分使用的
+ 
+                        <a href="../extensions/contentSecurityPolicy.html">内容安全策略（CSP）</a>
+                        所限制。这就意味着，它可以使用内嵌脚本与
+                        <code>eval</code>.
+                    </p>
 
-  <p>For example, here's how to specify that two extension pages are to be
-  served in a sandbox with a custom CSP:</p>
+                    <p>
+                     例如，如下代码指定两个扩展程序页面将在沙箱中载入，并指定了自定义的CSP：
+                    </p>
 
-  <pre>{
+                    <pre>{
   ...
   "sandbox": {
     "pages": [
       "page1.html",
       "directory/page2.html"
     ]
-    <i>// content_security_policy is optional.</i>
+    <i>// 内容安全策略是可选的。</i>
     "content_security_policy":
         "sandbox allow-scripts; script-src https://www.google.com"
   ],
   ...
 }</pre>
 
-  <p>
-  If not specified, the default <code>content_security_policy</code> value is
-  <code>sandbox allow-scripts allow-forms</code>. You can specify your CSP
-  value to restrict the sandbox even further, but it must have the <code>sandbox</code>
-  directive and may not have the <code>allow-same-origin</code> token (see
-  <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#attr-iframe-sandbox">the
-  HTML5 specification</a> for possible sandbox tokens).
-  </p>
-</li>
-</ol>
+                    <p>
+                        如果没有指定的话，默认的<code>content_security_policy</code>值为
+ 
+                        <code>sandbox allow-scripts allow-forms</code>。您可以指定您自己的CSP值来更进一步限制沙箱，但是它必须包含<code>sandbox</code>
+                        指示符，并且不能包含<code>allow-same-origin</code>记号（有关可能的沙箱记号，请参照
+ 
+                        <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#attr-iframe-sandbox">相应的HTML5规范</a>
+                       ）。
+ 
+                    </p>
+                </li>
+            </ol>
 
-<p>
-Note that you only need to list pages that you expected to be loaded in
-windows or frames. Resources used by sandboxed pages (e.g. stylesheets or
-JavaScript source files) do not need to appear in the
-<code>sandboxed_page</code> list, they will use the sandbox of the page
-that embeds them.
-</p>
+            <p>
+   注意，您只需要列出您期望在窗口或框架中载入的页面。受沙箱保护的页面所使用的资源（例如样式表或JavaScript源文件）不需要出现在
+                <code>sandboxed_page</code>列表中，它们会使用内嵌它们的页面所使用的沙箱。
+            </p>
 
-<p>
-<a href="sandboxingEval.html">"Using eval in Chrome Extensions. Safely."</a>
-goes into more detail about implementing a sandboxing workflow that enables use
-of libraries that would otherwise have issues executing under extension's
-<a href="../extensions/contentSecurityPolicy.html">default Content Security
-Policy</a>.
-</p>
+            <p>
+                <a href="sandboxingEval.html">"安全的使用eval"</a>
+              文档更详细地介绍了如何实现沙箱保护的工作流程，使您得以使用扩展程序
+                <a href="../extensions/contentSecurityPolicy.html">默认内容安全策略</a>下无法正常执行的库。
+            </p>
 
-<p>
-Sandboxed page may only be specified when using
-<a href="#manifest_version"><code>manifest_version</code></a> 2 or above.
-</p>
-      </div>
+            <p>
+               只有使用
+                <a href="#manifest_version"><code>manifest_version</code></a>2或更高版本时才能指定受沙箱保护的页面。
+            </p>
+        </div>
     </div>
-  </body>
-  <script>
+</body>
+<script>
     window.bootstrap = {
-      api_names: [{"name":"alarms"},{"name":"bookmarks"},{"name":"browserAction"},{"name":"browsingData"},{"name":"commands"},{"name":"contentSettings"},{"name":"contextMenus"},{"name":"cookies"},{"name":"debugger"},{"name":"declarativeWebRequest"},{"name":"devtools.inspectedWindow"},{"name":"devtools.network"},{"name":"devtools.panels"},{"name":"downloads"},{"name":"events"},{"name":"extension"},{"name":"fileBrowserHandler"},{"name":"fontSettings"},{"name":"history"},{"name":"i18n"},{"name":"idle"},{"name":"input.ime"},{"name":"management"},{"name":"omnibox"},{"name":"pageAction"},{"name":"pageCapture"},{"name":"permissions"},{"name":"privacy"},{"name":"proxy"},{"name":"runtime"},{"name":"scriptBadge"},{"name":"storage"},{"name":"tabs"},{"name":"topSites"},{"name":"tts"},{"name":"ttsEngine"},{"name":"types"},{"name":"webNavigation"},{"name":"webRequest"},{"name":"webstore"},{"last":true,"name":"windows"}].concat(
-          [{"name":"experimental.bluetooth"},{"name":"experimental.devtools.audits"},{"name":"experimental.devtools.console"},{"name":"experimental.discovery"},{"name":"experimental.identity"},{"name":"experimental.infobars"},{"name":"experimental.offscreenTabs"},{"name":"experimental.processes"},{"name":"experimental.record"},{"name":"experimental.speechInput"},{"name":"experimental.systemInfo.cpu"},{"name":"experimental.systemInfo.storage"},{"last":true,"name":"experimental.usb"}]),
-      branchInfo: {"channels":[{"path":"stable","name":"Stable"},{"path":"dev","name":"Dev"},{"path":"beta","name":"Beta"},{"path":"trunk","name":"Trunk"}],"current":"stable","showWarning":false}
+        api_names: [{ "name": "alarms" }, { "name": "bookmarks" }, { "name": "browserAction" }, { "name": "browsingData" }, { "name": "commands" }, { "name": "contentSettings" }, { "name": "contextMenus" }, { "name": "cookies" }, { "name": "debugger" }, { "name": "declarativeWebRequest" }, { "name": "devtools.inspectedWindow" }, { "name": "devtools.network" }, { "name": "devtools.panels" }, { "name": "downloads" }, { "name": "events" }, { "name": "extension" }, { "name": "fileBrowserHandler" }, { "name": "fontSettings" }, { "name": "history" }, { "name": "i18n" }, { "name": "idle" }, { "name": "input.ime" }, { "name": "management" }, { "name": "omnibox" }, { "name": "pageAction" }, { "name": "pageCapture" }, { "name": "permissions" }, { "name": "privacy" }, { "name": "proxy" }, { "name": "runtime" }, { "name": "scriptBadge" }, { "name": "storage" }, { "name": "tabs" }, { "name": "topSites" }, { "name": "tts" }, { "name": "ttsEngine" }, { "name": "types" }, { "name": "webNavigation" }, { "name": "webRequest" }, { "name": "webstore" }, { "last": true, "name": "windows" }].concat(
+            [{ "name": "experimental.bluetooth" }, { "name": "experimental.devtools.audits" }, { "name": "experimental.devtools.console" }, { "name": "experimental.discovery" }, { "name": "experimental.identity" }, { "name": "experimental.infobars" }, { "name": "experimental.offscreenTabs" }, { "name": "experimental.processes" }, { "name": "experimental.record" }, { "name": "experimental.speechInput" }, { "name": "experimental.systemInfo.cpu" }, { "name": "experimental.systemInfo.storage" }, { "last": true, "name": "experimental.usb" }]),
+        branchInfo: { "channels": [{ "path": "stable", "name": "Stable" }, { "path": "dev", "name": "Dev" }, { "path": "beta", "name": "Beta" }, { "path": "trunk", "name": "Trunk" }], "current": "stable", "showWarning": false }
     };
   </script>
-  <div id="gc-footer">
+<div id="gc-footer">
     <div class="text">
-      <p>
-        Except as otherwise <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+        <p>
+            Except as otherwise <a href="http://code.google.com/policies.html#restrictions">noted</a>,
         the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
         Attribution 3.0 License</a>, and code samples are licensed under the
-        <a rel="license" href="http://code.google.com/google_bsd_license.html">BSD License</a>.
-      </p>
-      <p>
-        ©2012 Google
-      </p>
-      <script src="stable/static/js/branch.js" type="text/javascript"></script>
-      <script src="stable/static/js/sidebar.js" type="text/javascript"></script>
-      <script src="stable/static/js/prettify.js" type="text/javascript"></script>
-      <script>
-        (function() {
-          // Auto syntax highlight all pre tags.
-          var preElements = document.getElementsByTagName('pre');
-          for (var i = 0; i < preElements.length; i++)
-            preElements[i].classList.add('prettyprint');
-          prettyPrint();
-        })();
+       
+            <a rel="license" href="http://code.google.com/google_bsd_license.html">BSD License</a>.
+     
+        </p>
+        <p>
+            ©2012 Google
+     
+        </p>
+        <script src="stable/static/js/branch.js" type="text/javascript"></script>
+        <script src="stable/static/js/sidebar.js" type="text/javascript"></script>
+        <script src="stable/static/js/prettify.js" type="text/javascript"></script>
+        <script>
+            (function () {
+                // Auto syntax highlight all pre tags.
+                var preElements = document.getElementsByTagName('pre');
+                for (var i = 0; i < preElements.length; i++)
+                    preElements[i].classList.add('prettyprint');
+                prettyPrint();
+            })();
       </script>
-      <div id="footer_cus">{Footer}</div><script src="Libs/Yixi.js"></script><script src="http://s9.cnzz.com/stat.php?id=4928336&web_id=4928336" language="JavaScript"></script>
-  
+        <div id="footer_cus">{Footer}</div>
+        <script src="Libs/Yixi.js"></script>
+        <script src="http://s9.cnzz.com/stat.php?id=4928336&web_id=4928336" language="JavaScript"></script>
+
     </div>
-  </div>
+</div>
 </html>
